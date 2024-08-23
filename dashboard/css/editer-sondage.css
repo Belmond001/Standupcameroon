@@ -1,0 +1,105 @@
+.wrapper-nouveau-sondage {
+    padding: 0 28px;
+    position: relative;
+}
+.information-generale {
+    padding: 8px 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+
+.wrap-field.middle {
+    width: 50%;
+    margin-right: 0;
+}
+
+.nouveau-sondage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    padding: 48px 34px 28px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 18px #0000000d;
+}
+
+.wrap-field.full_line {
+    width: 100%;
+}
+
+.wrap-field.middle .field-form {
+    padding-right: 15px;
+}
+
+.wrap-field.middle:nth-child(2) .field-form {
+    padding-right: 0px;
+}
+
+.wrap-textarea {
+    margin-top: 18px;
+}
+
+.wrap-btn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.wrap-btn .btn-submit {
+    padding: 10px 15px;
+    background: var(--third-color);
+    color: white;
+    border-radius: 50px;
+    font-weight: 500;
+    box-shadow: 2px 4px 8px #0000000f;
+}
+
+.wrapper-btn {
+    padding: 28px 40px;
+    background: white;
+    position: sticky;
+    bottom: 0px;
+    z-index: 10;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    box-shadow: 0 0 12px #0000000f;
+}
+
+.content-fixed-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-fixed-btn button, .content-fixed-btn a {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: var(--primary-color);
+    color: white;
+    line-height: 8px;
+}
+
+.content-fixed-btn .prev-btn {
+    color: var(--primary-color);
+    background: transparent;
+    border: 2px solid;
+}
+
+.content-fixed-btn .prev-btn i {
+    margin-right: 5px;
+}
+
+.content-fixed-btn .next-btn i {
+    margin-left: 5px;
+}

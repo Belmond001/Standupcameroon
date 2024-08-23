@@ -1,0 +1,135 @@
+.wrapper-utilisateur {
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.wrap-top-liste {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+ul.list-element {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+li.item-list-element {
+    font-weight: 600;
+    color: var(--third-color);
+    min-width: 16.66%;
+    padding-right: 20px;
+}
+
+.wrap-utilisateur {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-utilisateur {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+    background: white;
+    /* margin-bottom: 10px; */
+    border-top: 1px solid #eee;
+    transition: all ease 0.5s;
+}
+
+.contener-info-user {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 24.66%;
+    padding-right: 20px;
+}
+
+.photo-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-right: 14px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #93c9ab5e;
+}
+
+.photo-user img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
+.name-user {
+    font-weight: 500;
+    color: #403f3f;
+    width: calc(100% - 64px);
+    line-height: 20px;
+}
+
+.bloc-info {
+    font-weight: 500;
+    color: #403f3f;
+    min-width: 16.66%;
+    padding-right: 20px;
+}
+
+.item-utilisateur:hover {
+    background: linear-gradient(269deg, rgb(208, 2, 2, 0) 0%, rgb(0 1 128 / 7%) 100%);
+    border-left: 4px solid var(--third-color);
+}
+
+.bloc-info.status {
+    padding: 5px 15px;
+    border-radius: 8px;
+    background: #eee;
+    min-width: fit-content !important;
+}
+
+.status.pending {
+    background: #ffa50021;
+    color: orange;
+}
+
+.status.success {
+    background: #00800024;
+    color: green;
+}
+
+.status.danger {
+    background: #ff000012;
+    color: red;
+}
+
+li.item-list-element:first-child {
+    min-width: 24.66%;
+    padding-right: 20px;
+}
+
+li.item-list-element:last-child {
+    min-width: 10%;
+    padding-right: 0;
+}
+
+.bloc-info:last-child {
+    min-width: 10%;
+}
+
+.bloc-info:nth-child(2) {
+    min-width: 10%;
+}
+
+li.item-list-element:nth-child(2) {
+    min-width: 10%;
+}

@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/********************************* Font Awesome *****************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css');
+@import url('search.css');
+
+
+/********************************* Font Families *****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Briem+Hand:wght@100..900&family=Sedgwick+Ave+Display&display=swap');
+/* @font-face {
+    font-family: reeyregular;
+    src: url(fonts/reey/Reey-Regular.otf);
+} */
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    word-wrap: break-word;
+    /* font-size: 15px; */
+}
+
+
+
+body{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #767676;
+    padding: 0;
+    margin: 0;
+    background-color: #eff1f5;
+}
+.header{
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    top: 0px;
+    z-index: 2;
+    box-shadow: 0px 6px 16px #00000017;
+    width: 100%;
+}
+
+:root {
+    --primary-color: #CD0101;
+    --second-color: #057838;
+    --white-color: #fff;
+    --black-color: #000;
+    --title-font: "Roboto";
+    --primary-font:
+    'Manjari', sans-serif;
+    --second-font:
+    'Unbounded', sans-serif;
+    --thirth-font:
+    'Montserrat', sans-serif;
+    --smooth-font:
+    "Popins" sans-serif;
+   
+    --third-color: #000180;
+}
+.logo-img{
+    height: auto;
+    width: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.header-left-items{
+    height: 30px;
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+.header-light-mode{
+    border: 2px solid;
+    width: 82px;
+    border-radius: 30px;
+}
+.header-light-mode p span{
+    background-color: #eee;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    justify-content: center;
+    width: 26px;
+    margin-right: 10px;
+}
+.header-notification, .header-basket{
+    background-color: #eee;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    position: relative;
+}
+.header-profil-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-profil-picture{
+    display: flex;
+    align-items: center;
+    width: 39px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header-profil-picture img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.header-left-items div {
+    margin-right: 10px;
+}
+
+.header-light-mode p {
+    display: flex;
+}
+.header-currency {
+    display: flex;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.header-left-items div, .header-left-items select {
+    cursor: pointer;
+}
+.header-notification::before {
+    content: "";
+    position: absolute;
+    background-color: #D00202;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}

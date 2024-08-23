@@ -1,0 +1,460 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/fiche-elections.css">
+
+    <!-- Magnific popup -->
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
+
+        <!-- JS files -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-img">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header-left-items">
+            <div class="header-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+         
+            <div class="header-notification">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="header-profil-box">
+                <div class="header-profil-picture">
+                    <img src="images/profilman.png" alt="photo de profil">
+                </div>
+                <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper-dashboard">
+        <div class="container dashboard">
+            <div class="wrap-dashboad">
+                <!--  -->
+                <div class="dashboard-left">
+                    <div class="item-dashboard-menu">
+                        <div class="wrap-item-dashboard-menu">
+                            <ul class="dashboard-menu">
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-chart-line"></i></span>Dashboard</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-house-chimney"></i></span>Menus et contenus</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="sondage.html"><span><i class="fa-solid fa-user-group"></i></span>Sondages</a>
+                                </li>
+                                <li class="menu-list active-menu">
+                                    <a href="election.html"><span><i class="fas fa-vote-yea"></i></i></span>Elections</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="actualite.html"><span><i class="fa-regular fa-newspaper"></i></span>Actualités</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="candidat.html"><span><i class="fa-solid fa-users-rays"></i></span>Candidats</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="utilisateur.html"><span><i class="fa-solid fa-user-group"></i></span>Utilisateurs</a>
+                                </li>
+                                
+                                <li class="menu-list">
+                                    <a href="temoignage.html"><span><i class="fa-regular fa-comment-dots"></i></span>Témoignage</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="notification.html"><span><i class="fa-regular fa-bell"></i></span>Notifications</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="mon-compte.html"><span><i class="fa-regular fa-user"></i></span>Mon compte</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-gear"></i></span>Droit d'aministration</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="dashboard-right">
+                    <!--  -->
+                    <div class="item-dashboard">
+                        <div class="wrap-item-dashboard">
+                            <div class="menu-top">
+                                <div class="left-menu-top">
+                                    <div class="menu-top publish active-menu-top">
+                                        <a href="#"><span><i class="fa-regular fa-paper-plane"></i></span>Les élections</a>
+                                    </div>
+                                   
+                                </div>
+                                <div class="right-menu-top">
+                                    <div class="menu-top-icon-box">
+                                        <div class="menu-top-icon1"><i class="fa-solid fa-table-cells-large"></i></div>
+                                        <div class="menu-top-icon2"><i class="fa-solid fa-list"></i></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void();" id="show_and_hide_form" class="btn-add-item-page">
+                        <span class="icon-btn">
+                            <span class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="text-btn">Nouvelle élection</span>
+                    </a>
+
+                      <!-- search  -->
+                      <div class="wrapper-search" style="display: block;">
+                        <div class="wrapper-search-contain">
+                            <div class="wrap-search">
+                                <form class="form-search" id="form-recherche">
+                                    <div class="wrap-field">
+                                        <label class="libele-form labelle-periode">Titre </label>
+                                        <div class="field-form">
+                                            <input type="text" required=" " name="libelle-search" placeholder="titre " id="libelle-search">
+                                            <!-- <label class="libele-form">Saisir</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="wrap-field">
+                                        <div class="field-form wrap-select">
+                                        <label class="libele-form labelle-periode">Catégorie</label>
+                                    
+                                            <select name="category-search" class="" id="category-search" onchange="Filtrer_commune('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', 'category-search','commune-search')">
+                                                <option value="" data-spec="select-option">Toutes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                               
+                
+                                    <div class="wrap-field">
+                                        <div class="field-form wrap-select">
+                                        <label for="" class="libele-form labelle-periode">Autre</label>
+                                    
+                                            <select name="periode-search" class="periode-search" id="periode-search">
+                                                <option value="question" selected="" data-spec="select-option">Nombre de question</option>
+                                                <option value="reponse" data-spec="select-option">Nombre de reponse</option>
+                 
+                
+                                            </select>
+                                        </div>
+                                    </div>
+                
+                                    <div id="contener-periode-search"></div>
+                
+                                    <div class="wrapper-btn-search">
+                                        <button type="button" class="btn-search" id="btn-filtrer-graphe"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                    <input type="hidden" name="token" id="token" value="">
+                                    <input type="hidden" name="form" id="form" value="form-recherche">
+                                    <input type="hidden" name="traitement" id="traitement" value="">
+                                    <input type="hidden" name="conteneur-resultat" id="conteneur-resultat" value="line3">
+                
+                                </form>
+                            </div>
+                
+                        </div>
+                      </div>
+
+                        <div class="wrapper-toggle-form">
+                                                
+                            <div class="wrap-toggle-form" id="wrap-toggle-form" style="display:none;">
+                                <div class="title-toggle-form">Formulaire de Participation aux Élections </div>
+                                <div class="contener-toggle-form">
+                                    <form onsubmit='return false;' id="form-editer-depense" enctype="multipart/form-data"> 
+                                        <div class="bloc-formulaire">
+                                            <div class="titre-bloc-formulaire"><h2>Vos Noms et prénoms</h2></div>
+                                            <div class="wrap-field middle">
+                                                <div class="field_input">
+                                                    <div class="element_field">
+                                                        <label for="nom" class="label_field">Nom<span class="require">*</span></label>
+                                                        <input type="text" name="nom-electeur" id="nom-electeur" placeholder="" class="class_input majuscule mandatory-electeur" data-error-contener="div-erreur-nom" onkeyup="Verif_saisie(event, 'nom-electeur', 'btn-valider-electeur')" onchange="Verif_saisie(event, 'nom-electeur', 'btn-valider-electeur')">
+                                                        <div class="message-erreur" id="div-erreur-nom" style="display: none;">Veuillez saisir le nom</div>
+                                                    </div>
+                                                </div>
+                                                <div class="field_input ">
+                                                    <div class="element_field">
+                                                        <label for="nom" class="label_field">Prénom <span class="require">*</span></label>
+                                                        <input type="text" name="prenom-electeur" id="prenom-electeur" placeholder="" class="class_input miniscule mandatory-electeur" data-error-contener="div-erreur-prenom" onkeyup="Verif_saisie(event, 'prenom-electeur', 'btn-valider-electeur')">
+                                                        <div class="message-erreur" id="div-erreur-prenom" style="display: none;">Veuillez saisir le prénom</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="bloc-formulaire">
+                                            <div class="titre-bloc-formulaire"><h2>Téléphone et Email</h2></div>
+                                             <div class="wrap-field middle">
+                                                <div class="field_input">
+                                                    <div class="element_field">
+                                                      <label class="label_field" for="telephone">Téléphone <span class="require">*</span></label>
+                                                        <input type="telephone" class="mandatory class_input" name="telephone" id="telephone" data-error-contener="div-erreur-champ-telephone-contact" onkeyup="Verif_saisie(event, 'telephone', 'btn-valider-contact')" oninput="this.value = this.value.replace(/[^0-9()+. ]/g, '').replace(/(\..*)\./g, '$1');" onchange="Verif_saisie(event, 'telephone', 'btn-valider-contact')">
+                                                    </div>
+                                                    
+                                                   
+                                                </div>
+                                                <div class="field_input">
+                                                    <div class="element_field">
+                                                        <label class="label_field" for="email">Adresse Email <span class="require">*</span></label>
+                                                        
+                                                        <input type="email" class="mandatory class_input" name="email" id="email"  autocomplete="on" data-error-contener="div-erreur-champ-email-contact" onkeyup="Verif_saisie(event, 'email', 'btn-valider')" onchange="Verif_saisie(event, 'email', 'btn-valider-contact')">
+                                                    </div>
+                                                   
+                                                    <div class="message-erreur" id="div-erreur-champ-email-contact" style="display: none;"> Veuillez indiquer une adresse email valide</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bloc-formulaire">
+                                            <div class="titre-bloc-formulaire"><h2>Pièce d'identité </h2></div>
+                                            <div class=" wrap-field middle">
+                                                <div class="field_input">
+                                                    <div class="element_field">
+                                                        <label for="type-piece-identite" class="label_field">Type de pièce d'identité <span class="requiere">*</span></label>
+                                                        <select name="type-piece-identite" class="class_select mandatory-electeur" id="type-piece-identite" data-error-contener="div-erreur-type-piece-identite">
+                                                        <option value="" selected="">Sélectionnez</option>
+                                                        <option value="cni">CNI (carte Nationale d'Identité)</option>
+                                                        <option value="passport">Passport</option>
+                                                         <option value="permis">Permis de conduire</option>
+                                                        </select>
+                                                        <div class="message-erreur" id="div-erreur-type-piece-identite" style="display: none;">Veuillez indiquer</div>
+                                                    </div>
+                                                </div>
+                                                <div class="field_input ">
+                                                    <div class="element_field">
+                                                        <label for="numero_piece" class="label_field">Numéro de la pièce d'identité<span class="requiere">*</span></label>
+                                                        <input type="text" name="numero_piece" id="numero_piece" class="class_input mandatory-electeur" data-error-contener="div-erreur-numero_piece" onkeyup="Verif_saisie(event, 'numero_piece', 'btn-valider-electeur')">
+                                                        <div class="message-erreur" id="div-erreur-numero_piece" style="display: none;">Veuillez indiquer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="bloc-formulaire">
+                                            <div class="titre-bloc-formulaire"><h2>Informations sur l'élection</h2></div>
+                                            <div class="wrap-field middle">
+                                                <div class="field_input">
+                                                    <div class="element_field">
+                                                        <label for="nom-election" class="label_field">Nom de l'élection<span class="require">*</span></label>
+                                                        <input type="text" name="nom-election" id="nom-election" placeholder="" class="class_input majuscule mandatory-election" data-error-contener="div-erreur-nom-election" onkeyup="Verif_saisie(event, 'nom-election', 'btn-valider-election')" onchange="Verif_saisie(event, 'nom-election', 'btn-valider-election')">
+                                                        <div class="message-erreur" id="div-erreur-nom-election" style="display: none;">Veuillez saisir le nom de l'election</div>
+                                                    </div>
+                                                </div>
+                                                <div class="field_input">
+
+                                                    <div class="element_field">
+                                                        <label for="" class="label_field">Date de l'élection <span class="requiere">*</span></label>
+                                                        <input type="date" name="date_election" id="date_election" class="class_input mandatory-election" data-error-contener="div-erreur-date_election" onkeyup="Verif_saisie(event, 'date_election', 'btn-valider-elction')">
+
+                                                        <div class="message-erreur" id="div-erreur-date_election" style="display: none;">Veuillez indiquer une date valide</div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                         <div class="bloc-formulaire">
+
+                                            <div class="titre-bloc-formulaire"><h2>Listes des candidats</h2></div>
+
+                                            <div class="field_double radio-fields">      
+                                                <div class="field_input ">
+                                                    <div class="element_field">
+                                                        <input type="checkbox" name="religion[]" id="Jean" placeholder="" class="class_input mandatory" data-error-contener="div-erreur-religion" value="Jean" checked="">
+                                                        <!-- <span class="icon-input"></span> -->
+                                                        <label for="Jean" class="">Jean</label>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="field_input ">
+                                                    <div class="element_field">
+                                                        <input type="checkbox" name="religion[]" id="claude" placeholder="" class="class_input mandatory" data-error-contener="div-erreur-religion" value="claude" >
+                                                        <!-- <span class="icon-input"></span> -->
+                                                        <label for="claude" class="">claude</label>
+                                                    </div>
+                                                    <div class="message-erreur" id="div-erreur-religion" style="display: none;">Veuillez choisir la religion</div>
+
+                                                </div>
+                                                 
+                                                <div class="field_input ">
+                                                    <div class="element_field">
+                                                        <input type="checkbox" name="religion[]" id="Eric" placeholder="" class="class_input mandatory" data-error-contener="div-erreur-religion" value="Eric" >
+                                                        <!-- <span class="icon-input"></span> -->
+                                                        <label for="Eric" class="">Eric</label>
+                                                    </div>
+                                                    <div class="message-erreur" id="div-erreur-religion" style="display: none;">Veuillez choisir la religion</div>
+
+                                                </div>
+                                                 
+                                            </div>
+
+                                        </div>
+                                        <div class="bloc-formulaire">
+                                            <div class="titre-bloc-formulaire"><h2>Commentaires</h2></div>
+                                            <div class="wrap-field full-line">
+                                                <div class="field_input">
+                                                    <div class="element_field">
+                                                       
+                                                        <label class="label_field textarea" for="commentaire">Commentaires<span class="requiere">*</span></label>
+                                                       
+                                                        <textarea type="message" class="mandatory" name="message" id="message"  data-error-contener="div-erreur-champ-message-contact" onkeyup="Verif_saisie(event, 'message', 'btn-valider-contact')" onchange="Verif_saisie(event, 'message', 'btn-valider-contact')"></textarea>
+                                                    
+                                                        <div class="message-erreur" id="div-erreur-champ-message-contact" style="display: none;"> Veuillez saisir votre message.</div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="space_btn_submit space_double">
+                                            <button type="button" class="button_lightbox" id="btn-valider">Enregistrer</button>
+                                            <button type="button" class="button_lightbox" id="btn-annuler">annuler</button>
+                                           
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row-contain-title-page row-container">
+                                <div class="titre-page-generale">
+                                    <h1>Liste des élections</h1>
+                                </div>
+                                
+                            </div>
+                            <div class="wrap-card">
+                                <!-- election -->
+                                    <div class="wrapper-fiche-election">
+                                        <div class="container fiche-election">
+                                            <div class="wrap-fiche-election ">
+                                                <div class="item-fiche-election">
+                                                    <div class="wrap-item-fiche-election row-container">
+                                                        <div class="left-bloc-fiche-election row-container">
+                                                            <div class="content-check-fiche-election">
+                                                                
+                                                            </div>
+                                                            
+                                                            <div class="first-dot-status-fivhe"></div>
+                                                            <div class="texte-left-fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                                            <div class="statut-left-fiche"><span class="second-dot-status-fiche"></span>Lorem ispum</div>
+                                                        </div>
+                                                        <div class="right-bloc-fiche-election ">
+                                                        <div class="periode-du-vote">
+                                                            Du<span class="jour-du-vote">12/05/2024</span>au<span class="jour-du-vote">12/08/2024</span>
+                                                        </div>
+                                                            <div class="bloc-image-du-votant">
+                                                                
+                                                                    <div class="item-image-circle tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up" >
+                                                                        <img src="images/actualites/actu1.jpg" alt="Image 1">
+                                                                    </div>
+                                                                    <div class="item-image-circle  tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up">
+                                                                        <img src="images/actualites/actu2.jpg" alt="Image 2">
+                                                                    </div>
+                                                                    <div class="item-image-circle tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up">
+                                                                        <img src="images/actualites/actu3.jpg" alt="Image 3">
+                                                                    </div>
+                                                                    <div class="item-image-circle  tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up">
+                                                                        <img src="images/actualites/actu1.jpg" alt="Image 4">
+                                                                    </div>
+                                                            </div>
+                                                            <div class="categorie-fiche-eection">Lorem ispum</div>
+                                                            <div class="action_fiche_btn">
+                                                                <button type="button" class="btn_option"><i class="fas fa-ellipsis-vertical"></i></button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-fiche-election">
+                                                    <div class="wrap-item-fiche-election row-container">
+                                                        <div class="left-bloc-fiche-election row-container">
+                                                            <div class="content-check-fiche-election">
+                                                                
+                                                            </div>
+                                                            
+                                                            <div class="first-dot-status-fivhe"></div>
+                                                            <div class="texte-left-fiche">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                                            <div class="statut-left-fiche"><span class="second-dot-status-fiche"></span>Lorem ispum</div>
+                                                        </div>
+                                                        <div class="right-bloc-fiche-election ">
+                                                        <div class="periode-du-vote">
+                                                            Du<span class="jour-du-vote">12/05/2024</span>au<span class="jour-du-vote">12/08/2024</span>
+                                                        </div>
+                                                            <div class="bloc-image-du-votant">
+                                                                
+                                                                    <div class="item-image-circle tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up" >
+                                                                        <img src="images/actualites/actu1.jpg" alt="Image 1">
+                                                                    </div>
+                                                                    <div class="item-image-circle  tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up">
+                                                                        <img src="images/actualites/actu2.jpg" alt="Image 2">
+                                                                    </div>
+                                                                    <div class="item-image-circle tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up">
+                                                                        <img src="images/actualites/actu3.jpg" alt="Image 3">
+                                                                    </div>
+                                                                    <div class="item-image-circle  tooltip-color  link_edit" aria-label="jean claude" data-balloon-pos="up">
+                                                                        <img src="images/actualites/actu1.jpg" alt="Image 4">
+                                                                    </div>
+                                                            </div>
+                                                            <div class="categorie-fiche-eection">Lorem ispum</div>
+                                                            <div class="action_fiche_btn">
+                                                                <button type="button" class="btn_option"><i class="fas fa-ellipsis-vertical"></i></button>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--  -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+
+
+    <script type="text/javascript">
+
+    function Cacher_form(id){
+        $('#'+id).slideUp('slow');
+    }
+   
+    $('#show_and_hide_form').click(function(){
+    
+        $("#wrap-toggle-form").slideToggle('slow');
+
+    })
+
+    $("#btn-annuler").click(function(){
+        Cacher_form('wrap-toggle-form');
+    })
+
+
+    
+    </script>
+
+
+
+</body>
+</html>

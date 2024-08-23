@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/editer-sondage.css">
+
+    <title>Dashboard: Standupcameroon</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-img">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header-left-items">
+            <div class="header-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-currency">
+                <select name="currency" id="currency">
+                    <option value="usd">USD</option>
+                </select>
+            </div>
+            <div class="header-notification">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="header-profil-box">
+                <div class="header-profil-picture">
+                    <img src="images/profilman.png" alt="photo de profil">
+                </div>
+                <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper-dashboard">
+        <div class="container dashboard">
+            <div class="wrap-dashboad">
+                <!--  -->
+                <div class="dashboard-left">
+                    <div class="item-dashboard-menu">
+                        <div class="wrap-item-dashboard-menu">
+                            <ul class="dashboard-menu">
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-chart-line"></i></span>Dashboard</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-house-chimney"></i></span>Menus et contenus</a>
+                                </li>
+                                <li class="menu-list active-menu">
+                                    <a href="sondage.html"><span><i class="fa-solid fa-user-group"></i></span>Sondages</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="election.html"><span><i class="fas fa-vote-yea"></i></i></span>Elections</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="actualite.html"><span><i class="fa-regular fa-newspaper"></i></span>Actualités</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="candidat.html"><span><i class="fa-solid fa-users-rays"></i></span>Candidats</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="utilisateur.html"><span><i class="fa-solid fa-user-group"></i></span>Utilisateurs</a>
+                                </li>
+                                
+                                <li class="menu-list">
+                                    <a href="temoignage.html"><span><i class="fa-regular fa-comment-dots"></i></span>Témoignage</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="notification.html"><span><i class="fa-regular fa-bell"></i></span>Notifications</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="mon-compte.html"><span><i class="fa-regular fa-user"></i></span>Mon compte</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-gear"></i></span>Droit d'aministration</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="dashboard-right">
+                    <!--  -->
+                    <div class="item-dashboard">
+                        <div class="wrap-item-dashboard">
+                            <div class="menu-top">
+                                <div class="left-menu-top">
+                                    <div class="menu-top publish active-menu-top">
+                                        <a href="#"><span><i class="fas fa-users"></i></span>Nouveau sondage</a>
+                                    </div>
+                                    <div class="menu-top publish">
+                                        <a href="#"><span><i class="fas fa-users"></i></span>Questionnaires</a>
+                                    </div>
+                                                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-nouveau-sondage">
+                        <div class="information-generale info">
+                            <p class="libelle-info">Créer un nouveau sondage? Pour ce faire bien vouloir remplir soigneusement le formulaire ci-dessous!</p>
+                        </div>
+
+                        <form action="" class="nouveau-sondage">
+                            <div class="wrap-field middle">
+                                <label class="libele-form labelle-periode">Titre </label>
+                                <div class="field-form">
+                                    <input type="text" required=" " name="titre-sondage" placeholder="titre " id="titre-sondage">
+                                    <!-- <label class="libele-form">Saisir</label> -->
+                                </div>
+                            </div>
+                            <div class="wrap-field middle">
+                                <div class="field-form wrap-select">
+                                <label class="libele-form labelle-periode">Catégorie</label>
+                            
+                                    <select name="category-sondage" class="" id="category-sondage" >
+                                        <option value="" data-spec="select-option">Toutes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="wrap-field full_line">
+                                <div class="field-form wrap-textarea">
+                                <label class="libele-form labelle-periode">Description</label>
+                            
+                                    <textarea name="Description" class="" id="description-sondage"></textarea>
+                                </div>
+                            </div>
+                            <div class="wrap-btn">
+                                <button type="button" class="btn-submit" id="btn-editer-sondage">Enregistrer</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="wrapper-btn">
+                        <div class="content-fixed-btn">
+                            <a href="sondage.html" class="prev-btn"><i class="fas fa-angle-left"></i> Quitter</a>
+                            <a href="question-sondage.html" class="next-btn">Continuer <i class="fas fa-angle-right"></i> </a>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sélectionne tous les éléments avec la classe 'item'
+            const items = document.querySelectorAll('.menu-list');
+
+            // Ajoute un écouteur d'événement 'click' à chaque élément
+            items.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    // Supprime la classe 'active' de tous les éléments
+                    items.forEach(function(el) {
+                        el.classList.remove('active-menu');
+                    });
+                    // Ajoute la classe 'active' à l'élément cliqué
+                    this.classList.add('active-menu');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

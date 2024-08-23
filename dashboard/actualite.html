@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/fiche-actualite.css">
+
+    <title>Dashboard: Standupcameroon</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-img">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header-left-items">
+            <div class="header-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+      
+            <div class="header-notification">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="header-profil-box">
+                <div class="header-profil-picture">
+                    <img src="images/profilman.png" alt="photo de profil">
+                </div>
+                <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper-dashboard">
+        <div class="container dashboard">
+            <div class="wrap-dashboad">
+                <!--  -->
+                <div class="dashboard-left">
+                    <div class="item-dashboard-menu">
+                        <div class="wrap-item-dashboard-menu">
+                            <ul class="dashboard-menu">
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-chart-line"></i></span>Dashboard</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-house-chimney"></i></span>Menus et contenus</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="sondage.html"><span><i class="fa-solid fa-user-group"></i></span>Sondages</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="election.html"><span><i class="fas fa-vote-yea"></i></i></span>Elections</a>
+                                </li>
+                                <li class="menu-list active-menu">
+                                    <a href="actualite.html"><span><i class="fa-regular fa-newspaper"></i></span>Actualités</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="candidat.html"><span><i class="fa-solid fa-users-rays"></i></span>Candidats</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="utilisateur.html"><span><i class="fa-solid fa-user-group"></i></span>Utilisateurs</a>
+                                </li>
+                                
+                                <li class="menu-list">
+                                    <a href="temoignage.html"><span><i class="fa-regular fa-comment-dots"></i></span>Témoignage</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="notification.html"><span><i class="fa-regular fa-bell"></i></span>Notifications</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="mon-compte.html"><span><i class="fa-regular fa-user"></i></span>Mon compte</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-gear"></i></span>Droit d'aministration</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="dashboard-right">
+                    <!--  -->
+                    <div class="item-dashboard">
+                        <div class="wrap-item-dashboard">
+                            <div class="menu-top">
+                                <div class="left-menu-top">
+                                    <div class="menu-top publish active-menu-top">
+                                        <p><span><i class="fa-regular fa-paper-plane"></i></span>Actualités</p>
+                                    </div>
+                                   
+                                </div>
+                                <div class="right-menu-top">
+                                    <div class="menu-top-icon-box">
+                                        <div class="menu-top-icon1"><i class="fa-solid fa-table-cells-large"></i></div>
+                                        <div class="menu-top-icon2"><i class="fa-solid fa-list"></i></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-add-item-page">
+                        <span class="icon-btn">
+                            <span class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="text-btn">Nouvelle actualité</span>
+                    </a>
+                      <!-- search  -->
+                      <div class="wrapper-search" style="display: block;">
+                        <div class="wrapper-search-contain">
+                            <div class="wrap-search">
+                                <form class="form-search" id="form-recherche">
+                                    <div class="wrap-field">
+                                        <label class="libele-form labelle-periode">Titre </label>
+                                        <div class="field-form">
+                                            <input type="text" required=" " name="libelle-search" placeholder="titre " id="libelle-search">
+                                            <!-- <label class="libele-form">Saisir</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="wrap-field">
+                                        <div class="field-form wrap-select">
+                                        <label class="libele-form labelle-periode">Catégorie</label>
+                                    
+                                            <select name="category-search" class="" id="category-search" onchange="Filtrer_commune('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', 'category-search','commune-search')">
+                                                <option value="" data-spec="select-option">Toutes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                               
+                
+                                    <div class="wrap-field">
+                                        <div class="field-form wrap-select">
+                                        <label for="" class="libele-form labelle-periode">Autre</label>
+                                    
+                                            <select name="periode-search" class="periode-search" id="periode-search">
+                                                <option value="question" selected="" data-spec="select-option">Nombre de question</option>
+                                                <option value="reponse" data-spec="select-option">Nombre de reponse</option>
+                 
+                
+                                            </select>
+                                        </div>
+                                    </div>
+                
+                                    <div id="contener-periode-search"></div>
+                
+                                    <div class="wrapper-btn-search">
+                                        <button type="button" class="btn-search" id="btn-filtrer-graphe"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                    <input type="hidden" name="token" id="token" value="">
+                                    <input type="hidden" name="form" id="form" value="form-recherche">
+                                    <input type="hidden" name="traitement" id="traitement" value="">
+                                    <input type="hidden" name="conteneur-resultat" id="conteneur-resultat" value="line3">
+                
+                                </form>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="card">
+                        <div class="row-contain-title-page row-container">
+                            <div class="titre-page-generale">
+                                <h1>Liste des actualités</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="wrap-card">
+                            <!--  actualites -->
+
+                                <div class="dashboard-actualite">
+                                    <div class="item-dashboard-actualite">
+                                        <div class="wrap-item-dashboard-actualite">
+                                            <div class="dashboard-actualite-img">
+                                                <img src="images/actualites/actu1.jpg" alt="famille">
+                                            </div>
+                                            <div class="dashboard-actualite-content">
+                                                <div class="dashboard-actualite-meter">
+                                                    <div class="meter-left"><p><span><i class="fa-regular fa-thumbs-up"></i></span>5k</p></div>
+                                                    <div class="second_field_btn">
+                                                        <button type="button" class="btn_option"><i class="fas fa-ellipsis-h"></i></button>
+                                            
+                                                        <div class="action_element">
+                                                            <i class="fas fa-caret-up" aria-hidden="true"></i>
+                                                            
+                                                                <a class="link_action link_edit" href="#">
+                                                                    <i class="fas fa-pencil"></i><span>Editer</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-camera"></i>
+                                                                    <span>Ajouter photos</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-link"></i>
+                                                                    <span>Lier actualités</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-file"></i>
+                                                                    <span>Joindre fichiers</span>
+                                                                </a>
+                                                                <a class="link_action link_edit" href="./nouveau-projet/MTg=">
+                                                                    <i class="fas fa-trash"></i><span>Supprimer</span>
+                                                                </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h2 class="dashboard-actualite-title">Titre pour l'actualité ici</h2>
+                                                <p class="dashboard-actualite-text">Lorem ipsum dolor sit amet adipisicing elit. Sapiente possimus illo aliquam.</p>
+                                                <p class="dashboad-actualite-duration"><span><i class="fa-regular fa-calendar"></i></span>28 juil. 24</p>
+                                                <div class="dashboard-actualite-edit">
+                                                    <div class="dashboard-edit-text">
+                                                        <p class="edit-text1">Categorie 1</p>
+                                                        <p class="edit-text2">Categorie 2</p>
+                                                    </div>
+                                                    <!-- <button class="dashboard-edit-btn"><span><i class="fa-regular fa-pen-to-square"></i></span>Edit</button> -->
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-dashboard-actualite">
+                                        <div class="wrap-item-dashboard-actualite">
+                                            <div class="dashboard-actualite-img">
+                                                <img src="images/actualites/actu2.jpg" alt="famille">
+                                            </div>
+                                            <div class="dashboard-actualite-content">
+                                                <div class="dashboard-actualite-meter">
+                                                    <div class="meter-left"><p><span><i class="fa-regular fa-thumbs-up"></i></span>5k</p></div>
+                                                    <div class="second_field_btn">
+                                                        <button type="button" class="btn_option"><i class="fas fa-ellipsis-h"></i></button>
+                                            
+                                                        <div class="action_element">
+                                                            <i class="fas fa-caret-up" aria-hidden="true"></i>
+                                                            
+                                                                <a class="link_action link_edit" href="#">
+                                                                    <i class="fas fa-pencil"></i><span>Editer</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-camera"></i>
+                                                                    <span>Ajouter photos</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-link"></i>
+                                                                    <span>Lier actualités</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-file"></i>
+                                                                    <span>Joindre fichiers</span>
+                                                                </a>
+                                                                <a class="link_action link_edit" href="./nouveau-projet/MTg=">
+                                                                    <i class="fas fa-trash"></i><span>Supprimer</span>
+                                                                </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h2 class="dashboard-actualite-title">Titre pour l'actualité ici</h2>
+                                                <p class="dashboard-actualite-text">Lorem ipsum dolor sit amet adipisicing elit. Sapiente possimus illo aliquam.</p>
+                                                <p class="dashboad-actualite-duration"><span><i class="fa-regular fa-calendar"></i></span>18 juin. 24</p>
+                                                <div class="dashboard-actualite-edit">
+                                                    <div class="dashboard-edit-text">
+                                                        <p class="edit-text1">Categorie 1</p>
+                                                        <p class="edit-text2">Categorie 2</p>
+                                                    </div>
+                                                    <!-- <button class="dashboard-edit-btn"><span><i class="fa-regular fa-pen-to-square"></i></span>Edit</button> -->
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-dashboard-actualite">
+                                        <div class="wrap-item-dashboard-actualite">
+                                            <div class="dashboard-actualite-img">
+                                                <img src="images/actualites/actu3.jpg" alt="famille">
+                                            </div>
+                                            <div class="dashboard-actualite-content">
+                                                <div class="dashboard-actualite-meter">
+                                                    <div class="meter-left"><p><span><i class="fa-regular fa-thumbs-up"></i></span>5k</p></div>
+                                                    <div class="second_field_btn">
+                                                        <button type="button" class="btn_option"><i class="fas fa-ellipsis-h"></i></button>
+                                            
+                                                        <div class="action_element">
+                                                            <i class="fas fa-caret-up" aria-hidden="true"></i>
+                                                            
+                                                                <a class="link_action link_edit" href="#">
+                                                                    <i class="fas fa-pencil"></i><span>Editer</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-camera"></i>
+                                                                    <span>Ajouter photos</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-link"></i>
+                                                                    <span>Lier actualités</span>
+                                                                </a>
+                                                                <a href="#" class="link_action link_edit">
+                                                                    <i class="fas fa-file"></i>
+                                                                    <span>Joindre fichiers</span>
+                                                                </a>
+                                                                <a class="link_action link_edit" href="./nouveau-projet/MTg=">
+                                                                    <i class="fas fa-trash"></i><span>Supprimer</span>
+                                                                </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h2 class="dashboard-actualite-title">Titre pour l'actualité ici</h2>
+                                                <p class="dashboard-actualite-text">Lorem ipsum dolor sit amet adipisicing elit. Sapiente possimus illo aliquam.</p>
+                                                <p class="dashboad-actualite-duration"><span><i class="fa-regular fa-calendar"></i></span>10 jan. 24</p>
+                                                <div class="dashboard-actualite-edit">
+                                                    <div class="dashboard-edit-text">
+                                                        <p class="edit-text1">Categorie 1</p>
+                                                        <p class="edit-text2">Categorie 2</p>
+                                                    </div>
+                                                    <!-- <button class="dashboard-edit-btn"><span><i class="fa-regular fa-pen-to-square"></i></span>Edit</button> -->
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bloc_pagination">
+                                        <div class="info-total-element-in-list">
+                                            <div class="total-element"><span>03</span> resultats&nbsp;</div>
+                                            <div class="total-page"> - page <span>1</span> sur <span>5</span></div>
+                                        </div>
+                                        <ul class="list-pagination">
+                                            <li class="btn-pagination prev">
+                                                <a href=""><i class="fas fa-angle-left"></i></a>
+                                            </li>
+                                            <li class="btn-pagination active">
+                                                <a href=""><span>1</span></a>
+                                            </li>
+                                            <li class="btn-pagination ">
+                                                <a href=""><span>2</span></a>
+                                            </li>
+                                            <li class="btn-pagination">
+                                                <a href=""><span>3</span></a>
+                                            </li>
+                                            <li class="btn-pagination next">
+                                                <a href=""><i class="fas fa-angle-right"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sélectionne tous les éléments avec la classe 'item'
+            const items = document.querySelectorAll('.menu-list');
+
+            // Ajoute un écouteur d'événement 'click' à chaque élément
+            items.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    // Supprime la classe 'active' de tous les éléments
+                    items.forEach(function(el) {
+                        el.classList.remove('active-menu');
+                    });
+                    // Ajoute la classe 'active' à l'élément cliqué
+                    this.classList.add('active-menu');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
