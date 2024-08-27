@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inscription.css">
+    <title>login: StandUp Cameroon </title>
+    <script src="js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+    
+    <section class="wrapper-login">
+        <div class="container login">
+            <div class="wrap-login">
+                <div class="item-login left">
+                    <div class="wrap-item-login left">
+                        <div class="shapes_images">
+                            <div class="shape_top_images">
+                                <img src="./images/shape/shape-projet1.png" alt="shape image">
+                            </div>
+                            <div class="shape_bottom_images">
+                                <img src="./images/shape/shape-projet2.png" alt="shape image">
+                            </div>
+
+                        </div>
+                        <div class="section-login-logo">
+                            <div class="login-logo-img">
+                                <img src="images/logo.png" alt="logo image">
+                            </div>
+                        </div>
+                        <h2 class="left-login-title">Lorem ipsum</h2>
+                        <p class="left-login-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, quisquam. Nemo, odio sint hic, saepe accusamus vero nam, earum odit eveniet quis architecto tempore placeat rerum! Ex commodi voluptas dolore.</p>
+                        <div class="copy-right-box">
+                            <p>22th July. Made By</p>
+                            <p class="writer-signature">Name of interprise</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-login right">
+                    
+                    <div class="parent-wrap-item-login right">
+                        <!-- <div class="login-option">
+                            <div id="option-login" class="option-login actif">Se connecter</div>
+                            <div id="option-signup" class="option-signup ">S'inscrire</div>
+                        </div> -->
+                  
+                        <div class="wrap-item-inscription">
+                            <div class="login-page-title">INS<span>CRIPTION</span></div>
+
+                            <div class="description-login">Pour rester connecté avec nous <br/> s'il vous plait connectez-vous avec vos informations personnel</div>
+                            <form action="#">
+                                <div class="input-container">
+                                    <div class="login-field-content">
+                                        <div class="login-field-input">
+                                            <input type="text" name="name" id="name" placeholder="Nom"  data-error-message="div-erreur-nom">
+                                            <div class="login-icon-container">
+                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="message-erreur" id="div-erreur-nom" style="display: none;"> 
+                                            Veillez enter votre nom
+                                        </div>
+                                    </div>
+                                    <div class="login-field-content">
+                                        <div class="login-field-input">
+                                            <input type="text" name="firstname" id="firstname" placeholder="Prénom" data-error-message="div-erreur-prenom">
+                                            <div class="login-icon-container">
+                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="message-erreur" id="div-erreur-prenom" style="display: none;">
+                                            Veillez enter votre prénom
+                                        </div>
+                                    </div>
+                                    <div class="login-field-content">
+                                        <div class="login-field-input">
+                                            <input type="tel" name="phone-number" id="numero-tel" placeholder="Numéro de Téléphone"  data-error-message="div-erreur-telephone">
+                                            <div class="login-icon-container">
+                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="message-erreur" id="div-erreur-telephone" style="display: none;"> 
+                                           Veillez enter votre numéro
+                                        </div>
+                                    </div>
+                                    <div class="login-field-content">
+                                        <div class="login-field-input">
+                                            <div class="login-icon-container">
+                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
+                                            </div>
+                                        </div>
+                                        <input type="email" name="email" id="email" placeholder="Adresse Email" data-error-message="div-erreur-email">
+                                        <div class="message-erreur" id="div-erreur-email" style="display: none;"> 
+                                           Veillez entrer votre adresse
+                                        </div>
+                                    </div>
+                                    <div class="login-field-content success">
+                                        <div class="login-field-input">
+                                            <input type="password" name="pwd" id="pwd" placeholder="Mot de Passe" data-error-message="div-erreur-pwd">
+                                            <div class="login-icon-container">
+                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                <div class="login-icon good"><i class="fa-solid fa-circle-check"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="message-erreur" id="div-erreur-pwd" style="display: none;"> 
+                                            Veillez entrer un mot de passe
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="login-field-content error">
+                                        <div class="login-field-input">
+                                            <input type="password" name="pwd-confirmation" id="pwd-confirmation" data-error-message="div-erreur-conf-pwd" placeholder="Comfirmer le Mot de Passe">
+                                            <div class="login-icon-container">
+                                                <div class="login-icon bad"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="message-erreur" id="div-erreur-conf-pwd"> 
+                                            Mauvais mot de passe
+                                        </div>
+                                    </div>
+                                    <div class="login-checkbox-content">
+                                        <label for="contrat" class="checkbox">
+                                            <input type="checkbox" name="checkbox-1" id="contrat">
+                                            <p>j'ai lu et j'accepte <span>les termes et les conditions de confidentialité</span></p>
+                                        </label>
+                                    </div>
+                                    <button type="button" class="login-btn">S'inscrire</button>
+                                    
+                                    
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+	<script src="login.js"></script>
+    <script>
+        $('#option-login').click(function(){
+            $(".wrap-item-connexion").slideDown();
+            $(".wrap-item-inscription").slideUp();
+            $(this).addClass('actif');
+            $('#option-signup').removeClass('actif');
+        })
+        $('#option-signup').click(function(){
+            $(".wrap-item-inscription").slideDown();
+            $(".wrap-item-connexion").slideUp();
+            $(this).addClass('actif');
+            $('#option-login').removeClass('actif');
+        })
+    </script>
+</body>
+</html>

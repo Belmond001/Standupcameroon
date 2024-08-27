@@ -16,10 +16,10 @@
                     <div class="wrap-item-login left">
                         <div class="shapes_images">
                             <div class="shape_top_images">
-                                <img src="./images/shapes/shape1.png" alt="shape image">
+                                <img src="./images/shape/shape-projet1.png" alt="shape image">
                             </div>
                             <div class="shape_bottom_images">
-                                <img src="./images/shapes/shape2.png" alt="shape image">
+                                <img src="./images/shape/shape-projet2.png" alt="shape image">
                             </div>
 
                         </div>
@@ -39,17 +39,22 @@
                 <div class="item-login right">
                     
                     <div class="parent-wrap-item-login right">
-                        <div class="login-option">
+                        <!-- <div class="login-option">
                             <div id="option-login" class="option-login actif">Se connecter</div>
                             <div id="option-signup" class="option-signup ">S'inscrire</div>
-                        </div>
+                        </div> -->
                         <div class="wrap-item-connexion">
                             <div class="login-page-title">CON<span>NEXION</span></div>
 
-                            <div class="description-login">Pour rester conncté avec nous <br/> s'il vous plait connectez-vous avec vos informations personnel</div>
+                            <div class="description-login">Pour rester conneté avec nous <br/> s'il vous plait connectez-vous avec vos informations personnel</div>
                             
                             <form action="authentification-deux-facteurs.html">
                                 <div class="input-container">
+                                    <div class="login-field-content">
+                                        <div class="login-field-input">
+                                            <input type="text" name="username" id="username" placeholder="Username">
+                                        </div>
+                                    </div>
                                     <div class="login-field-content">
                                         <div class="login-field-input">
                                             <input type="text" name="email" id="email" placeholder="Adresse Email">
@@ -64,103 +69,18 @@
                                         </a>
                                         
                                     </div>
+                                    <div class="login-checkbox-content">
+                                        <label for="contrat" class="checkbox">
+                                            <input type="checkbox" name="checkbox-1" id="contrat">
+                                            <p>Je souhaites <span> avant tout rester anonyme</span></p>
+                                        </label>
+                                    </div>
                                     <button type="submit" class="login-btn">Se connecter</button>
                                 </div>
                                 
                             </form>
                         </div>
-                        <div class="wrap-item-inscription" style="display: none;">
-                            <div class="login-page-title">INS<span>CRIPTION</span></div>
-
-                            <div class="description-login">Pour rester conncté avec nous <br/> s'il vous plait connectez-vous avec vos informations personnel</div>
-                            <form action="#">
-                                <div class="input-container">
-                                    <div class="login-field-content">
-                                        <div class="login-field-input">
-                                            <input type="text" name="name" id="name" placeholder="Nom"  data-error-message="div-erreur-nom">
-                                            <div class="login-icon-container">
-                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
-                                            </div>
-                                        </div>
-                                        <div class="message-erreur" id="div-erreur-nom" style="display: none;"> 
-                                            Veillez enter votre nom
-                                        </div>
-                                    </div>
-                                    <div class="login-field-content">
-                                        <div class="login-field-input">
-                                            <input type="text" name="firstname" id="firstname" placeholder="Prénom" data-error-message="div-erreur-prenom">
-                                            <div class="login-icon-container">
-                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
-                                            </div>
-                                        </div>
-                                        <div class="message-erreur" id="div-erreur-prenom" style="display: none;">
-                                            Veillez enter votre prénom
-                                        </div>
-                                    </div>
-                                    <div class="login-field-content">
-                                        <div class="login-field-input">
-                                            <input type="tel" name="phone-number" id="numero-tel" placeholder="Numéro de Téléphone"  data-error-message="div-erreur-telephone">
-                                            <div class="login-icon-container">
-                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
-                                            </div>
-                                        </div>
-                                        <div class="message-erreur" id="div-erreur-telephone" style="display: none;"> 
-                                           Veillez enter votre numéro
-                                        </div>
-                                    </div>
-                                    <div class="login-field-content">
-                                        <div class="login-field-input">
-                                            <div class="login-icon-container">
-                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
-                                            </div>
-                                        </div>
-                                        <input type="email" name="email" id="email" placeholder="Adresse Email" data-error-message="div-erreur-email">
-                                        <div class="message-erreur" id="div-erreur-email" style="display: none;"> 
-                                           Veillez entrer votre adresse
-                                        </div>
-                                    </div>
-                                    <div class="login-field-content success">
-                                        <div class="login-field-input">
-                                            <input type="password" name="pwd" id="pwd" placeholder="Mot de Passe" data-error-message="div-erreur-pwd">
-                                            <div class="login-icon-container">
-                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                <div class="login-icon good"><i class="fa-solid fa-circle-check"></i></div>
-                                            </div>
-                                        </div>
-                                        <div class="message-erreur" id="div-erreur-pwd" style="display: none;"> 
-                                            Veillez entrer un mot de passe
-                                        </div>
-                                    
-                                    </div>
-                                    <div class="login-field-content error">
-                                        <div class="login-field-input">
-                                            <input type="password" name="pwd-confirmation" id="pwd-confirmation" data-error-message="div-erreur-conf-pwd" placeholder="Comfirmer le Mot de Passe">
-                                            <div class="login-icon-container">
-                                                <div class="login-icon bad"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
-                                            </div>
-                                        </div>
-                                        <div class="message-erreur" id="div-erreur-conf-pwd"> 
-                                            Mauvais mot de passe
-                                        </div>
-                                    </div>
-                                    <div class="login-checkbox-content">
-                                        <label for="contrat" class="checkbox">
-                                            <input type="checkbox" name="checkbox-1" id="contrat">
-                                            <p>j'ai lu et j'accepte <span>les termes et les conditions de confidentialité</span></p>
-                                        </label>
-                                    </div>
-                                    <button type="button" class="login-btn">S'inscrire</button>
-                                    
-                                    
-                                </div>
-                                
-                            </form>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
