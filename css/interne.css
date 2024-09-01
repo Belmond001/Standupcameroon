@@ -7,31 +7,34 @@
 
 
 section.biography-wrapper {
-    background-image: url(../images/banniere/banners.jpg);
+    background-image: url(../images/banniere/bg-interne.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size: 518px;
+    background-position: bottom left;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 60px 0 60px;
+    padding: 185px 0 55px;
     color: var(--white-color);
-    background-color: var(--second-color);
-    height: 177px;
+    background-color: #000052;
+    height: 300px;
+    -
+    top: 0;
 }
+
 .content-text-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 h3.title-banner-center {
     line-height: 1;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -62,7 +65,7 @@ h3.title-banner-center {
 
 
 .wrapper-page-interne {
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 
 .wrap-page-interne {
@@ -429,46 +432,29 @@ aside.aside_right {
     border: 1px solid #f0f0f0;
 }
 
-.widget-aside.widget_search {
-    border-color: transparent;
-    border-radius: 5px;
-    background-color: #fafafa;
-}
 
 .widget-content {}
 
 h2.widget-title {
-    font-size: 26px;
-    margin-bottom: 41px;
-    padding-bottom: 12px;
     position: relative;
     color: #1b2336;
-    line-height: 1.2;
     font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
 }
 
 h2.widget-title:before {
+position: absolute;
     content: '';
-    width: 35px;
-    height: 3px;
-    background-color: var(--primary-color);
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    border-radius: 8px;
+    top: 50%;
+    left: -25px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 60%;
+    width: 100%;
+    border-left:5px solid var(--primary-color);
 }
-
-h2.widget-title:after {
-    content: '';
-    width: 10px;
-    height: 3px;
-    background-color: var(--primary-color);
-    position: absolute;
-    bottom: -10px;
-    left: 42px;
-    border-radius: 8px;
-}
-
 h2.widget-title span:last-child {
     width: 5px;
     display: block;
@@ -485,19 +471,15 @@ form.search-form {
 }
 
 form.search-form input {
-    border: none;
-    border-radius: 0;
+    height: 50px;
+    border: 1px solid #d5e0ef;
+    border-radius: 4px;
+    padding: 0 62px 0 18px;
     background-color: #fff;
-    padding: 8.5px 24px;
-    font-size: 16px;
-    font-style: italic;
-    line-height: 95px;
-    color: #939393;
-    box-shadow: rgba(149,157,165,.2)0 8px 24px;
-    height: 51px;
-    transition: all 200ms linear 0ms;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
     width: 100%;
-    border-radius: 10px;
 }
 
 form.search-form button {
@@ -510,25 +492,25 @@ form.search-form button {
     outline: none;
     top: 0;
     right: 0;
-    color: #fff;
+    color: var(--primary-color);
     font-weight: 400;
-    background-color: var(--primary-color);
-    background-image: none;
+    background-color: #00000000;
+    /* background-image: none; */
     border-radius: 0;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
+    font-size: 20px;
 }
 
 
 
 .widget-aside {
-    position: relative;
-    margin: 0 0 30px;
-    padding: 30px 40px 30px;
+       margin-bottom: 30px;
+    padding: 25px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 6px 30px rgba(0, 0, 0, .07);
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, .07);
     border-radius: 10px;
-    background: url(../images/bg/bg-widget.jpg) no-repeat center center/cover;
-    padding-right: 35px;
-    padding-left: 35px;
 }
 
 
@@ -536,7 +518,7 @@ form.search-form button {
 ul.list-categories {}
 
 li.item-categorie, li.item-categorie li {
-    background: #fff;
+    background: #ededed;
     padding: 10px 22px;
     border-radius: 3px;
     font-size: 15px;
@@ -575,9 +557,9 @@ li.item-categorie span {
     height: 36px;
     border-radius: 5px;
     text-align: center;
-    background: #ededed;
+    background: var(--third-color);
     font-size: 12px;
-    color: #252525;
+    color: #ffffff;
     line-height: 36px;
     font-weight: 700;
     position: absolute;

@@ -2818,9 +2818,9 @@ button.news-letter-button i {
 }
 .wrapper-news-letter {
   position: relative;
-  margin: -162px 0 -85px;
+  margin: -80px 0 -85px;
   z-index: 1;
-  padding: 80px 0 0;
+  /* padding: 80px 0 0; */
 }
 .wrap-newsletter.row-container {
   position: relative;

@@ -323,7 +323,7 @@ a.support-logo {
 
 .logo-header img {
     height: auto;
-    width: 85px;
+    width: 100px;
     object-fit: contain;
 }
     
@@ -905,11 +905,10 @@ a.support-logo {
 .logo-header {
   width: 50%;
 }
-.logo-header a {
-  width: 100%;
-}
-.logo-header a  img {
-}
+    .logo-header a {
+        width: 100px;
+    }
+.logo-header a  img {height: auto;object-fit: contain;}
 
     .title-filigrane {
   font-size: 70px;
@@ -948,7 +947,43 @@ a.support-logo {
         font-size: 13px;
         text-align: justify;
     }
-
+    .logo-header a img {
+        height: auto;
+        object-fit: contain;
+    }
+    .field-form-news-letter input {
+      height: 50px;
+      padding: 10px 20px;
+      outline: 0;
+      padding-right: 118px;
+      border: 1px solid rgba(241, 238, 246, 0.5);
+      color: #686a6f;
+      font-size: 14px;
+      width: 100%;
+      background-color: var(--white-color);
+      /* appearance: none; */
+      border-radius: 5px;
+      background-clip: padding-box;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+  }
+  form.form-newsletter button {
+    font-size: 12px;
+    padding-left: 10px;
+    width: max-content;
+    padding-right: 10px;
+    padding: 0 10px;
+    height: 40px;
+}
+.primary-btn {
+  padding: 7px 16px;
+  font-size: 11px;
+}
+.footer-link-item {
+  width: 100%;
+  padding-bottom: 20px;
+}
 
 }
 
@@ -1071,7 +1106,7 @@ a#identification {
 }
     
 .logo-header a img {
-  width: 125px;
+  width: 90px;
 }
 .logo-and-3-bandes-header.row-container {
   padding-top: 0;
@@ -1179,16 +1214,30 @@ a.logo-right img {
         height: 20px;
     }
 
+    .news-letter-title {
+      font-size: 18px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .wrap-form-news-letter {
+      width: 92%;
+      padding-top: 0;
+    }
 
 
 }
 
 
 @media only screen and (max-width: 375px) {
-.logo-header {
-        /*! width: 50%; */
-    }
-    
+.logo-header a img {
+  width: 93px;
+  height: auto;
+  }
+  .logo-header a  {
+  width: 90px;
+  height: auto;
+  }
 .item-info-contact:nth-child(2) {
   position: relative;
   top: 0;
@@ -1221,7 +1270,30 @@ a.logo-right img {
   /*! justify-content: center; */
   /*! align-items: center; */
 }
-
+.title-bloc {
+  font-size: 22px !important;
+  text-align: initial;
+  line-height: 20px !important;
+  padding-top: 26px;
+  margin-top: 0px;
+}
+span.sub-title {
+font-size: 12px;
+}
+.subtitle_divider::after {
+right: 2px;
+top: 28px;
+}
+.subtitle_divider::before {
+  top: 29px;
+  left: 2px;
+}
+.center .sub-title::after {
+  right: -35px;
+}
+.center .sub-title::before {
+  left: -35px;
+}
 
 
 }

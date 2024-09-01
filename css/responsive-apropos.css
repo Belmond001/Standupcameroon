@@ -1,0 +1,221 @@
+
+
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+
+@media only screen and (max-width: 3000px) {
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .item-a-propos {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .a-propos-banner-title {
+        font-size: 50px;
+    }
+    
+    .wrapper-a-propos {
+        padding: 80px 0;
+    }
+    
+    .sub-title {
+        font-size: 18px;
+    }
+    
+    .right .wrap-item-a-propos {
+        margin-left: 0;
+    }
+    
+    .main-title {
+        font-size: 38px;
+    }
+    
+    .a-propos-list {
+        font-size: 22px;
+    }
+    
+    .a-propos-list-experience h3 {
+        font-size: 22px;
+    }
+    
+    
+    .contact-number h3 {
+        font-size: 18px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .item-a-propos.left {
+        width: 80%;
+    }
+    .item-a-propos{
+        width: 100%;
+    }
+    .main-title {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .a-propos-list-item {
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (max-width: 485px) {
+    .item-a-propos {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .a-propos-banner-title {
+        font-size: 40px;
+    }
+    
+    .wrapper-a-propos {
+        padding: 50px 0;
+    }
+    
+    .sub-title {
+        font-size: 15px;
+    }
+    
+    .right .wrap-item-a-propos {
+        margin-left: 0;
+    }
+    
+    .main-title {
+        font-size: 25px;
+    }
+    
+    .a-propos-list {
+        font-size: 16px;
+    }
+    
+    .a-propos-list-experience h3 {
+        font-size: 22px;
+    }
+    
+    .a-propos-list-experience h2 {
+        font-size: 60px;
+    }
+    
+    .contact-number h3 {
+        font-size: 18px;
+    }
+
+    .a-propos-banner {
+    height: 150px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .link-btn-box {
+        align-content: flex-start;
+    }
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .item-a-propos {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .a-propos-banner-title {
+        font-size: 40px;
+    }
+    
+    .wrapper-a-propos {
+        padding: 50px 0;
+    }
+    
+    .sub-title {
+        font-size: 15px;
+    }
+    
+    .right .wrap-item-a-propos {
+        margin-left: 0;
+    }
+    
+    .main-title {
+        font-size: 25px;
+    }
+    
+    .a-propos-list {
+        font-size: 16px;
+    }
+    
+    .a-propos-list-experience h3 {
+        font-size: 22px;
+    }
+    
+    .a-propos-list-experience h2 {
+        font-size: 60px;
+    }
+    
+    .contact-number h3 {
+        font-size: 18px;
+    }
+
+    .a-propos-banner {
+    height: 150px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.link-btn-box {
+    align-content: flex-start;
+}
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+
+}
+
+
+

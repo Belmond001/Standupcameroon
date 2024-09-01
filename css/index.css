@@ -493,7 +493,7 @@ a.tx-number {
     top: 6px;
     left: 23px;
     right: 0;
-    width: 1300px !important;
+    width: 100%;
     object-fit: cover;
     fill: var(--primary-color);
   }
@@ -1931,7 +1931,6 @@ a.tx-number {
     padding: 15px 20px;
     background: white;
     z-index: 20;
-    border: ;
   }
   .title-video-bloc-left-video h3 {
     font-size: 18px;
@@ -1978,7 +1977,7 @@ a.tx-number {
     display: flex;
     align-items: center;
     color: var(--second-color);
-    z-index: 1;
+    z-index: 4;
   }
   .img-item-right-video {
     height: 260px;
@@ -2235,3 +2234,156 @@ a.tx-number {
     padding-right: 13px;
   }
   
+  
+
+/*************************************************************************************************************************|
+                                                           Partenaires                                                  **|
+**************************************************************************************************************************/
+
+
+
+
+.wrapper-partenaire {
+  padding: 0px 0 80px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.wrap-partenaire {
+  padding: 70px 0 0;
+}
+
+.item-partenaire {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.wrap-item-partenaire {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.wrap-item-partenaire img {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: transform .4s ease;
+  -khtml-transition: transform .4s ease;
+  -moz-transition: transform .4s ease;
+  -ms-transition: transform .4s ease;
+  -o-transition: transform .4s ease;
+  transition: transform .4s ease;
+  position: relative;
+  -webkit-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+  -khtml-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+  -moz-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+  -ms-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+  -o-transition: all .3s cubic-bezier(0,0,.2,1)0s;
+  transition: all .3s cubic-bezier(0,0,.2,1)0s;
+  max-height: 65px;
+}
+
+.wrap-item-partenaire img:nth-child(1) {
+  /* filter: grayscale(100%); */
+}
+
+.wrap-item-partenaire img:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-150%);
+  -khtml-transform: translate(-50%,-150%);
+  -moz-transform: translate(-50%,-150%);
+  -ms-transform: translate(-50%,-150%);
+  -o-transform: translate(-50%,-150%);
+  transform: translate(-50%,-150%);
+  opacity: 0;
+}
+
+.item-partenaire:hover .wrap-item-partenaire img:nth-child(1) {
+  -webkit-transform: translateY(100%);
+  -khtml-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.item-partenaire:hover .wrap-item-partenaire img:nth-child(2) {
+  -webkit-transform: translate(-50%,-50%);
+  -khtml-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  opacity: 1;
+}
+
+.wrap-partenaire .slick-dots {
+  z-index: -1;
+  left: 0;
+  top: 20px;
+  right: 0;
+  position: absolute;
+  background-color: #dfe0e6;
+  height: 1px;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap-partenaire .slick-dots li {
+  width: 50%;
+  height: 2px;
+  /* margin: 0; */
+  position: relative;
+}
+
+.wrap-partenaire .slick-dots li button {
+  display: none;
+}
+
+.wrap-partenaire .slick-dots li.slick-active {
+  background: var(--primary-color);
+}
+
+.wrap-partenaire .slick-arrow {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 300ms linear 0ms;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  padding: 0;
+  background-color: #f2f6ff;
+  font-size: 20px;
+  top: 20px;
+  color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap-partenaire .slick-arrow:hover {
+  color: #fff;
+  background: var(--second-color);
+}
+
+.wrap-partenaire .slick-next {
+  margin-left: 35px;
+  outline: none;
+  right: 0;
+}
+
+.wrap-partenaire .slick-prev {
+  left: 0;
+}
+
+.wrap-partenaire .slick-btn::before {
+  display: none;
+}
