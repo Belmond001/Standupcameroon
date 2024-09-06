@@ -130,7 +130,9 @@ ul.header-contact-info li {
 
 
 @media only screen and (max-width: 1024px) {
-    
+div#wrapper-bottom-header {
+    box-shadow: 0px 14px 20px #00000021;
+}
 .footer-link-title {
   font-size: 16px;
 }
@@ -983,6 +985,9 @@ a.support-logo {
 .footer-link-item {
   width: 100%;
   padding-bottom: 20px;
+}
+.footer-link-item:last-child {
+ display:none;
 }
 
 }

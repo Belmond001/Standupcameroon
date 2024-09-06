@@ -11,7 +11,7 @@
 .form-group i {
   position: absolute;
   left: 16px;
-  top: 5px;
+  top: 9px;
   color: #8080803d;
   font-size: 19px;
 }
@@ -37,7 +37,7 @@ textarea::placeholder {
   padding: 20px;
   padding-top: 0;
   position: relative;
-  padding-bottom: 0;
+  padding-bottom: 25px;
 }
 .item-tutor-details h6 {
   font-size: 17px;
@@ -98,13 +98,14 @@ textarea::placeholder {
 }
 .titre-and-prix-details-candidat h3 {
   margin: 0 0 6px;
-  color: #231340;
+  color: var(--third-color);
   border: navajowhite;
 }
 
 .titre-and-prix-details-candidat.row-container {
   border-bottom: 1px solid #DEE2E7;
   margin-bottom: 24px;
+  padding-top: 25px;
 }
 .titre-and-prix-details-candidat p {
   font-size: 21px;
@@ -117,8 +118,7 @@ textarea::placeholder {
 .text-details-candiitat {
   line-height: 1.8;
   color: #6f6d73;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: à;
 }
 .bloc-image-candidat {
   display: flex;
@@ -194,13 +194,13 @@ textarea::placeholder {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    font-family: "DM sans";
+    font-family: var(--primary-font);
     display: block;
 }
 
 textarea.form-control {
     height: 70px;
-    padding-left: 47px;
+    padding-left: 47px !important;
 }
 
 .btn.btn-black {
@@ -226,13 +226,12 @@ textarea.form-control {
 
 
 .form-group.review-submit-btn {
-    margin: 10px 0 0;
 }
 
 
 .title-biography-candidat {
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--third-color);
   padding: 0 0 12px;
   border-bottom: 1px solid #DEE2E7;
   margin: 0 0 12px;
@@ -242,6 +241,7 @@ textarea.form-control {
 }
 .bloc-commentaire-candidat {
   padding: 30px 0;
+  padding-bottom: 0;
 }
 .item-filtre-bloc-top-candidat:first-child {
   border-bottom: 3px solid var(--primary-color);
@@ -265,6 +265,7 @@ textarea.form-control {
   border: 1px solid #E7E7EC;
   padding: 25px;
   background: white;
+  margin-bottom: 30px;
 }
 .texte-biography-candidat {
   line-height: 24px;
@@ -302,8 +303,9 @@ textarea.form-control {
 }
 .btn-follow-and-message a:first-child {
   background: white;
-  color: var(--second-color);
+  background: var(--second-color);
   border: 2px solid var(--second-color);
+  text-transform: uppercase;
 }
 .number-follower-and-following {
   min-width: 100px;
@@ -360,4 +362,92 @@ textarea.form-control {
 }
 .content-commentaire-candidat {
   margin-top: 27px;
+}
+
+.wrap-item-actualite-lie {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  /*! overflow: hidden; */
+  box-shadow: 1px 3px 5px 7px rgb(0 1 1 / 10%);
+  background: white;
+  position: relative;
+  padding-bottom: 30px;
+}
+.item-actualite-lie {
+  padding: 15px;
+  width: 50%;
+}
+.bloc-actualite-candidat {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-actualite-lie {
+  height: 199px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.titre-actualite-lie h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  color: var(--second-color);
+  cursor: pointer;
+  margin-bottom: 10px;
+  line-height: 27px;
+  margin-top: 15px;
+}
+.chapeau-actualite-lie {
+  line-height: 1.6;
+  color: #3d3931;
+  font-size: 16px;
+}
+.image-actualite-lie img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.btn-more {
+  padding: 5px 10px;
+  color: white;
+  background: var(--primary-color);
+  width: fit-content;
+  border-radius: 50px;
+  margin-top: 14px;
+  align-items: center;
+  display: flex;
+  position: relative;
+  z-index: 20px;
+}
+.btn-more i {
+  width: 24px;
+  height: 24px;
+  background: white;
+  color: var(--primary-color);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.more-btn-wraper {
+  position: absolute;
+  top: 91%;
+  z-index: 6;
+  right: 5%;
+}
+
+.ligne-form input , .ligne-form textarea {
+  border: 1px solid #f4f4f4;
+  padding: 0 40px 0 20px;
+  line-height: 45px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: white;
+  box-shadow: 1px 1px 30px #c0d6cf17;
 }

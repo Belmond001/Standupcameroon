@@ -29,5 +29,17 @@ $(".contentclose").click(function name() {
 });
 
 
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("wrapper-bottom-header");
+var sticky = 100;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
 
 

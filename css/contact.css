@@ -104,7 +104,7 @@ img{
     margin: 0 0 20px;
 }
 .text{
-    margin-bottom: 30px;
+    margin-bottom: 14px;
 }
 
 
@@ -135,7 +135,7 @@ img{
     /* margin-right: -15px; */
     /* display: flex; */
     /* flex-wrap: wrap; */
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .item-contact-box{
     /* padding: 0 15px; */
@@ -157,9 +157,9 @@ img{
     -webkit-box-flex: 0;
     flex: none;
     background-color: var(--border-color);
-    height: 70px;
-    width: 70px;
-    font-size: 35px;
+    height: 65px;
+    width: 65px;
+    font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +169,7 @@ img{
     font-size: 24px;
     font-weight: 600;
     line-height: 1.417em;
+    font-family: var(--primary-font);
 }
 .wrap-item-contact-box:hover .contact-icon{
     background-color: var(--primary-color);
@@ -263,7 +264,7 @@ img{
 }
 .contact-details-title{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5em;
     margin-bottom: 5px;
 }
