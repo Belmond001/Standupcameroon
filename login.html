@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/connexion.css">
+    <link rel="stylesheet" href="css/responsive-connexion.css">
+
     <title>login: StandUp Cameroon </title>
-    <script src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 </head>
 <body>
     
@@ -28,11 +30,11 @@
                                 <img src="images/logo.png" alt="logo image">
                             </div>
                         </div>
-                        <h2 class="left-login-title">Lorem ipsum</h2>
-                        <p class="left-login-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, quisquam. Nemo, odio sint hic, saepe accusamus vero nam, earum odit eveniet quis architecto tempore placeat rerum! Ex commodi voluptas dolore.</p>
+                        <h2 class="left-login-title">Informations</h2>
+                        <p class="left-login-text">Pour garantir la sécurité et l'intégrité du processus de vote, vous devez être connecté à votre compte. Si vous n'avez pas encore de compte, veuillez en créer un. Une fois connecté, vous pourrez soumettre votre vote.</p>
                         <div class="copy-right-box">
-                            <p>22th July. Made By</p>
-                            <p class="writer-signature">Name of interprise</p>
+                            <p>Je n'ai pas encore de compte</p>
+                            <a href="inscription.html" class="writer-signature">S'inscrire</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +48,7 @@
                         <div class="wrap-item-connexion">
                             <div class="login-page-title">CON<span>NEXION</span></div>
 
-                            <div class="description-login">Pour rester conneté avec nous <br/> s'il vous plait connectez-vous avec vos informations personnel</div>
+                            <div class="description-login">Merci de vous connecter pour soumettre votre vote.</div>
                             
                             <form action="authentification-deux-facteurs.html">
                                 <div class="input-container">
@@ -55,11 +57,7 @@
                                             <input type="text" name="username" id="username" placeholder="Username">
                                         </div>
                                     </div>
-                                    <div class="login-field-content">
-                                        <div class="login-field-input">
-                                            <input type="text" name="email" id="email" placeholder="Adresse Email">
-                                        </div>
-                                    </div>
+                              
                                     <div class="login-field-content">
                                         <div class="login-field-input">
                                             <input type="password" name="pwd" id="pwd" placeholder="Mot de Passe">
@@ -69,12 +67,7 @@
                                         </a>
                                         
                                     </div>
-                                    <div class="login-checkbox-content">
-                                        <label for="contrat" class="checkbox">
-                                            <input type="checkbox" name="checkbox-1" id="contrat">
-                                            <p>Je souhaites <span> avant tout rester anonyme</span></p>
-                                        </label>
-                                    </div>
+                                    
                                     <button type="submit" class="login-btn">Se connecter</button>
                                 </div>
                                 
@@ -90,19 +83,6 @@
 
 
 	<script src="login.js"></script>
-    <script>
-        $('#option-login').click(function(){
-            $(".wrap-item-connexion").slideDown();
-            $(".wrap-item-inscription").slideUp();
-            $(this).addClass('actif');
-            $('#option-signup').removeClass('actif');
-        })
-        $('#option-signup').click(function(){
-            $(".wrap-item-inscription").slideDown();
-            $(".wrap-item-connexion").slideUp();
-            $(this).addClass('actif');
-            $('#option-login').removeClass('actif');
-        })
-    </script>
+
 </body>
 </html>

@@ -19,6 +19,10 @@ for(let i=0;i<item_select.length;i++){
 
 }
 
+$(".poll-btn").click(function(){
+    AfficherNotification("info","INFORMATION", "loader2", "Veuillez vous connecter ou créer un compte pour participer au vote, afin de garantir la sécurité et l'intégrité du processus de vote.", "Se connecter", "javascript:gotoURL('./login.html','loader')", "Fermer", "", "0");
+})
+
 
 $('.banniere').owlCarousel({
     items:1,

@@ -494,57 +494,58 @@ function incrementValue(idelement)
 
 // Fonction affichant les notification en lightbox
 
-	function AfficherNotification(titrelightbox,loader,texteNotification,bouton1,actionbouton1,bouton2,actionbouton2,fermeture){
-		// affichage du chargement
-	 var defaut='<div id="div_preloader"  style="text-align: center"> <img src="images/preloader.gif"  />	</div>';
-	 $("#"+loader).html(defaut);
-	 Afficher_loader(loader);
-		// cacher chargement
-		$("#div_preloader").hide();
-		// balise de
-		var notification = '<div class="lightbox-notification" id="lightbox-notification"></div>';
-		var enteteNotification ='<div class="entete-lightbox-notification" id="entete-lightbox-notification"> <span id="titre-lightbox"></span><span id="close-lightbox"></span></div>';
-		var closeNotification='<div class="close-lightbox-notification" onclick="Cacher_loader(\''+loader+'\')"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">	<path d="M612,306C612,137.004,474.995,0,306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306 C474.995,612,612,474.995,612,306z M168.3,424.032L286.333,306L168.3,187.967l19.667-19.667L306,286.333L424.032,168.3 l19.668,19.667L325.667,306L443.7,424.032L424.032,443.7L306,325.667L187.967,443.7L168.3,424.032z"/></svg></div>';
-		var contenuNotification='<div class="contenu-lightbox-notification" id="contenu-lightbox-notification"></div>';
-		var conteneurBtnNotification='<div class="conteneur-btn-lightbox-notification"></div>';
-		var btnNotification1 = '<a href="#" class="btn-lightbox-notification" id="btn1-lightbox"></a>';
-		var btnNotification2 = '<a href="#" class="btn-lightbox-notification" id="btn2-lightbox"></a>';
-
-		$("#"+loader+"").empty();
-		$("#"+loader+"").prepend(notification);
-		$("#lightbox-notification").prepend(enteteNotification);
-		if(typeof titrelightbox != 'undefined')$("#titre-lightbox").html(titrelightbox);
-		if((typeof fermeture != 'undefined') && (fermeture == '1')){
-			$("#entete-lightbox-notification").append(closeNotification);
-		}
+function AfficherNotification(nameAlert,titrelightbox,loader,texteNotification,bouton1,actionbouton1,bouton2,actionbouton2,fermeture){
+	// affichage du chargement
+	var defaut='<div id="div_preloader"  style="text-align: center"> <img src="images/preloader.gif"  />	</div>';
+	$("#"+loader).html(defaut);
+	Afficher_loader(loader);
+	// cacher chargement
+	$("#div_preloader").hide();
+	// balise de
+	var notification = '<div class="wrapper-verification"><div class="conainer container-verification"><div class="wrap-verification"><div class="item-verification'+' '+nameAlert+'"><div class="wrap-item-verification"></div></div></div></div></div>';
+	var closeNotification='<div class="close-lightbox-notification" onclick="Cacher_loader(\''+loader+'\')"><i class="fa-solid fa-xmark"></i></div>';
+	var enteteNotification ='<div class="icon-box"></div><h3 class="verification-title"></h3>';
+	var contenuNotification='<p class="verification-text"></p>';
+	var conteneurBtnNotification='<div class="verification-btn"></div>';
+	var btnNotification1 = ' <button class="continue"></button>';
+	var btnNotification2 = '<button class="print"></button>';
 
 
-		$("#lightbox-notification").append(contenuNotification);
-		if(typeof texteNotification != 'undefined') {
-		  $("#contenu-lightbox-notification").html(texteNotification);
-		}else $("#contenu-lightbox-notification").html('Alert notification');
+	$("#"+loader+"").empty();
+	$("#"+loader+"").prepend(notification);
+	$(".wrap-item-verification").prepend(enteteNotification);
+	if(typeof titrelightbox != 'undefined')$(".verification-title").html(titrelightbox);
+	if((typeof fermeture != 'undefined') && (fermeture == '1')){
+		$(".wrap-verification").append(closeNotification);
+	}
 
 
-		if((typeof bouton1 != 'undefined') || (typeof bouton2 != 'undefined'))$("#lightbox-notification").append(conteneurBtnNotification);
+	$(".wrap-item-verification").append(contenuNotification);
+	if(typeof texteNotification != 'undefined') {
+	  $(".verification-text").html(texteNotification);
+	}else $(".verification-text").html('Alert notification');
 
-		if((typeof bouton1 != 'undefined') && (bouton1 != '')){
-			$(".conteneur-btn-lightbox-notification").append(btnNotification1);
-			$("#btn1-lightbox").html(bouton1);
-			if((typeof actionbouton1 != 'undefined') && (actionbouton1 != '')){
-				$("#btn1-lightbox").attr("href", actionbouton1);
-			}else $("#btn1-lightbox").attr("href", "javascript:Cacher_loader('"+loader+"')");
-		}
 
-		if((typeof bouton2 != 'undefined') && (bouton2 !='')){
-			$(".conteneur-btn-lightbox-notification").append(btnNotification2);
-			$("#btn2-lightbox").html(bouton2);
-			if((typeof actionbouton2 != 'undefined') && (actionbouton2 != '')){
-				$("#btn2-lightbox").attr("href", actionbouton2);
-			}else $("#btn2-lightbox").attr("href", "javascript:Cacher_loader('"+loader+"')");
+	if((typeof bouton1 != 'undefined') || (typeof bouton2 != 'undefined'))$(".wrap-item-verification").append(conteneurBtnNotification);
 
-		}
+	if((typeof bouton1 != 'undefined') && (bouton1 != '')){
+		$(".verification-btn").append(btnNotification1);
+		$(".continue").html(bouton1);
+		if((typeof actionbouton1 != 'undefined') && (actionbouton1 != '')){
+			$(".continue").attr('onclick',''+actionbouton1);
+		}else $(".continue").attr('onclick','Cacher_loader("'+loader+'")')
+	}
+
+	if((typeof bouton2 != 'undefined') && (bouton2 !='')){
+		$(".verification-btn").append(btnNotification2);
+		$(".print").html(bouton2);
+		if((typeof actionbouton2 != 'undefined') && (actionbouton2 != '')){
+			$(".print").attr('onclick',''+actionbouton2);
+		}else $(".print").attr('onclick','Cacher_loader("'+loader+'")');
 
 	}
+
+}
 
 function connaitre_operateur(numero){
 	   var id_operateur="";
