@@ -60,7 +60,7 @@ a.login-checkbox-content {
     width: 53%;
 }
 
-button.login-btn {
+.login-btn {
     font-size: 12px;
     height: 40px;
 }
