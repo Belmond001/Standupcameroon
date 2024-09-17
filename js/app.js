@@ -1,3 +1,12 @@
+// document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+// document.onkeydown = function(e) {
+//      if (((e.keyCode == 85 || e.keyCode == 83 ) && e.ctrlKey) || e.keyCode==123) {
+//          e.preventDefault();
+//      }
+//      //////alert(e.keyCode);
+//  }
+
+
 /******************** ACCES TABLEAU DE BORD***********************************/
 function Acceder_compte(traitement) {
 

@@ -94,11 +94,13 @@ h3.title-banner-center {
 
 .wrapper-pagination {
     padding: 15px 0;
+    width: 100%;
 }
 
 .pagination {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .wrapper-pagination-left {
