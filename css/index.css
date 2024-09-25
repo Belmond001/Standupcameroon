@@ -7,9 +7,9 @@ section.wrapper-banniere {position: relative;transition: 0.4s ease;/* clip-path:
 .banniere-item {
     padding-top: 257px;
     padding-bottom: 200px;
-    animation: bg-zoom-anim 10s linear infinite alternate;
+    /* animation: bg-zoom-anim 10s linear infinite alternate; */
     position: relative;
-    background-size: cover;
+    /* background-size: cover; */
     /* background-repeat: no-repeat; */
     height: 800px;
 }
@@ -55,11 +55,37 @@ section.wrapper-banniere {position: relative;transition: 0.4s ease;/* clip-path:
     right: 0;
     left: 0;
 }
+
+.bg-banner-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bg-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-banner-image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0000008f;
+    position: absolute;
+}
 .banniere-item.slide1 {
-    background-image: url("../images/galerie/galerie2.jpg");
+    /* background-image: url("../images/galerie/galerie2.jpg"); */
     opacity: 1;
     /* transform: translate3d(-1349px, 0px, 0px); */
-    transition-duration: 0ms;
+    /* transition-duration: 0ms; */
 }
 
 .tx-pattern {
@@ -156,6 +182,8 @@ span.tx-cercleBadge {
 
 .wrap-banniere-item.container {
     width: 1300px;
+    position: relative;
+    z-index: 2;
 }
 
 .left-wrap-banniere {max-width: 750px;position: relative;}
