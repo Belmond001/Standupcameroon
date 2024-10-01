@@ -160,6 +160,8 @@ a {
 }
 .social-header.row-container a {
   margin-right: 5px;
+  width: 25px;
+  font-size: 12px;
 }
     
 .ssmenu li a {
@@ -1253,6 +1255,7 @@ a.logo-right img {
 .right-top-super-header ul li {
   width: 100%;
   text-align: center;
+  margin-right: 10px;
 }
 .right-top-super-header ul {
   display: flex;

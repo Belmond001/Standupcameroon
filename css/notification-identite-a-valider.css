@@ -188,6 +188,8 @@ h1.side-tips-title {
 .wrap-main-content-page {
     padding: 1.5rem 20px 20px 20px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bloc-top-formulaire-inscription.row-container {
@@ -308,9 +310,13 @@ h1.side-tips-title {
 
 .body-main-content-page {
     padding-top: 15px;
+    width: 100%;
+    display: flex;
 }
 
-.wrap-body-main-content-page {}
+.wrap-body-main-content-page {
+    width: 100%;
+}
 
 form.formulaire-projet {}
 
@@ -1669,6 +1675,7 @@ input#prenom-inscription {
   margin-top: 5vh;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 100%;
 }
 .field-form input {
   width: 100%;

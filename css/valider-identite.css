@@ -126,6 +126,7 @@
 }
 .bloc-formulaire {
     position: relative;
+    z-index: 1;
 }
 
     .bloc-formulaire:last-child {

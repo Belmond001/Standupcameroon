@@ -203,7 +203,10 @@ form.search-form input {
 
 
 @media only screen and (max-width: 600px) {
-
+.title-bloc {
+        font-size: 22px;
+        line-height: 1.2;
+      }
 .input-form.mot-cles {
         width: 100%;
     }
@@ -257,8 +260,9 @@ form.search-form input {
           margin-bottom: 10px;
         }
     .title-bloc {
-        font-size: 20px;
-        line-height: 1.2;
+        font-size: 20px !important;!i;!;
+        line-height: 1.2 !important;!i;!;
+        padding-top: 0px;
       }
 
     .breadcrumblist>li:not(:first-child) {
