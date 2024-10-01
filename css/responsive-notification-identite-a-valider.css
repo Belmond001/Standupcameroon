@@ -5,7 +5,7 @@
 .wrap-formulaire-projet {
 }
 .wrap-formulaire-projet {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 }
 }
 
@@ -45,8 +45,10 @@
         padding: 15px;
     }
     .main-content-page {
-        width: 55vw;
-        height: 100vw;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
     .image-inscrit {
         width: 140px;
@@ -109,7 +111,7 @@
 .main-content-page {
   margin-left: 0;
   width: 100%;
-  padding-top: 74px;
+  padding-top: 35px;
 }
 .classcontent-inscription {
   padding-bottom: 14px;

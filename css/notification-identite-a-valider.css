@@ -171,11 +171,12 @@ h1.side-tips-title {
 
 .main-content-page {
     margin-left: auto;
-    width: 72vw;
+    width: 100vw;
     position: relative;
     background: #0001801f;
     min-height: auto;
-    height: 100vh;
+    height: auto;
+    padding-top: 160px;
 }
 
 .etape-nombre span {
@@ -185,7 +186,7 @@ h1.side-tips-title {
 }
 
 .wrap-main-content-page {
-    padding: 1.5rem 2rem 7em 3.5rem;
+    padding: 1.5rem 20px 20px 20px;
     position: relative;
 }
 
@@ -1665,7 +1666,9 @@ input#prenom-inscription {
 .wrap-formulaire-projet {
   justify-content: center;
   display: flex;
-  margin-top: 13vh;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .field-form input {
   width: 100%;
@@ -1685,8 +1688,9 @@ input#prenom-inscription {
     display: flex;
     justify-content: center;
     font-size: 25px;
-    margin-bottom: 10px;
-    color: var(--second-color);
+    /* margin-bottom: 10px; */
+    /* color: var(--second-color); */
+    /* animation: rotateme infinite 2s; */
 }
 .texte-before-validation-code {
   text-align: center;
@@ -1694,7 +1698,7 @@ input#prenom-inscription {
   padding: 0;
   width: 99%;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 75px;
   margin-bottom: 17px;
 }
 .texte-before-validation-code span {
@@ -1761,4 +1765,45 @@ input#prenom-inscription {
   font-size: 17px;
   font-weight: 700;
   color: black;
+}
+
+.bg-top-icon {
+    background: #ffffff;
+    width: 70px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -29px;
+    border-radius: 50%;
+    border: 2px solid;
+    box-shadow: 2px 4px 8px #eee;
+}
+.bg-top-icon.progress {
+    border-color: orange;
+}
+
+.bg-top-icon.progress .progress-icon {
+    color: orange;
+        animation: rotateme infinite 2s;
+}
+
+.bg-top-icon.danger {
+    border-color: var(--primary-color);
+}
+
+.bg-top-icon.danger .progress-icon {
+    color: var(--primary-color);
+}
+
+.bg-top-icon.success {
+    border-color: var(--second-color);
+}
+
+.bg-top-icon.success .progress-icon {
+    color: var(--second-color);
 }
