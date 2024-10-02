@@ -149,7 +149,7 @@
                                                 </ul>
                                             </li>  
                                             <li class="has-children">
-                                                <a class=" active " href="javascript:void();" target="">Aide</a>
+                                                <a class="" href="javascript:void();" target="">Aide</a>
                                                 <ul class="smenu">
                                                     <li><a href="faq.html" target="">FAQ</a></li>
                                                     <li><a href="contact.html" target="">Contact</a></li>
@@ -300,26 +300,26 @@
                                                 </label>
                                             </div>
     
-                                            <div class="listmenu">
-                                                <input type="radio" name="submenu-mb" id="item3">
+                                            <div class="listmenu"><input type="radio" name="submenu-mb" id="item3">
                                                 <label for="item3" class="submenu-label">
                                                     <span class="linklist-menu">Résultats</span>
                                                     <ul class="panel_submenu_mb">
-                                                        
                                                         <li class="smenu-item">
-                                                            <a class="linksubmenu__mb" href="#" target="">Résultats actuels </a>    
-                                                            <ul class="panel_submenu_mb">
-                                                        
-                                                                <li class="ssmenu-item">
-                                                                    <a class="linksubmenu__mb" href="#" target="">Résultats actuels </a>    
-                                                                </li>
-                                                                <li class="ssmenu-item">
-                                                                    <a class="linksubmenu__mb" href="#" target="">Résultats archivés</a>                          
-                                                                </li>
-                                                            </ul>
+                                                            <a class="linksubmenu__mb" href="resultat-vote-archiver.html" target="">Résultats archivés</a>
                                                         </li>
-                                                        <li class="smenu-item">
-                                                            <a class="linksubmenu__mb" href="#" target="">Résultats archivés</a>                          
+                                                        <li class="smenu-item has-children ">
+                                                            <input type="radio" name="smenu" id="subitem41">
+                                                            <label for="subitem41">
+                                                                <span class="smenu-item-titre"> Résultats actuels</span>
+                                                                <ul class="ssmenu">
+                                                                    <li>
+                                                                        <a href="resultat-vote.html" target="">Vote</a>
+                                                                    </li>
+                                                                  
+                                                                    <li><a href="resultat-sondage.html" target="">Sondage</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </label>
                                                         </li>
                                                     </ul>
                                                 </label>
@@ -503,7 +503,61 @@
                             </table>
                         </figure>
                     </div>
+
+                    
                     <div class="item-graphe">
+
+                        <figure class="highcharts-figure">
+                            <div id="container3"></div>
+                            <p class="highcharts-description">
+                               cette étude analyse les tendances de participation aux élections auprès de la population camerounaise , en distinguant les hommes et les femmes répartis en différentes tranches d'âge.
+                            </p>
+                            </p>
+                            <table id="datatable3" style="display:none;">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Homme</th>
+                                        <th>Femme</th>
+                                       
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>17 à 29 ans</th>
+                                        <td>10</td>
+                                        <td>30</td>
+                                       
+                                       
+                                    </tr>
+                                    <tr>
+                                        <th>30 à 44 ans</th>
+                                        <td>6</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <th>45 à 59 ans</th>
+                                        <td>20</td>
+                                        <td>40</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>60 à 74 ans</th>
+                                        <td>50</td>
+                                        <td>90</td>
+                                       
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </figure>
+                    </div>
+
+
+
+
+                    <div class="item-graphe full-line">
                         <figure class="highcharts-figure">
                         <div id="container2"></div>
                         <p class="highcharts-description">
@@ -563,57 +617,8 @@
                         </figure>
                     </div>
 
-                    <div class="item-graphe">
 
-                        <figure class="highcharts-figure">
-                            <div id="container3"></div>
-                            <p class="highcharts-description">
-                               cette étude analyse les tendances de participation aux élections auprès de la population camerounaise , en distinguant les hommes et les femmes répartis en différentes tranches d'âge.
-                            </p>
-                            </p>
-                            <table id="datatable3" style="display:none;">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>Homme</th>
-                                        <th>Femme</th>
-                                       
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>17 à 29 ans</th>
-                                        <td>10</td>
-                                        <td>30</td>
-                                       
-                                       
-                                    </tr>
-                                    <tr>
-                                        <th>30 à 44 ans</th>
-                                        <td>6</td>
-                                        <td>20</td>
-                                    </tr>
-                                    <tr>
-                                        <th>45 à 59 ans</th>
-                                        <td>20</td>
-                                        <td>40</td>
-
-                                    </tr>
-                                    <tr>
-                                        <th>60 à 74 ans</th>
-                                        <td>50</td>
-                                        <td>90</td>
-                                       
-                                    </tr>
-                                   
-                                </tbody>
-                            </table>
-                        </figure>
-                    </div>
-
-
-                    <div class="item-graphe">
+                    <div class="item-graphe full-line">
 
                         <figure class="highcharts-figure">
                             <div id="container4"></div>
