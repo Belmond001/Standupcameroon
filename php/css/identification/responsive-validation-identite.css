@@ -1,0 +1,104 @@
+
+
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+
+@media only screen and (max-width: 3000px) {
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .left-content-validation-identite {
+        padding-right: 0px;
+    }
+    
+    .item-left-faq__text {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .left-content-validation-identite {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    
+    .right-validation-identite {
+        width: 100%;
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .wrap-main-content-page {
+        padding-top: 0px;
+    }
+    
+    .texte-before-validation-code {
+        margin-top: 57px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bloc-bon-savoir p {
+        font-size: 15px;
+    }
+    .wrap-content-validation-form {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .space_btn_submit button {
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    .field_input.middle {
+        width: 100%;
+    }
+    
+    .field_input.three {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .wrapper-validation-identite {
+        padding-top: 30px;
+        padding-bottom: 84px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+
+}
+
+
+

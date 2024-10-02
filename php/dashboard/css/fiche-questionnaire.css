@@ -1,0 +1,255 @@
+.wrapper-question {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+
+
+.question-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.question-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.question-number {
+    font-weight: 600;
+    margin-right: 10px;
+    font-family: var(--primary-font);
+}
+
+.question-title {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    height: 40px;
+    font-family: var(--primary-font);
+}
+
+.question-type {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    font-family: var(--primary-font);
+}
+
+.suggested-question a {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.choices .choice {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.choice-input {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+}
+
+.points button {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.points input {
+    width: 30px;
+    text-align: center;
+    border: none;
+    background-color: #f8f9fa;
+    margin: 0 5px;
+    pointer-events: none;
+}
+
+.max-points {
+    font-size: 12px;
+    color: #888;
+    margin-left: auto;
+}
+
+.multiple-answers {
+    margin-bottom: 20px;
+}
+
+.multiple-answers button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.options label {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.options input[type="checkbox"]:disabled + span {
+    color: #ccc;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn.green {
+    background-color: var(--third-color);
+    color: white;
+}
+
+.btn.cancel {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn.save {
+    background-color: #007bff;
+    color: white;
+}
+.choices {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.wrap-form-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.form-item .input-field {
+    height: 40px;
+    border: 1px solid #eee;
+    padding: 0 10px;
+    margin-left: 15px;
+    width: 100%;
+    font-size: 15px;
+    font-family: var(--primary-font);
+}
+
+.nice-number button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30px;
+    font-size: 14px;
+    background: #f4f4f400;
+}
+
+.wrap-mark-question .nice-number {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    height: 40px;
+}
+
+.nice-number .note-reponse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 600;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    aspect-ratio: 1;
+    font-family: var(--primary-font);
+}
+
+.wrap-mark-question {
+    margin-left: 10px;
+}
+
+.wrap-content-add-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap-content-add-item button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    width: 25px;
+    border-radius: 50%;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid var(--third-color);
+    color: var(--third-color);
+    margin: 0 10px;
+}
+.action-buttons .btn i {
+    margin-right: 5px;
+}
+.wrap-content-add-item button.remove-bloc {
+    margin: 0px;
+}
+
+.wrap-content-add-item button:last-child {
+    margin-right: 0px !important;
+}

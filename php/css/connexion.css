@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+/********************************* Font Awesome *****************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css');
+
+/********************************* Font Families *****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Briem+Hand:wght@100..900&family=Sedgwick+Ave+Display&display=swap');
+/* @font-face {
+    font-family: reeyregular;
+    src: url(fonts/reey/Reey-Regular.otf);
+} */
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    word-wrap: break-word;
+    /* font-size: 15px; */
+}
+
+body{
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #6a6969;
+    padding: 0;
+    margin: 0;
+}
+.wrapper-login{
+    /* position: relative; */
+    /* padding: 50px 0; */
+    position: relative;
+    padding: 46px 0 50px;
+    /* height: 100vh; */
+    background: #a2a2c733;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.wrap-login{
+    align-items: unset;
+    position: relative;
+    /* box-shadow: 0px 0px 19px 0 rgb(0 0 0 / 7%); */
+    box-shadow: 0 0 20px rgba(52, 69, 113, 0.16);
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    background: white;
+    display: flex;
+    /* padding: 50px; */
+    flex-wrap: wrap;
+}
+.login-page-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000180;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    /* margin-left: 24px; */
+    text-align: center;
+}
+
+.login-page-title span {
+    font-weight: 300;
+    display: inline-block;
+    /* margin-left: 4px; */
+    color: #75b993;
+}
+.description-login {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.container.login {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+.item-login.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 24px;
+    padding: 40px;
+}
+.wrap-item-login {
+    /* overflow: auto; */
+}
+.wrap-item-login::-webkit-scrollbar{
+    display: none
+}
+
+.item-login.left{
+ text-align: center;
+ width: 50%;
+ padding: 40px;
+}
+.login-option{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid rgb(172, 169, 169);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.login-option >div.actif {
+    background: #000180;
+    color: white;
+    border-color: #000180;
+}
+.login-option >div{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000180;
+    width: 50%;
+    cursor: pointer;
+    height: 100%;
+    font-size: 16px;
+    /* box-shadow: 5px 8px 10px #eee; */
+}
+.option-signup{
+    border-top-left-radius: 50px;
+    /* background-color: #4D7BF3; */
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    font-size: 18px;
+}
+.option-signup{
+    color: #0d0d0d;
+}
+
+.item-login.left{
+    display: flex;
+    color: #fff;
+    background: #000180;
+    border-radius: 0 154px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-login.left::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0 0 50% 0;
+    background: linear-gradient(#66679a, transparent);
+    top: 0;
+    /* transform: translate(-50%,-50%); */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.wrap-item-login.left{
+    /* width: 400px; */
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+} 
+.section-login-logo{
+    margin-bottom: 20px;
+}
+.login-logo-img{
+    width: 170px;
+    height: 170px;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+}
+.login-logo-img img{
+    width: 100%;
+    height: auto;
+}
+.item-login{
+    display: flex;
+    text-align: center;
+    padding: 0 30px;
+    justify-content: start;
+}
+
+.login-text{
+    margin-bottom: 50px;
+}
+.login-field-content{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.login-field-content input{
+    background-color: #c9cad8;
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    padding: 0 40px 0 25px;
+}
+.login-field-input{
+    position: relative;
+}
+input::placeholder{
+    text-align: center;
+    font-size: 15px;
+}
+.login-btn{
+    background-color: #d00202;
+    height: 45px;
+    width: 50%;
+    text-align: center;
+    padding: 15px 30px;
+    display: flex;
+    margin-top: 14px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0px 7px 20px rgba(52, 69, 113, 0.16);
+}
+.login-reminder-content p span{
+    color: #1e1f87;
+    font-weight: 600;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* max-height: 310px; */
+    overflow: auto;
+    padding: 20px;
+    padding-left: 0px;
+}
+.checkbox{
+    display: flex;
+    align-items: self-start;
+}
+.checkbox p{
+    margin-left: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+.checkbox P span{
+    color: #d00202;
+}
+.login-checkbox-content input{
+    width: 20px;
+    height: 20px;
+}
+.login-checkbox-content label{
+    margin-left: 10px;
+}
+.login-checkbox-content{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+.login-icon-container{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login-icon {
+    font-size: 20px;
+}
+
+.login-icon.bad {
+    color: #d00202;
+}
+
+.login-icon.good {
+    color: rgb(24, 139, 24);
+}
+.message-erreur{
+    color: #d00202;
+    font-size: 12px;
+}
+
+
+
+
+/*********************** SECTION DE MA PARTIE PERSONNEL ************************/
+
+.copy-right-box{
+    display: flex;
+    margin-top: 60px;
+    font-size: 11px;
+    line-height: 10px;
+    justify-content: center;
+}
+.writer-signature{
+    border-left: 2px solid #fff;
+    padding-left: 5px;
+    margin-left: 5px;
+    color: #d00202;
+    font-size: 13px;
+    font-weight: 600;
+}
+.shapes_images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shape_top_images img,.shape_bottom_images img {
+    width: 100%;
+    height: auto;
+}
+
+.shapes_images >div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height: auto;
+    position: absolute;
+}
+
+.shape_top_images {
+    top: -77px;
+    left: -42px;
+}
+
+.shape_bottom_images {
+    right: -93px;
+    bottom: -77px;
+}

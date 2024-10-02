@@ -1,0 +1,223 @@
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+@media only screen and (max-width: 3000px) {
+
+
+}
+
+@media only screen and (max-width: 1700px) {
+
+   
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+   
+
+}
+
+@media only screen and (max-width: 1024px) {
+  
+.image-candidat {
+  width: 130px;
+  height: 130px;
+}
+.item-tutor-details {
+  padding-left: 145px;
+  top: -10px;
+  position: relative;
+}
+.titre-and-prix-details-candidat.row-container {
+  padding-top: 17px;
+  margin-bottom: 15px;
+  border: navajowhite;
+}
+.title-biography-candidat {
+  font-size: 18px !important;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  /*! border: navajowhite; */
+  width: 100%;
+}
+.titre-actualite-lie h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  line-height: 24px;
+}
+.item-actualite-lie {
+  padding: 10px;
+}
+.chapeau-actualite-lie {
+  line-height: 1.4;
+  font-size: 14px;
+}
+.btn-more {
+  padding: 5px;
+  font-size: 14px;
+}
+.btn-more i {
+  font-size: 10px;
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+.aside_left {
+  width: 100%;
+  padding: 0;
+}
+.wrap-candidat {
+  flex-wrap: wrap;
+}
+.wrap-aside-left-candidat.row-container {
+  padding: 0;
+}
+.titre-and-prix-details-candidat {
+  padding-bottom: 0;
+}
+.wrap-second-left-bloc {
+  padding: 15px;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .text-details-candiitat p {
+    font-size: 15px;
+}
+.item-actualite-lie {
+  padding: 5px;
+  width:100%;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+  
+.form-group.one-item {
+  margin-bottom: 10px;
+}
+  
+.texte-biography-candidat {
+  padding-bottom: 5px;
+}
+.social-media-candidat {
+  padding-bottom: 0;
+}
+  
+aside.aside_right {
+  margin-top: 20px;
+}
+  
+.title-biography-candidat h3 {
+  width: 100%;
+}
+h3.title-biography-candidat {
+  border: none;
+}
+  
+.wrapper-candidat {
+  padding: 30px 0 30px;
+}
+.second-left-bloc {
+  padding-top: 20px;
+}
+  
+.form-group.one-item {
+  margin-bottom: 10px;
+}
+.wrap-item-actualite-lie {
+  padding: 15px;
+}
+
+.image-candidat {
+  width: 90px;
+  height: 90px;
+  top: -35px;
+}
+.item-tutor-details {
+  padding-left: 102px;
+}
+.item-tutor-details h6 {
+  font-size: 15px;
+  padding-bottom: 2px;
+}
+.item-tutor-details p {
+  font-size: 12px;
+}
+.second-item-tutor-details h6 {
+  padding-bottom: 2px;
+}
+.second-item-tutor-details p {
+  font-size: 12px;
+}
+.item-actualite-lie {
+  width: 100%;
+  padding-bottom: 26px;
+  text-align: initial !important;
+}
+.titre-actualite-lie h3 {
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.item-actualite-lie {
+  padding: 0;
+  padding-bottom: 35px;
+}
+.bloc-commentaire-candidat {
+  padding-top: 0;
+}
+.btn-follow-and-message a {
+  padding: 7px 11px 7px 11px;
+  font-size: 12px;
+}
+.bloc-top-right-candidat {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.btn-more {
+  padding-left: 10px;
+  align-items: center;
+}
+.image-second-item-tutor {
+  width: 70px;
+  height: 70px;
+}
+.second-item-tutor-details {
+  padding-left: 10px;
+}
+ 
+
+}
+
+@media only screen and (max-width: 375px) {
+
+   
+
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
+}

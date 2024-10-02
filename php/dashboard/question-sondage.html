@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/fiche-questionnaire.css">
+    <link rel="stylesheet" href="css/editer-sondage.css">
+    <link rel="stylesheet" href="css/jquery.nice-number.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+
+    <script src="js/jquery.nice-number.js"></script>
+
+    <title>Dashboard: Standupcameroon</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-img">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header-left-items">
+            <div class="header-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="header-notification">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="header-profil-box">
+                <div class="header-profil-picture">
+                    <img src="images/profilman.png" alt="photo de profil">
+                </div>
+                <span><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper-dashboard">
+        <div class="container dashboard">
+            <div class="wrap-dashboad">
+                <!--  -->
+                <div class="dashboard-left">
+                    <div class="item-dashboard-menu">
+                        <div class="wrap-item-dashboard-menu">
+                            <ul class="dashboard-menu">
+                                <li class="menu-list">
+                                    <a href="dashboard.html"><span><i class="fa-solid fa-chart-line"></i></span>Dashboard</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-house-chimney"></i></span>Menus et contenus</a>
+                                </li>
+                                <li class="menu-list active-menu">
+                                    <a href="sondage.html"><span><i class="fa-solid fa-user-group"></i></span>Sondages</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="election.html"><span><i class="fas fa-vote-yea"></i></i></span>Elections</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="actualite.html"><span><i class="fa-regular fa-newspaper"></i></span>Actualités</a>
+                                </li>
+                                <li class="menu-list ">
+                                    <a href="candidat.html"><span><i class="fa-solid fa-users-rays"></i></span>Candidats</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="utilisateur.html"><span><i class="fa-solid fa-user-group"></i></span>Utilisateurs</a>
+                                </li>
+                                
+                                <li class="menu-list">
+                                    <a href="temoignage.html"><span><i class="fa-regular fa-comment-dots"></i></span>Témoignage</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="notification.html"><span><i class="fa-regular fa-bell"></i></span>Notifications</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="mon-compte.html"><span><i class="fa-regular fa-user"></i></span>Mon compte</a>
+                                </li>
+                                <li class="menu-list">
+                                    <a href="#"><span><i class="fa-solid fa-gear"></i></span>Droit d'aministration</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="dashboard-right">
+                    <!--  -->
+                    <div class="item-dashboard">
+                        <div class="wrap-item-dashboard">
+                            <div class="menu-top">
+                                <div class="left-menu-top">
+                                    <div class="menu-top publish ">
+                                        <a href="#"><span><i class="fas fa-users"></i></span>Nouveau sondage</a>
+                                    </div>
+                                    <div class="menu-top publish active-menu-top">
+                                        <a href="#"><span><i class="fas fa-users"></i></span>Questionnaires</a>
+                                    </div>
+                                                                   
+                                </div>
+                                <div class="right-menu-top">
+                                    <div class="menu-top-icon-box">
+                                        <div class="menu-top-icon1"><i class="fa-solid fa-table-cells-large"></i></div>
+                                        <div class="menu-top-icon2"><i class="fa-solid fa-list"></i></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <!--  question -->
+                        <div class="wrapper-question">
+                            <div class="question-container">
+                                <div class="question-header">
+                                    <span class="question-number">Q1</span>
+                                    <input type="text" class="question-title" placeholder="Saisir une question">
+                                    <select class="question-type">
+                                        <option value="multiple">Choix multiple</option>
+                                        <option value="case-cocher">Case à cocher</option>
+                                        <option value="etoile">Evaluation par étoile</option>
+                                        <option value="liste">Liste déroulante</option>
+                                        <option value="date">Date et heure</option>
+                                    </select>
+                                </div>
+                                
+                        
+                                <div class="choices">
+                                    <div class="wrap-form-item">
+                                        <div class="form-item">
+                                            <input type="checkbox" class="checkbox-choise" disabled>
+                                            <input type="text" required="" name="reponse[]" id="reponse1" placeholder="Saisissez un choix de réponse" class="input-field mandatory" data-error-contener="div-erreur-reponse">
+                                            <div class="message-erreur" id="div-erreur-reponse1" style="display: none;"> Vous devez proposer au moins un choix.</div>
+                                        </div>
+                                        <div class="wrap-mark-question">
+                                            <input type="number" min='0' name="note[]" value='0' class="note-reponse">
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+
+                                <div class="choices">
+                                    <div class="wrap-form-item">
+                                        <div class="form-item">
+                                            <input type="checkbox" class="checkbox-choise" disabled>
+                                            <input type="text" required="" name="reponse[]" id="reponse1" placeholder="Saisissez un choix de réponse" class="input-field " data-error-contener="div-erreur-reponse">
+                                            <div class="message-erreur" id="div-erreur-reponse1" style="display: none;"> Vous devez proposer au moins un choix.</div>
+                                        </div>
+                                        <div class="wrap-mark-question">
+                                            <input type="number" min='0' name="note[]" value='0' class="note-reponse">
+                                        </div>
+                                        <div class="wrap-content-add-item">
+                                            <button class="add-bloc"><span>+</span></button>
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                                <div class="choices">
+                                    <div class="wrap-form-item">
+                                        <div class="form-item">
+                                            <input type="checkbox" class="checkbox-choise" disabled>
+                                            <input type="text" required="" name="reponse[]" id="reponse1" placeholder="Saisissez un choix de réponse" class="input-field " data-error-contener="div-erreur-reponse">
+                                            <div class="message-erreur" id="div-erreur-reponse1" style="display: none;"> Vous devez proposer au moins un choix.</div>
+                                        </div>
+                                        <div class="wrap-mark-question">
+                                            <input type="number" min='0' name="note[]" value='0' class="note-reponse">
+                                        </div>
+                                        <div class="wrap-content-add-item">
+                                            <button class="add-bloc"><span>+</span></button>
+                                            <button class="remove-bloc"><span>-</span></button>
+
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                        
+
+                        
+                                <div class="options">
+                                    <label>
+                                        <input type="checkbox">
+                                        Noter cette question <span>(activer le mode quiz)</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" disabled>
+                                        Utiliser les choix de réponses précédents <span>(reporter les réponses)</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        Ajouter une option de réponse "Autre" ou un champ de commentaire
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        Ajouter une option de réponse "Aucun des éléments ci-dessus"
+                                    </label>
+                                </div>
+                        
+                                <div class="action-buttons">
+                                    <button class="btn green"> <i class="fa-solid fa-circle-plus"></i> Ajouter une question</button>
+                                </div>
+                            </div>
+                        </div>
+                    <!--  -->
+                    <div class="wrapper-btn">
+                        <div class="content-fixed-btn">
+                            <a href="editer-sondage.html" class="prev-btn"><i class="fa-solid fa-xmark"></i> Annuler</a>
+                            <a href="question-sondage.html" class="next-btn">Enregistrer <i class="fas fa-share"></i> </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+
+    <script src="js/questionnaire.js"></script>
+    <script>
+        $(function(){
+            $('input[type="number"]').niceNumber();
+        });
+    </script>
+
+</body>
+</html>

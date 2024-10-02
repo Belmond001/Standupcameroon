@@ -1,0 +1,610 @@
+
+
+@media only screen and (max-width: 1024px){
+
+.wrap-formulaire-projet {
+}
+.wrap-formulaire-projet {
+  /* margin-top: 10vh; */
+}
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .sidebar {
+        width: 45vw;
+    }
+    
+    .wrap-main-content-page {
+        padding: 40px 20px;
+    }
+    
+    .content-entete-complement-info {
+        font-size: 22px;
+    }
+    
+    .titre-complement-info {
+        font-size: 15px;
+    }
+    
+    .content-two-elt.field-form {
+        width: 100%;
+    }
+    
+    .field_double {
+        flex-wrap: wrap;
+    }
+    
+    .field_input.middle {
+        width: 100%;
+    }
+    
+    .etape2 .space_btn_submit.space_double {
+        width: 55vw;
+        padding: 15px;
+    }
+    .main-content-page {
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .image-inscrit {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .body-main-content-page {
+        padding-top: 0;
+    }
+    
+    .wrap-formulaire-projet {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .wrap-sidebar {
+        height: 282px;
+        padding: 28px 15px 30px 15px;
+    }
+    
+.field_double.radio-fields {
+  flex-wrap: wrap;
+}
+.field_input {
+  margin-bottom: 10px;
+}
+    
+.three .element_field {
+  width: 100%;
+}
+.field_input.three {
+  width: 100%;
+}
+    
+.three .element_field {
+  width: 95%;
+}
+.field_input.three {
+  width: 100%;
+}
+
+.sidebar {
+  width: 100%;
+  position: relative;
+  max-height: 400px;
+}
+.wrap-sidebar {
+  height: 300px;
+}
+.content-bloc-center {
+  margin-top: 17px;
+}
+.sub-title-right-login-page {
+  font-size: 23px;
+}
+.main-content-page {
+  margin-left: 0;
+  width: 100%;
+  padding-top: 35px;
+}
+.classcontent-inscription {
+  padding-bottom: 14px;
+}
+.bloc-bon-savoir p {
+  font-size: 14px;
+}
+.titre-bloc-formulaire h2 {
+  font-size: 15px;
+}
+.etape2 .space_btn_submit.space_double {
+  width: 100%;
+}
+label.label_field {
+  font-size: 12px;
+}
+    
+    aside.sidebar {
+        position: relative;
+        width: 100%;
+    }
+    
+    .content-bloc-center {
+        margin-top: 30px;
+    }
+    
+    .sub-title-right-login-page {
+        line-height: 25px;
+        font-size: 25px;
+    }
+    
+    .main-content-page {
+        width: 100%;
+    }
+    
+    .wrap-main-content-page {
+        padding: 30px 15px 55px;
+    }
+    
+    .field_input.middle {
+        width: 49%;
+    }
+    
+    .field_input.middle .element_field {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .content-two-elt.field-form {
+        width: 61%;
+        margin-right: 10px;
+    }
+    
+    .etape2 .space_btn_submit.space_double {
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .creer-compte {
+        font-size: 15px;
+    }
+    
+    .classcontent-inscription {
+        flex-wrap: wrap;
+        font-size: 25px;
+        justify-content: normal;
+    }
+    
+    .classcontent-inscription small {
+        font-size: 16px;
+    }
+    
+    .titre-complement-info {
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    
+    .titre-bloc-formulaire h2 {
+        font-size: 17px;
+    }
+    
+    .class_select, .class_input {
+        height: 50px;
+        font-size: 15px;
+    }
+    button.btn-precedent {
+        height: 37px;
+    }
+    
+    .space_btn_submit.space_double button.submit {
+        font-size: 14px;
+    }
+    
+    .left-top-bloc-inscription a {
+        padding: 10px 0;
+    }
+
+    label.label_field {
+        font-size: 14px;
+    }
+
+    .content-two-elt.field-form .field_input {
+        width: 72%;
+    }
+
+    .content-select-type.middle select {
+        padding-left: 5px;
+    }
+
+    .text-logo {
+        font-size: 17px;
+    }
+    .field_double {
+        flex-wrap: nowrap;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .wrap-sidebar {
+        height: 282px;
+        padding: 28px 15px 30px 15px;
+    }
+    
+    aside.sidebar {
+        position: relative;
+        width: 100%;
+    }
+    
+.content-select-type.middle {
+  width: 25%;
+}
+.content-two-elt.field-form .field_input {
+  width: 74%;
+}
+.class_select, .class_input {
+  font-size: 12px;
+}
+    
+    .content-bloc-center {
+        margin-top: 30px;
+    }
+    
+    .sub-title-right-login-page {
+        line-height: 25px;
+        font-size: 25px;
+    }
+    
+    .main-content-page {
+        width: 100%;
+    }
+    
+    .wrap-main-content-page {
+        padding: 30px 15px 55px;
+    }
+    
+    .field_input.middle {
+        width: 49%;
+    }
+    
+    .field_input.middle .element_field {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .content-two-elt.field-form {
+        width: 61%;
+        margin-right: 10px;
+    }
+    
+    .etape2 .space_btn_submit.space_double {
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .creer-compte {
+        font-size: 15px;
+    }
+    
+    .classcontent-inscription {
+        flex-wrap: wrap;
+        font-size: 23px;
+        justify-content: normal;
+    }
+    
+    .classcontent-inscription small {
+        font-size: 16px;
+    }
+    
+    .titre-complement-info {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    
+    .titre-bloc-formulaire h2 {
+        font-size: 17px;
+    }
+    
+    .class_select, .class_input {
+        height: 50px;
+        font-size: 15px;
+    }
+    button.btn-precedent {
+        height: 37px;
+    }
+    
+    .space_btn_submit.space_double button.submit {
+        font-size: 14px;
+    }
+    
+    .left-top-bloc-inscription a {
+        padding: 10px 0;
+    }
+
+    label.label_field {
+        font-size: 14px;
+    }
+
+    .content-two-elt.field-form .field_input {
+        width: 72%;
+    }
+
+    .content-select-type.middle select {
+        padding-left: 5px;
+    }
+
+    .text-logo {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .field_double.three {
+        flex-direction: column;
+    }
+    
+    .three .field_input {
+        width: 100%;
+    }
+    .image-inscrit {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+
+@media only screen and (max-width: 485px){
+    .wrap-sidebar {
+        height: 282px;
+        padding: 28px 15px 30px 15px;
+    }
+    
+    aside.sidebar {
+        position: relative;
+        width: 100%;
+    }
+    
+    .content-bloc-center {
+        margin-top: 30px;
+    }
+    
+.field_double.radio-fields .field_input {
+  width: fit-content;
+}
+.field_double.radio-fields {
+  display: flex;
+}
+.field_double .field_input .element_field {
+  margin: 0;
+}
+    
+    .sub-title-right-login-page {
+        line-height: 25px;
+        font-size: 25px;
+    }
+    
+    .main-content-page {
+        width: 100%;
+    }
+    
+    .wrap-main-content-page {
+        padding: 30px 15px 55px;
+    }
+    
+    .field_double {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .field_input.middle {
+        width: 100%;
+    }
+    
+    .field_input.middle .element_field {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .content-two-elt.field-form {
+        width: 100%;
+    }
+    
+    .etape2 .space_btn_submit.space_double {
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .creer-compte {
+        font-size: 13px;
+    }
+    
+    .classcontent-inscription {
+        flex-wrap: wrap;
+        font-size: 18px;
+        justify-content: normal;
+    }
+    
+    .classcontent-inscription small {
+        font-size: 13px;
+    }
+    
+    .titre-complement-info {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    .titre-bloc-formulaire h2 {
+        font-size: 15px;
+    }
+    
+    .class_select, .class_input {
+        height: 50px;
+        font-size: 12px;
+    }
+    button.btn-precedent {
+        height: 30px;
+    }
+    
+    .space_btn_submit.space_double button.submit {
+        font-size: 13px;
+    }
+    
+    .left-top-bloc-inscription a {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+
+    label.label_field {
+        font-size: 14px;
+    }
+    
+    .left-top-bloc-inscription {
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 425px){
+
+    .creer-compte {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    
+    .wrap-sidebar {
+        height: 282px;
+        padding: 28px 15px 30px 15px;
+    }
+    
+    aside.sidebar {
+        position: relative;
+        width: 100%;
+    }
+    
+    .content-bloc-center {
+        margin-top: 30px;
+    }
+    
+    .sub-title-right-login-page {
+        line-height: 25px;
+        font-size: 23px;
+    }
+    
+    .main-content-page {
+        width: 100%;
+    }
+    
+    .wrap-main-content-page {
+        padding: 30px 15px 55px;
+    }
+    
+    .field_double {
+        flex-direction: column;
+    }
+    
+    .field_input.middle {
+        width: 100%;
+    }
+    
+    .field_input.middle .element_field {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .content-two-elt.field-form {
+        width: 100%;
+    }
+    
+    .etape2 .space_btn_submit.space_double {
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .creer-compte {
+        font-size: 15px;
+    }
+    
+    .classcontent-inscription {
+        flex-wrap: wrap;
+        font-size: 18px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .classcontent-inscription small {
+        font-size: 13px;
+    }
+    
+    .titre-complement-info {
+        font-size: 15px;
+        /*! margin-left: 49px; */
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .titre-bloc-formulaire h2 {
+        font-size: 14px;
+    }
+    
+    .class_select, .class_input {
+        height: 50px;
+        font-size: 14px;
+    }
+    button.btn-precedent {
+        height: 30px;
+    }
+    
+    .space_btn_submit.space_double button.submit {
+        font-size: 13px;
+    }
+    
+    .left-top-bloc-inscription a {
+        padding: 10px 0;
+    }
+
+    label.label_field {
+        font-size: 13px;
+    }
+    
+    .left-top-bloc-inscription {
+        margin-bottom: 10px;
+    }
+    .image-inscrit {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 85px;
+    }
+    
+    .image-inscrit {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .texte-before-validation-code .nom-user {
+        font-size: 18px;
+    }
+    
+    .texte-before-validation-code {
+        margin-top: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    
+
+}

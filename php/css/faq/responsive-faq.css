@@ -1,0 +1,151 @@
+
+
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+
+@media only screen and (max-width: 3000px) {
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .wrapper-faq {
+        padding: 80px 0;
+    }
+    .wrap-faq {
+        display: block;
+    }
+    .item-faq.left {
+        width: 70%;
+        padding: 0;
+        margin: 0 auto 40px;
+    }
+    
+    .item-faq.right {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .faq-detail-content P {
+        line-height: 26px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+    .wrapper-faq {
+        padding: 80px 0;
+    }
+    .wrap-faq {
+        display: block;
+    }
+    
+    .item-faq.left {
+        width: 80%;
+        padding: 0;
+    }
+    
+    .item-faq.right {
+        width: 80%;
+        padding: 0;
+    }
+    
+}
+
+
+@media only screen and (max-width: 485px) {
+    .wrapper-faq {
+        padding: 60px 0;
+    }
+    .wrap-faq {
+        display: block;
+    }
+    
+    .item-faq.left {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .item-faq.right {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .faq-detail-content P {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .faq-question {
+        font-size: 15px;
+    }   
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    
+    .wrapper-faq {
+        padding: 60px 0;
+    }
+    .wrap-faq {
+        display: block;
+    }
+    
+    .item-faq.left {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .item-faq.right {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .faq-detail-content P {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .faq-question {
+        font-size: 15px;
+    }  
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+
+}
+
+
+

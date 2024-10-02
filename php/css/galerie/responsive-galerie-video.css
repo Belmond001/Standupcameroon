@@ -1,0 +1,225 @@
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+@media only screen and (max-width: 3000px) {
+
+
+}
+
+@media only screen and (max-width: 1700px) {
+
+   
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+   
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .content-item-etudes-de-cas h3 {
+        font-size: 20px !important;
+    }
+
+    .btn-style2 {
+        font-size: 17px;
+    }
+
+    .cat-list a {
+        font-size: 14px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .parent-items-categorie {
+        width: 50%;
+    }
+
+    .input-form.mot-cles {
+        /* width: 50%; */
+    }
+    .form {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%;
+    }
+
+
+
+    .wrapper-form {
+        background-color: #fff;
+        box-shadow: 0px 6px 12px rgb(0 0 0 / 5%);
+        border-radius: 30px;
+        padding: 17px;
+        margin-bottom: 45px;
+    }
+    .wrapper-form form {
+        box-shadow: none !important; 
+        height: 100%;
+    }
+
+    .img-etudes-de-cas img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .wrapper-parent-etudes-de-cas {
+        width: 100%;
+        padding: 0 0px 30px;
+        position: relative;
+        cursor: pointer;
+        /* padding: 0; */
+    }
+    
+    .date-agenda span {
+      font-size: 13px;
+    }
+    span.date_in_number {
+      width: 40px;
+      height: 40px;
+    }
+    .date-agenda {
+      width: 60px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  
+
+    .btn-primary {
+        /* display: flex; */
+        /* justify-content: center; */
+        align-items: center;
+        width:100%;
+        flex-wrap: wrap;
+    }
+
+    .parent-items-categorie {
+        width: 100%;
+    }
+
+    .content-item-etudes-de-cas h3 {
+        /* font-size: 16px; */
+    }
+
+    .cat-list {
+        /* font-size: 12px; */
+    }
+    .content-item-etudes-de-cas p {
+        /* font-size: 12px; */
+        /* line-height: 1.5; */
+    }
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    .wrapper-parent-etudes-de-cas {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .parent-title {
+        padding-left: 10px;
+        min-height: 1px;
+        margin-bottom: 10px;
+    }
+
+    .img-etudes-de-cas img {
+        height: 330px;
+    }
+
+    .wrapper-parent-etudes-de-cas .portfolio-btn .btn-style2::after {
+        width: 45px !important;
+        height: 45px;
+    }
+
+    span.btn-style2 {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .parent-title::before {}
+
+    .portfolio-btn {
+        left: unset;
+        right: 30px;
+        bottom: 40px;
+        top: unset;
+    }
+
+    .content-item-etudes-de-cas {
+        width: 82%;
+        padding: 0 0px 30px 15px;
+    }
+
+
+.btn.btn-primary {
+    position: relative;
+}
+
+.parent-etudes-de-cas {
+    padding: 0 !important;
+}
+
+    
+    .content-item-etudes-de-cas h3 {
+    font-size: 15px !important;
+}
+
+.cat-list {
+    font-size: 13px !important;
+}
+}
+
+@media only screen and (max-width: 375px) {
+
+    .content-item-etudes-de-cas h3 {
+    font-size: 14px !important;
+}
+
+.cat-list {
+    font-size: 12px !important;
+}
+
+}
+
+@media only screen and (max-width: 320px) {
+    .content-item-etudes-de-cas h3 {
+        font-size: 17px;
+    }
+
+    .cat-list {
+        font-size: 13px;
+    }
+
+    .content-item-etudes-de-cas p {
+        margin-bottom: 6px;
+    }
+
+    .wrapper-parent-etudes-de-cas .portfolio-btn .btn-style2::after {
+        width: 50px !important;
+        height: 50px;
+    }
+
+}

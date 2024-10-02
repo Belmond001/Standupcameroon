@@ -1,0 +1,100 @@
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+@media only screen and (max-width: 3000px) {
+
+
+}
+
+@media only screen and (max-width: 1700px) {
+
+   
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+   
+
+}
+
+@media only screen and (max-width: 1024px) {
+  
+  
+.wrapper-candidat {
+  padding: 30px 0 100px;
+}
+.aside-left {
+  width: 100%;
+  padding: 0;
+}
+aside.aside_right {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+.candidat-author {
+  padding: 15px;
+  padding-bottom: 0;
+}
+.author-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+
+
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+ 
+
+.parent-item-candidat {
+  width: 100%;
+  padding: 15px 0;
+}
+.aside-left {
+  flex-wrap: wrap;
+}
+.social-candidat a {
+  width: 28px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+
+   
+
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
+}
