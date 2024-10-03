@@ -1,5 +1,5 @@
 
-
+<?php $page_active='actualite';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
