@@ -1,5 +1,5 @@
-<?php $page_active='';?>
 
+<?php $page_active='';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,11 +27,11 @@
 
     <!-- CSS styles -->
     <link rel="stylesheet" type="text/css" href="css/header/responsive-header-footer.css">
-    <link rel="stylesheet" type="text/css" href="css/identification/responsive-validation-identite.css">
+
     <link rel="stylesheet" type="text/css" href="css/interne.css">
     <link rel="stylesheet" type="text/css" href="css/responsive-interne.css">
     <link rel="stylesheet" type="text/css" href="css/index/responsive-index.css">
-
+    <link rel="stylesheet" type="text/css" href="css/identification/responsive-validation-identite.css">
 
     <script src="js/app-mesfonctions.js"></script>
     <script src="js/app.js"></script>
@@ -53,12 +53,12 @@
             <div class="wrap-biography">
 
                 <div class="content-text-center">
-                    <h3 class="title-banner-center detail-tit aos-init aos-animate" data-aos="fade-down" data-aos-delay="100" data-aos-duration="3000">Validation identité</h3>
+                    <h3 class="title-banner-center detail-tit aos-init aos-animate" data-aos="fade-down" data-aos-delay="100" data-aos-duration="3000">Notification</h3>
                     <ol class="breadcrumblist aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
                         <li><a href="./">Accueil</a></li> /
-                        <li><a href="#">Je participe</a></li>
+                        <li><a href="contact.php">Contact</a></li>/
                         
-                                                
+                        <li><a href="#">Notification</a></li>
 
                     </ol>
                 </div>
@@ -70,32 +70,8 @@
    
     <div class="wrapper-validation-identite">
         <div class="container validation-identite">
-            <div class="wrap-validation-identite">
-                <div class="left-content-validation-identite">
-                    <div class="section-title"> 
-                        <span class="sub-title ">INFORMATION</span>
-                        <h2 class="title-bloc">Qu'est-ce que vous devez savoir?</h2>
-                        
-                    </div>
-                    
-                    <div class="content-mission-vision">
-                        <div class="item-left-faq">
-                            <div class="item-left-faq__icon"><img src="images/icons/icon1.png"></div>
-                            <h5 class="item-left-faq__title">Délai de traitement</h5>
-                            <p class="item-left-faq__text">
-                                Chers utilisateurs, le processus de vérification et de validation de votre identité sera effectué sous 24 heures. Une fois complété, vous recevrez une confirmation par SMS ou par e-mail.
-                            </p>
-                        </div>
-                        <div class="item-left-faq">
-                            <div class="item-left-faq__icon"><img src="images/icons/icon1.png"></div>
-                            <h5 class="item-left-faq__title">Sécurité des données </h5>
-                            <p class="item-left-faq__text">
-                                Vos données sont traitées avec la plus stricte confidentialité et protégées par des technologies avancées. Elles ne seront jamais partagées sans votre consentement.
-                            </p>
-                        </div>
-                        
-                    </div>
-                </div>
+            <div class="wrap-validation-identite center_block">
+             
                 <div class="right-validation-identite">
                     <div class="wrap-main-content-page">
                         <div class="body-main-content-page etape2">
@@ -103,12 +79,12 @@
         
                                     <div class="wrap-formulaire-projet">
                                        <div class="wrap-content-validation-form">
-                                           <div class="bg-top-icon progress"><div class="progress-icon"><i class="fa-regular fa-hourglass-half"></i></div></div>
+                                           <div class="bg-top-icon success"><div class="progress-icon"><i class="fas fa-check"></i></div></div>
                                             
                                             <div class="texte-before-validation-code">
                                                 
-                                                <p class="nom-user">KAMDEM SIMO Belmond Euphraim</p><p><strong>Votre dossier est actuellement encours de validation, </strong><br> <span>NB:</span> Chaque dossier soumis nécessite un délai de traitement de <strong>24h</strong>. 
-                                                    <strong>Délai dépassé ?</strong><a href="contact.html"><span>&nbsp;Nous contacter</span></a> 
+                                                <p class="nom-user">KAMDEM SIMO Belmond Euphraim</p><p><strong>Votre message a été envoyé et enregistré avec succès. </strong><br> Merci de l'intérêt que vous portez à notre egard, nous vous contacterons dans les plus bref délai Merci.  
+                                                     
                                                 </p>
                                             </div>
                                            
@@ -125,13 +101,15 @@
         </div>
     </div>
 
-    <?php include 'includes/footer.php';?>
 
+
+
+
+    <?php include 'includes/footer.php';?>
 
 
     <script src="js/valider-identite.js"></script>
     <script src="js/faq.js"></script>
-
 
 </body>
 </html>

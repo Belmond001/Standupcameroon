@@ -7,8 +7,18 @@
 }
 
 
+.wrap-validation-identite.center_block {
+    justify-content: center;
+}
+.wrap-validation-identite.center_block {
+    justify-content: center;
+}
 
-
+.center_block .right-validation-identite {
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+}
 
 .wrap-validation-identite {
     display: flex;

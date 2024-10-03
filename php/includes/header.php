@@ -47,9 +47,9 @@
                             <div class="navbar-header-bottom">
                                 <ul class="navlink">
 
-                                    <li><a class="<?php echo ($page_active=='index')? 'active':''?> " href="./index.html" target=""> Accueil</a></li>
+                                    <li><a class="<?php echo ($page_active=='index')? 'active':''?> " href="./index.php" target=""> Accueil</a></li>
                                     <li class="">
-                                        <a class="<?php echo ($page_active=='apropos')? 'active':''?> " href="apropos.html" target="">A propos</a>
+                                        <a class="<?php echo ($page_active=='apropos')? 'active':''?> " href="apropos.php" target="">A propos</a>
                                     </li>
                                 
                                     <li class="has-children">
@@ -79,31 +79,31 @@
                                             <li class="has-children">
                                                 <a href="javascript:void();" target="">Résultats actuels  </a>
                                                 <ul class="ssmenu">
-                                                    <li><a href="resultat-vote.html" target="">Des votes</a></li>
+                                                    <li><a href="resultat-vote.php" target="">Des votes</a></li>
                                                     <li><a href="#" target="">Des sondages </a></li>
                                                 
                                                 </ul>
                                             </li>
-                                            <li><a href="resultat-vote-archiver.html" target="">Résultats archivés</a></li>
+                                            <li><a href="resultat-vote-archiver.php" target="">Résultats archivés</a></li>
 
                                         
 
                                         </ul>
                                     </li>
-                                    <li class=""><a class=" <?php echo ($page_active=='actualite')? 'active':''?> " href="actualite.html" target="">Actualités</a></li>
+                                    <li class=""><a class=" <?php echo ($page_active=='actualite')? 'active':''?> " href="actualite.php" target="">Actualités</a></li>
                                     <li class="has-children">
                                         <a class=" <?php echo ($page_active=='galerie')? 'active':''?> " href="javascript:void();" target="">Galeries</a>
                                         <ul class="smenu">
-                                            <li><a href="galerie-photo.html" target="">Galeries photos</a></li>
-                                            <li><a href="galerie-video.html" target="">Galeries vidéos</a></li>
+                                            <li><a href="galerie-photo.php" target="">Galeries photos</a></li>
+                                            <li><a href="galerie-video.php" target="">Galeries vidéos</a></li>
                                 
                                         </ul>
                                     </li>  
                                     <li class="has-children">
                                         <a class="<?php echo ($page_active=='aide')? 'active':''?> " href="javascript:void();" target="">Aide</a>
                                         <ul class="smenu">
-                                            <li><a href="faq.html" target="">FAQ</a></li>
-                                            <li><a href="contact.html" target="">Contact</a></li>
+                                            <li><a href="faq.php" target="">FAQ</a></li>
+                                            <li><a href="contact.php" target="">Contact</a></li>
                                 
                                         </ul>
                                     </li> 
@@ -209,7 +209,7 @@
 
                                 <div class="main-menu-mb" id="main-menu-mb">
                                     <div class="listmenu"><a href="./" class="linklist-menu bush-left">Accueil</a></div>
-                                    <div class="listmenu"><a href="./apropos.html" class="linklist-menu bush-left">A propos</a></div>
+                                    <div class="listmenu"><a href="./apropos.php" class="linklist-menu bush-left">A propos</a></div>
 
                                     <div class="listmenu">
                                         <input type="radio" name="submenu-mb" id="item1">
@@ -256,7 +256,7 @@
                                             <span class="linklist-menu">Résultats</span>
                                             <ul class="panel_submenu_mb">
                                                 <li class="smenu-item">
-                                                    <a class="linksubmenu__mb" href="resultat-vote-archiver.html" target="">Résultats archivés</a>
+                                                    <a class="linksubmenu__mb" href="resultat-vote-archiver.php" target="">Résultats archivés</a>
                                                 </li>
                                                 <li class="smenu-item has-children ">
                                                     <input type="radio" name="smenu" id="subitem41">
@@ -264,10 +264,10 @@
                                                         <span class="smenu-item-titre"> Résultats actuels</span>
                                                         <ul class="ssmenu">
                                                             <li>
-                                                                <a href="resultat-vote.html" target="">Vote</a>
+                                                                <a href="resultat-vote.php" target="">Vote</a>
                                                             </li>
                                                         
-                                                            <li><a href="resultat-sondage.html" target="">Sondage</a>
+                                                            <li><a href="resultat-sondage.php" target="">Sondage</a>
                                                             </li>
                                                         </ul>
                                                     </label>
@@ -276,7 +276,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="listmenu"><a href="actualite.html" class="linklist-menu bush-left">Actualités</a></div>
+                                    <div class="listmenu"><a href="actualite.php" class="linklist-menu bush-left">Actualités</a></div>
 
                                     <div class="listmenu">
                                         <input type="radio" name="submenu-mb" id="item4">
@@ -285,10 +285,10 @@
                                             <ul class="panel_submenu_mb">
                                                 
                                                 <li class="smenu-item">
-                                                    <a class="linksubmenu__mb" href="galerie-photo.html" target="">Galeries photos </a>    
+                                                    <a class="linksubmenu__mb" href="galerie-photo.php" target="">Galeries photos </a>    
                                                 </li>
                                                 <li class="smenu-item">
-                                                    <a class="linksubmenu__mb" href="galerie-video.html" target="">Galeries vidéos</a>                          
+                                                    <a class="linksubmenu__mb" href="galerie-video.php" target="">Galeries vidéos</a>                          
                                                 </li>
                                             </ul>
                                         </label>
@@ -300,10 +300,10 @@
                                             <ul class="panel_submenu_mb">
                                                 
                                                 <li class="smenu-item">
-                                                    <a class="linksubmenu__mb" href="faq.html" target="">FAQ</a>    
+                                                    <a class="linksubmenu__mb" href="faq.php" target="">FAQ</a>    
                                                 </li>
                                                 <li class="smenu-item">
-                                                    <a class="linksubmenu__mb" href="contact.html" target="">Contact</a>                          
+                                                    <a class="linksubmenu__mb" href="contact.php" target="">Contact</a>                          
                                                 </li>
                                             </ul>
                                         </label>

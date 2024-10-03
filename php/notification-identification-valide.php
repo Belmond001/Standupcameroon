@@ -1,4 +1,5 @@
 
+<?php $page_active='';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -127,17 +128,8 @@
 
 
 
-    <div id="loader" style="display:none">
 
-        <div id="div_preloader" >
-
-            <img src="images/preloader.gif"  />
-
-        </div>
-
-    </div>
-
-    <?php include 'includes/header.php';?>
+    <?php include 'includes/footer.php';?>
 
 
     <script src="js/valider-identite.js"></script>

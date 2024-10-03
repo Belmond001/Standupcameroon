@@ -1,4 +1,5 @@
 
+<?php $page_active='';?>
 
 <!DOCTYPE html>
 <html lang="en">

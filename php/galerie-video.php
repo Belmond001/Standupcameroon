@@ -1,3 +1,4 @@
+<?php $page_active='galerie';?>
 
 
 <!DOCTYPE html>

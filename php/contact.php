@@ -1,3 +1,4 @@
+<?php $page_active='aide';?>
 
 
 <!DOCTYPE html>
@@ -72,7 +73,7 @@
                 
                 <div class="item-contact right">
                     <div class="wrap-item-contact">
-                        <form action="#">
+                        <form action="notification-contact.php">
                             <h2 class="main-tilte">Nous écrire</h2>
                             <div class="half-input">
                                 <div class="input-field">

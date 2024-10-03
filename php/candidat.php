@@ -1,4 +1,5 @@
 
+<?php $page_active='candidat';?>
 
 <!DOCTYPE html>
 <html lang="en">
