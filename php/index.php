@@ -526,7 +526,7 @@
                             </div>
                         </div>
 
-                        <div class="item-boc-left-video">
+                        <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="item-boc-left-video popup-youtube">
                             <div class="img-bloc-left-video">
                                 <img src="images/galerie/galerie1.jpg">
                             </div>
@@ -536,43 +536,64 @@
                             <div class="tite-and-categorie-item-left-video row-container">
                                 <div class="title-video-bloc-left-video">
                                     <h3>Reportage sur les défis et les suggestions des citoyens pour améliorer le système de santé.</h3>
-
-                                     <div class="categorie-and-map-video row-container">   
-                                       <span> <i class="fas fa-clock"></i>Douala </span>
-                                         <div class="category-bloc-left-video">
-                                    Santé 
+                                    <div class="categorie-and-map-video row-container">   
+                                        <span> <i class="fas fa-clock"></i>Douala </span>
+                                        <div class="category-bloc-left-video">Santé </div>
+                                    </div>
                                 </div>
-                                     </div>
-
-                                </div>
-                               
                             </div>
-                        </div>
+                        </a>
                         
                         
                     </div>
                     <div class="top-right-galerie ">
                         <div  class="wrap-top-right-galerie ">
-                            <div class="item-top-right-galerie">
-                                <div class="wrap-item-top-right-video">
-                                    <div class="img-item-right-video">
-                                       <img src="images/galerie/galerie2.jpg">
+                            <!-- item1 -->
+                                <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="item-top-right-galerie  popup-youtube">
+                                    <div class="wrap-item-top-right-video">
+                                        <div class="img-item-right-video">
+                                        <img src="images/galerie/galerie2.jpg">
+                                        </div>
+                                        <div class="btn-video-item-right-video">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                
+                                        <div class="title-video-item-right-video">
+                                            <h3>Opinions des citoyens sur la corruption et les mesures nécessaires pour y mettre fin.</h3>
+                                            <span> <i class="fas fa-clock"></i>Bamenda </span>
+                                        </div>
+                                        <div class="category-item-right-video">
+                                            Corruption
+                                        </div>
+                                
                                     </div>
-                                <div class="btn-video-item-right-video">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                            
-                                <div class="title-video-item-right-video">
-                                    <h3>Opinions des citoyens sur la corruption et les mesures nécessaires pour y mettre fin.</h3>
-                                    <span> <i class="fas fa-clock"></i>Bamenda </span>
-                                </div>
-                                 <div class="category-item-right-video">
-                                    Corruption
-                                </div>
-                               
-                                </div>
-                            </div>
-                            <div class="item-top-right-galerie">
+                                </a>
+                            <!-- FIN -->
+
+                            <!-- item2 -->
+                                <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="item-top-right-galerie popup-youtube">
+                                    <div class="wrap-item-top-right-video">
+                                        <div class="img-item-right-video">
+                                            <img src="images/galerie/galerie3.jpg">
+                                        </div>
+                                    <div class="btn-video-item-right-video">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                
+                                    <div class="title-video-item-right-video">
+                                        <h3>Sondage vidéo sur l'importance de l'innovation technologique selon les citoyens.</h3>
+                                        <span> <i class="fas fa-clock"></i>Maroua</span>
+                                    </div>
+                                    <div class="category-item-right-video">
+                                        Innovation Technologique
+                                    </div>
+                                
+                                    </div>
+                                </a>
+                            <!-- FIN -->
+
+                             <!-- item3 -->
+                             <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="item-top-right-galerie popup-youtube">
                                 <div class="wrap-item-top-right-video">
                                     <div class="img-item-right-video">
                                         <img src="images/galerie/galerie3.jpg">
@@ -585,12 +606,19 @@
                                     <h3>Sondage vidéo sur l'importance de l'innovation technologique selon les citoyens.</h3>
                                     <span> <i class="fas fa-clock"></i>Maroua</span>
                                 </div>
-                                 <div class="category-item-right-video">
-                                     Innovation Technologique
+                                <div class="category-item-right-video">
+                                    Innovation Technologique
                                 </div>
-                               
+                            
                                 </div>
-                            </div>
+                                </a>
+                            <!-- FIN -->
+
+                        </div>
+                        <div class="arrow-galerie">
+                            <div class="arrow-left prev-slick"><i class="fas fa-arrow-left"></i></div>
+                            <div class="arrow-right next-slick"><i class="fas fa-arrow-right"></i></div>
+
                         </div>
                     </div>
                 </div>

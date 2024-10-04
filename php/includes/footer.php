@@ -94,6 +94,7 @@
 
               <h3 class="footer-link-title">Flash infos</h3>
               <div class="footer_slider_arrows">
+                
                   <span class="footer_arrow prev-slick">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
                       <path fill-rule="evenodd" fill="rgb(182, 182, 182)" d="M0.215,5.448 L4.736,9.733 C5.023,10.007 5.489,10.007 5.777,9.733 C6.064,9.462 6.064,9.020 5.777,8.747 L1.777,4.954 L5.777,1.161 C6.064,0.888 6.064,0.447 5.777,0.174 C5.489,-0.098 5.023,-0.098 4.735,0.174 L0.215,4.461 C0.071,4.598 -0.000,4.776 -0.000,4.954 C-0.000,5.133 0.072,5.312 0.215,5.448 Z"></path>

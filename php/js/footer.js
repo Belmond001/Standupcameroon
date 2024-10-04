@@ -14,6 +14,9 @@ $('.wrap-produit-footer').slick({
 });
 
 
+
+
+
 $(document).ready(function name() {
 $(".icon_bar").click(function name() {
 	$('.widget_menu.content_panel_menu_mobile').css("visibility", "visible");

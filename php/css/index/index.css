@@ -2261,7 +2261,22 @@ a.tx-number {
   .wrap-top-right-galerie.scroller {
     padding-right: 13px;
   }
-  
+
+.arrow-galerie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-galerie div {
+    width: 30px;
+    aspect-ratio:1;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 7px 14px;
+    color: var(--second-color);
+}
   
 
 /*************************************************************************************************************************|
