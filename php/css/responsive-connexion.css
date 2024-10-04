@@ -112,7 +112,9 @@ a.login-checkbox-content {
 }
 
 @media only screen and (max-width: 485px){
-
+    .login-page-title {
+        font-size: 20px !important;
+    }
     .wrap-login {
         flex-direction: column;
     }
