@@ -43,12 +43,12 @@
                                 <div class="description-login">Veillez verifier votre addresse email en entrant le code a 4 chiffres reçu par mail</div>
                                 <form action="#">
                                     <div class="input-container">
-                                        <div class="login-field-content">
+                                        <!-- <div class="login-field-content">
                                             <input type="text" name="code" placeholder="Entrer le Code Reçu">
                                             <div class="message-erreur" id="div-erreur-nom-beneficiaire" style="display: none;"> 
                                                 Veiller enter le code reçu par mail
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="login-field-content">
                                             <input type="password" name="pwd" placeholder="Entrer un nouveau mot de passe">
                                             <div class="message-erreur" id="div-erreur-nom-beneficiaire" style="display: none;"> 
