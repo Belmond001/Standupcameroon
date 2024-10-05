@@ -261,6 +261,7 @@ input::placeholder{
     border: none;
     font-weight: 600;
     color: #fff;
+    margin: 18px auto 0;
     box-shadow: 0px 7px 20px rgba(52, 69, 113, 0.16);
 }
 .login-reminder-content p span{
@@ -273,7 +274,7 @@ input::placeholder{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-height: 310px;
+    max-height: 220px;
     overflow: auto;
     padding: 20px;
     padding-left: 0px;
@@ -299,7 +300,7 @@ input::placeholder{
 }
 .login-checkbox-content{
     display: flex;
-    justify-content: end;
+    justify-content: start;
     margin-top: 10px;
 }
 .login-icon-container{

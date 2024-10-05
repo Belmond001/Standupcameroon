@@ -8,6 +8,8 @@
 
     <title>login: StandUp Cameroon </title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/app-mesfonctions.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
     

@@ -509,10 +509,17 @@ function verif_saisie_champs(element, btn) {
                 error = true;
             }
 
-            if (error == true) $("#" + conteneur_erreur).fadeIn("slow");
+            if (error == true){
+                $("#" + conteneur_erreur).fadeIn("slow");
+                $(".login-icon-container."+element+" .login-icon.bad").show("slow");
+                $(".login-icon-container."+element+" .login-icon.good").hide("slow");
 
+            } 
             else if ($("#" + conteneur_erreur).is(':visible')) {
                 $("#" + conteneur_erreur).fadeOut("slow");
+                $(".login-icon-container."+element+" .login-icon.bad").hide("slow");
+                $(".login-icon-container."+element+" .login-icon.good").show("slow");
+
             }
         }
 

@@ -57,11 +57,11 @@
                 </div>
                 <div class="wrap-email-message" style="background: #fff; border: 1px solid #ddd;">
                     <div  class="email-message">
-                        <div style="line-height: 1.6;text-align: center;font-size: 14px;"><strong>NOUVELLE INSCRIPTION EN ATTENTE DE VALIDATION</strong></div>
+                        <div style="line-height: 1.6;text-align: center;font-size: 14px;"><strong>ACCUSE DE RECEPTION</strong></div>
                         <p style="line-height: 1.6;text-align: justify;font-size: 14px;">
-                         <strong>Hello</strong><br>
+                         <strong>Kamdem simo</strong><br>
                         
-                        Une nouvelle inscription sur StandUpCameroon a &eacute;t&eacute; enregistr&eacute;e. <br>
+                        Votre inscription sur StandUpCameroon a &eacute;t&eacute; enregistr&eacute;e. <br>
                         Ci-dessous les informations relatives &agrave; cette inscription.
                         </p>
 

@@ -10,6 +10,8 @@
 
     <title>login: StandUp Cameroon </title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/app-mesfonctions.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
     
@@ -52,8 +54,8 @@
                                 <div class="input-container">
                                     <div class="login-field-content">
                                         <div class="login-field-input">
-                                            <input type="text" name="username" id="username" placeholder="Username"  data-error-message="div-erreur-username">
-                                            <div class="login-icon-container">
+                                            <input type="text" name="username" id="username" placeholder="Username"  data-error-contener="div-erreur-username">
+                                            <div class="login-icon-container username">
                                                 <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
                                                 <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
                                             </div>
@@ -64,8 +66,8 @@
                                     </div>
                                     <div class="login-field-content">
                                         <div class="login-field-input">
-                                            <input type="text" name="name" id="name" placeholder="Nom"  data-error-message="div-erreur-nom">
-                                            <div class="login-icon-container">
+                                            <input type="text" name="name" id="name" placeholder="Nom"  data-error-contener="div-erreur-nom">
+                                            <div class="login-icon-container name">
                                                 <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
                                                 <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
                                             </div>
@@ -76,8 +78,8 @@
                                     </div>
                                     <div class="login-field-content">
                                         <div class="login-field-input">
-                                            <input type="text" name="firstname" id="firstname" placeholder="Prénom" data-error-message="div-erreur-prenom">
-                                            <div class="login-icon-container">
+                                            <input type="text" name="firstname" id="firstname" placeholder="Prénom" data-error-contener="div-erreur-prenom">
+                                            <div class="login-icon-container firstname">
                                                 <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
                                                 <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
                                             </div>
@@ -88,8 +90,8 @@
                                     </div>
                                     <div class="login-field-content">
                                         <div class="login-field-input">
-                                            <input type="tel" name="phone-number" id="numero-tel" placeholder="Numéro de Téléphone"  data-error-message="div-erreur-telephone">
-                                            <div class="login-icon-container">
+                                            <input type="tel" name="phone-number" oninput="this.value = this.value.replace(/[^0-9()+. ]/g, '').replace(/(\..*)\./g, '$1');" id="numero-tel" placeholder="Numéro de Téléphone"  data-error-contener="div-erreur-telephone">
+                                            <div class="login-icon-container numero-tel">
                                                 <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
                                                 <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
                                             </div>
@@ -100,22 +102,22 @@
                                     </div>
                                     <div class="login-field-content">
                                         <div class="login-field-input">
-                                            <div class="login-icon-container">
+                                            <div class="login-icon-container email">
                                                 <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
                                                 <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
                                             </div>
                                         </div>
-                                        <input type="email" name="email" id="email" placeholder="Adresse Email" data-error-message="div-erreur-email">
+                                        <input type="email" name="email" id="email" placeholder="Adresse Email" data-error-contener="div-erreur-email">
                                         <div class="message-erreur" id="div-erreur-email" style="display: none;"> 
                                            Veillez entrer votre adresse
                                         </div>
                                     </div>
                                     <div class="login-field-content success">
                                         <div class="login-field-input">
-                                            <input type="password" name="pwd" id="pwd" placeholder="Mot de Passe" data-error-message="div-erreur-pwd">
-                                            <div class="login-icon-container">
+                                            <input type="password" name="pwd" id="pwd" placeholder="Mot de Passe" data-error-contener="div-erreur-pwd">
+                                            <div class="login-icon-container pwd">
                                                 <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
-                                                <div class="login-icon good"><i class="fa-solid fa-circle-check"></i></div>
+                                                <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
                                             </div>
                                         </div>
                                         <div class="message-erreur" id="div-erreur-pwd" style="display: none;"> 
@@ -125,26 +127,24 @@
                                     </div>
                                     <div class="login-field-content error">
                                         <div class="login-field-input">
-                                            <input type="password" name="pwd-confirmation" id="pwd-confirmation" data-error-message="div-erreur-conf-pwd" placeholder="Comfirmer le Mot de Passe">
-                                            <div class="login-icon-container">
-                                                <div class="login-icon bad"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                            <input type="password" name="pwd-confirmation" id="pwd-confirmation" data-error-contener="div-erreur-conf-pwd" placeholder="Comfirmer le Mot de Passe">
+                                            <div class="login-icon-container pwd-confirmation">
+                                                <div class="login-icon bad" style="display: none;"><i class="fa-solid fa-circle-exclamation"></i></div>
                                                 <div class="login-icon good" style="display: none;"><i class="fa-solid fa-circle-check"></i></div>
                                             </div>
                                         </div>
-                                        <div class="message-erreur" id="div-erreur-conf-pwd"> 
+                                        <div class="message-erreur" id="div-erreur-conf-pwd" style="display: none;"> 
                                             Mauvais mot de passe
                                         </div>
                                     </div>
-                                    <div class="login-checkbox-content">
-                                        <label for="contrat" class="checkbox">
-                                            <input type="checkbox" name="checkbox-1" id="contrat">
-                                            <p>Je souhaites <span> avant tout rester anonyme</span></p>
-                                        </label>
-                                    </div>
-                                    <input type="submit" class="login-btn" value="S'inscrire">
-                                    
-                                    
                                 </div>
+                                <div class="login-checkbox-content">
+                                    <label for="contrat" class="checkbox">
+                                        <input type="checkbox" name="checkbox-1" id="contrat">
+                                        <p>Je souhaites <span> avant tout rester anonyme</span></p>
+                                    </label>
+                                </div>
+                                <input type="submit" id="btn-valider" class="login-btn" value="S'inscrire">
                                 
                             </form>
                         </div>
@@ -156,7 +156,7 @@
 
 
 
-	<script src="login.js"></script>
+	<script src="js/inscription.js"></script>
   
 </body>
 </html>
