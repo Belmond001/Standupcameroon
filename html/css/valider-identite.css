@@ -467,3 +467,22 @@ label.label_field {
     transition-delay: 0.4s;
     transition-timing-function: linear;
 }
+
+.content-two-elt.field-form {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.content-select-type.middle {
+    width: 25%;
+    position: relative;
+}
+
+.content-two-elt.field-form .field_input {
+    width: 73%;
+}
+.content-select-type.middle select {
+    padding-left: 11px;
+    padding-right: 12px;
+}

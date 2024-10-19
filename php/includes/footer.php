@@ -183,7 +183,7 @@
 </div>
 <script src="js/footer.js"></script>
 
-<div id="loader" style="display:none">
+    <div id="loader" style="display:none">
         <div id="div_preloader" >
             <img src="images/preloader.gif"  />
         </div>

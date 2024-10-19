@@ -1,0 +1,760 @@
+
+
+#form-election {
+  display: none;
+}
+@import url("https://unpkg.com/balloon-css/balloon.min.css");
+
+
+.left-bloc-fiche-election.row-container {
+  width: 58%;
+  justify-content: start;
+}
+
+.item-image-circle:hover {
+  z-index: 5;
+  transition: 0.001ms;
+}
+
+.item-fiche-election:nth-child(2) .second-dot-status-fiche {
+  background: green;
+}
+.right-bloc-fiche-election {
+  width: 42%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.wrap-item-fiche-election.row-container {
+  padding: 15px 15px;
+  border-radius: 18px;
+  justify-content: initial;
+  margin-bottom: 0px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  position: relative;
+  box-shadow: 6px 8px 10px #EEE;
+  margin-bottom: 15px;
+  background: white;
+}
+.image-du-votant {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.image-du-votant img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.content-check-fiche-election {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #b9b6b6;
+  border-radius: 3px;
+}
+.fas-stars-fiche {
+  font-size: 14px;
+  margin: 0 10px;
+  color: #f49a0d;
+}
+.texte-left-fiche {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-right: 5px;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: black;
+}
+.first-dot-status-fivhe {
+  width: 11px;
+  height: 11px;
+  margin-right: 0px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.statut-left-fiche {
+  border: 1px solid var(--primary-color);
+  border-radius: 27px;
+  color: var(--primary-color);
+  padding: 3px 16px 3px 11px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.second-dot-status-fiche {
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 50px;
+  margin-right: 6px;
+}
+.jour-du-vote {
+  color: var(--third-color);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 6px;
+}
+.categorie-fiche-eection {
+  font-size: 14px;
+  background: #3be0d81c;
+  color: blue;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-left: 24px;
+}
+.btn_option {
+  border: none;
+  border-radius: 50px;
+  color: darkgray;
+  background: transparent;
+  cursor: pointer;
+  padding: 0px 8px;
+}
+.wrapper-fiche-election {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.item-fiche-election:nth-child(2) .first-dot-status-fivhe {
+  background: green;
+}
+.item-fiche-election:nth-child(2) .statut-left-fiche {
+  border-color: green;
+  color: green;
+}
+.item-fiche-election:nth-child(2) .first-dot-status-fivhe {
+  background: green;
+}
+
+.bloc-image-du-votant {
+  display: flex;
+}
+.item-image-circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  line-height: 1;
+  margin-right: -11px;
+  font-size: 12px;
+  box-shadow: 1px 1px 10px #00000024;
+  border: 1px solid white;
+  z-index: 1;
+}
+.item-image-circle img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.periode-du-vote {
+  margin-right: 4px;
+  color: black;
+}
+.container.fiche-election {
+  width: 1200px;
+}
+
+
+
+/* formulaire */
+
+.titre-bloc-formulaire {
+    margin: 20px 0;
+    display: flex;
+    align-items: start;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.titre-bloc-formulaire h2 {
+    padding: 0px 10px;
+    border-left: 3px solid var(--third-color);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--third-color);
+}
+span.obligatoire {
+    color: red;
+}
+.content-form-bloc {}
+.autre .field_input.middle {
+    width: 43%;
+}
+.top-back-header {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--second-color);
+}
+.field_input.middle {
+    display: flex;
+    position: relative;
+    width: 49%;
+    justify-content: space-between;
+}
+
+.field_input.middle .element_field {
+    width: 49%;
+}
+
+select.class_select {
+    width: 100%;
+    position: relative;
+}
+
+label.label_field {
+    z-index: 1;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+    color: #312e2e;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    position: absolute;
+    left: 14px;
+    padding: 3px 2px;
+    top: -19%;
+    z-index: 2;
+    background: white;
+    text-transform: capitalize;
+}
+.class_select.chosen-select.selection.ui.dropdown.multiple {
+    padding-top: 12px !important;
+    width: 100% !important;
+}
+
+.class_select.chosen-select.selection.ui.dropdown.multiple .dropdown.icon {
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex!important;
+    align-items: center;
+    justify-content: right;
+    padding-right: 32px!important;
+    padding-top: 7px !important;
+}
+.class_select, .class_input {
+    transition: all 0.3s ease 0s;
+    background: rgba(246, 248, 253, 0.2);
+    box-shadow: none;
+    height: 60px;
+    border: 1px solid rgb(205, 208, 219);
+    padding: 0.5rem 0.75rem 0.5rem 20px;
+    font-size: 16px;
+    padding-top: 15px;
+    border-radius: 5px;
+    /*! font-family: Roboto; */
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1;
+}
+}
+
+.field_input {
+    position: relative;
+    margin-bottom: 20px;
+}
+.three .field_input {
+  width: 32%;
+}
+.element_field {
+    position: relative;
+}
+
+.field_input.full_line .element_field input {
+    width: 100%;
+}
+
+.field_input.middle .element_field input {
+    width: 100%;
+}
+
+.middle .field_input {
+    width: 49%;
+}
+.element_field .class_select, .element_field .class_input {
+    transition: all 0.3s ease 0s;
+    background: rgba(246, 248, 253, 0.2);
+    box-shadow: none;
+    height: 52px !important;
+    border: 1px solid rgb(205, 208, 219);
+    padding: 0.5rem 0.75rem 0.5rem 20px;
+    font-size: 16px;
+    padding-top: 15px;
+    border-radius: 5px;
+    /*! font-family: Roboto; */
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+.field_double.radio-fields {
+    justify-content: unset;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-fields .element_field {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.radio-fields input[type=checkbox]:checked + label {
+    /* background-color: var(--third-color); */
+    /* border-color: var(--third-color); */
+    /* color: white; */
+}
+.field_double.radio-fields label {
+    margin: 0;
+    /*! border: 1px solid #c8c8c8; */
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    /*! padding: 4px 1rem; */
+    position: relative;
+    cursor: pointer;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.radio-fields input {
+    position: relative;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 0;
+    /* color: #fa2964; */
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 0.5rem;
+    margin-bottom: 0px;
+    background: #fff !important;
+    /* display: none; */
+}
+
+.content-radio-elt:before {
+    /* content: ""; */
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    background-color: #fff;
+    border: 2px solid #d0d0d0;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border-color 0.3s;
+    transition: border-color 0.3s;
+}
+
+.icon-input:before {
+    content: "";
+    background-color: transparent;
+    transition: border-color 0s;
+    /* width: 60%; */
+    /* aspect-ratio: 1; */
+    /* border-radius: 50%; */
+    /* display: block; */
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.space_btn_submit button {
+    border-radius: 50px;
+    box-shadow: 0 6px 14px rgb(0 0 0 / 10%);
+    /*! margin-left: auto; */
+    background-color: var(--third-color);
+    border: 1px solid transparent;
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    padding: 2px 15px;
+    text-align: center;
+    align-items: center;
+    margin-right: 0;
+    border: none;
+    margin-right: 20px;
+    height: 36px;
+}
+.space_btn_submit.space_double {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #cacecf87;
+    padding-top: 30px;
+}
+.wrapper-toggle-form {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.wrap-toggle-form {
+    width: 100%;
+    padding: 20px 15px;
+    background: #ffffff;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 110px #00000012;
+}
+.bloc-formulaire {
+    margin-bottom: 25px;
+}
+
+p.text-info {
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+    color: #6da486;
+    margin-bottom: 20px;
+}
+
+.notification-message {
+    font-weight: 500;
+    /* color: black; */
+    width: 100%;
+}
+
+.notification-message span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+.contener-toggle-form {
+    width: 100%;
+    padding: 0 25px;
+}
+.title-toggle-form {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary-color);
+    /* margin-left: 6px; */
+    margin-top: 0 !important;
+    padding-bottom: 20px;
+}
+#btn-annuler {
+    background: var(--primary-color);
+}
+
+.element_field textarea {
+  transition: all 0.3s ease 0s;
+  background: rgba(246, 248, 253, 0.2);
+  box-shadow: none;
+  height: 52px !important;
+  border: 1px solid rgb(205, 208, 219);
+  padding: 0.5rem 0.75rem 0.5rem 20px;
+  padding-top: 0.5rem;
+  font-size: 16px;
+  padding-top: 15px;
+  border-radius: 5px;
+  font-family: Roboto;
+  width: 100%;
+  margin-top: 0px;
+  position: relative;
+}
+.label_field.textarea {
+  top: -11%;
+}
+#show_and_hide_form i {
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+.wrap-left-bloc-election {
+  padding: 20px 25px 20px;
+  margin-bottom: 30px;
+  color: #676767;
+  font-size: 16px;
+  text-align: justify;
+  border-radius: 14px;
+  width: 100%;
+  margin-top: 0;
+  border: 1px solid #eee;
+  position: relative;
+  background: white;
+  box-shadow: 6px 8px 10px #EEE;
+  padding-top: 106px;
+}
+.image-membre {
+  width: 200px;
+  height: 200px;
+  border: 10px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 6px 19px 41px #EEE;
+  top: -27%;
+  position: absolute;
+  left: 17%;
+}
+.image-membre img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.image-membre {
+}
+.left-bloc-election {
+  width: 30%;
+  height: auto;
+  position: sticky;
+  top: 120px;
+}
+.nom-membre {
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.telephone-membre {
+  /*! text-align: center; */
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  text-align: initial;
+  border-bottom: 1px dashed #0000ff45;
+  padding-bottom: 7px;
+}
+.telephone-membre  i {
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-size: 14px;
+}
+.right-bloc-election {
+  width: 70%;
+  padding-left: 40px;
+}
+.wrap-field.middle  >div {
+  width: 49%;
+}
+
+.telephone-membre span {
+  margin-right: 13px;
+  width: 42%;
+  color: var(--primary-color);
+}
+
+.page-wrapper {
+  background: #eff1f547;
+}
+.wrap-field.middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*candidat css*/
+
+.candidate {
+            
+            /*! margin: 20px; */
+            text-align: center;
+            position: relative;
+            justify-content: start;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            z-index: 5;
+            width: 100%;
+            background: #f7f8f6;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            /* display: none; */ /* Cacher le bouton radio */
+        }
+        .candidate img {
+            width: 100%;
+            height: 200px;
+            cursor: pointer;
+            border: 4px solid transparent;
+            border-radius: 10px; /* Bords arrondis par défaut */
+            transition: border-color 0.3s;
+            object-fit: cover;
+        }
+        input[type="radio"]:checked + label img {
+            border-color: var(--primary-color); /* Bordure bleue pour le candidat sélectionné */
+        }
+        label {
+            display: block; /* Permet au label de couvrir le nom */
+            cursor: pointer; /* Curseur en forme de main sur le nom */
+        }
+        label p {
+            margin: 0; /* Supprime la marge par défaut */
+        }
+
+.candidate label {
+  padding: 0;
+  margin: 0;
+}
+.radio-fields input[type="checkbox"]:checked + label {
+  /* background-color: var(--third-color); */
+  /* border-color: var(--third-color); */
+  /* color: white; */
+}
+.candidate p {
+  margin: 0;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border: 1px solid #c8c8c8;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 20px;
+  color: black;
+}
+input[type="radio"]:checked + label p {
+  background: var(--primary-color);
+  color: white;
+  /*! padding: 10px; */
+}
+
+.list-electoral .owl-nav.disabled {
+  display: flex !important;
+}
+.list-electoral .nav-btn {
+  border-radius: 20px 2px 3px 20px;
+  height: 26px;
+  width: 35px;
+  background: var(--primary-color);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  top: -14%;
+  right: 4%;
+  position: absolute;
+  font-size: 11px;
+  color: white;
+}
+.list-electoral .nav-btn.next-slide {
+  right: -1%;
+  border-radius: 2px 20px 20px 2px;
+}
+  
+
+
+  
+.titre-bloc-formulaire span {
+  font-size: 13px;
+  padding-top: 5px;
+  font-style: italic;
+}
+
+.top-contener-form {
+    padding: 20px;
+    background: #f7f8f6;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.list-electoral {
+    width: 100%;
+}
+
+.check-select-answer {
+    position: absolute;
+    right: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    aspect-ratio: 1;
+    background: #057838;
+    border-radius: 50px;
+    font-size: 10px;
+}
+.wrap-elction {
+    align-items: start;
+}
+
+
+/* MODAL  */
+
+/* Styles de la fenêtre modale */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  text-align: center;
+}
+
+.modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  text-align: right;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-confirm {
+  background-color: green;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: red;
+  color: white;
+}

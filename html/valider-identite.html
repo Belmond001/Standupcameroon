@@ -436,12 +436,86 @@
                     <form class="formulaire-validation-identite" id="form-valider-identite" enctype="multipart/form-data">
                         <div class="bloc-bon-savoir">
                             <div class="tile-bloc-bon-savoir">Bon à savoir</div>
-                            <p>Inscription incomplète. Veuillez compléter les informations ci-dessous, en vous assurant qu'elles correspondent exactement à celles de votre pièce d'identité. Ces données seront vérifiées et validées.
+                            <p>Veuillez compléter les informations ci-dessous, en vous assurant qu'elles correspondent exactement à celles de votre pièce d'identité. Ces données seront vérifiées et validées.
                                <strong>En cas de non-conformité, vous ne serez pas autorisé à voter.</strong>
                             </p>
                         </div>
                         <div class="wrap-formulaire-projet">
                   
+                            <div class="bloc-formulaire">
+                                <div class="titre-bloc-formulaire"><h2>Noms et prénoms</h2></div>
+                                <div class=" field_double">
+                                    <div class="content-two-elt field-form">
+
+                                        <div class="content-select-type middle">
+                                            <label for="" class="label_field">Genre<span class="require">*</span></label>
+                                            <select name="civilite" id="civilite" data-error-contener="div-erreur-civilite" class="class_select mandatory elt-sex">
+                                                <option value="" selected="">Choisir</option>
+                                                <option value="Homme">Homme</option>
+                                                <option value="Femme">Femme</option>
+                                            </select>
+                                            <div class="message-erreur" id="div-erreur-civilite" style="display: none;">Veuillez indiquer.</div>
+                                        </div>
+
+                                        <div class="field_input">
+                                            <div class="element_field">
+                                                <label for="nom" class="label_field">Nom<span class="require">*</span></label>
+                                                <input type="text" name="nom" id="nom" placeholder="" class="class_input majuscule mandatory" data-error-contener="div-erreur-nom" onkeyup="Verif_saisie(event, 'nom', 'btn-valider')" onchange="Verif_saisie(event, 'nom', 'btn-valider')">
+                                                <div class="message-erreur" id="div-erreur-nom" style="display: none;">Veuillez saisir le nom</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field_input middle">
+                                        <div class="element_field">
+                                            <label for="nom" class="label_field">Prénom <span class="require">*</span></label>
+                                            <input type="text" name="prenom" id="prenom" placeholder="" class="class_input miniscule mandatory" data-error-contener="div-erreur-prenom" onkeyup="Verif_saisie(event, 'prenom', 'btn-valider')">
+                                            <div class="message-erreur" id="div-erreur-prenom" style="display: none;">Veuillez saisir le prénom</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bloc-formulaire">
+                                <div class="titre-bloc-formulaire"><h2>Date et lieu de naissance</h2></div>
+                                <div class=" field_double">
+                                    <div class="field_input middle">
+                                        <div class="element_field">
+                                            <label for="date-naissance" class="label_field">Date de naissance<span class="require">*</span></label>
+                                            <input type="date" max="2024-10-12" name="date-naissance" id="date-naissance" class="class_input mandatory" data-error-contener="div-erreur-date-naissance" onkeyup="Verif_saisie(event, 'date-naissance', 'btn-valider')">
+                                            <div class="message-erreur" id="div-erreur-date-naissance" style="display: none;">Veuillez saisir une  date de naissance valide</div>
+                                        </div>
+                                    </div>
+                                   <div class="field_input middle">
+                                        <div class="element_field">
+                                            <label for="lieu-naissance" class="label_field">Lieu de naissance<span class="require">*</span></label>
+                                            <input type="text" name="lieu-naissance" id="lieu-naissance" placeholder="" class="class_input miniscule mandatory" data-error-contener="div-erreur-lieu-naissance" onkeyup="Verif_saisie(event, 'lieu-naissance', 'btn-valider')">
+                                            <div class="message-erreur" id="div-erreur-lieu-naissance" style="display: none;">Veuillez saisir votre lieu de naissance</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bloc-formulaire">
+                                <div class="titre-bloc-formulaire"><h2>Ville et quartier</h2></div>
+                                <div class=" field_double">
+                                
+                                    <div class="field_input middle">
+                                        <div class="element_field">
+                                            <label for="ville" class="label_field">Ville<span class="require">*</span></label>
+                                            <input type="text" name="ville" id="ville" placeholder="" class="class_input miniscule mandatory" data-error-contener="div-erreur-ville" onkeyup="Verif_saisie(event, 'ville', 'btn-valider-identite')">
+                                            <div class="message-erreur" id="div-erreur-ville" style="display: none;">Veuillez saisir la ville</div>
+                                        </div>
+                                    </div>
+                                    <div class="field_input middle">
+                                        <div class="element_field">
+                                            <label for="nom" class="label_field">Quartier<span class="require">*</span></label>
+                                            <input type="text" name="quartier" id="quartier" placeholder="" class="class_input miniscule mandatory" data-error-contener="div-erreur-quartier" onkeyup="Verif_saisie(event, 'quartier', 'btn-valider-identite')">
+                                            <div class="message-erreur" id="div-erreur-quartier" style="display: none;">Veuillez saisir le quartier</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="bloc-formulaire">
                                 <div class="titre-bloc-formulaire"><h2  >Pièce d'identité </h2></div>
 
@@ -506,17 +580,12 @@
 
                             </div>
 
-
-
-
                             <div class="space_btn_submit">
-                               
                                 <button type="button" class="submit secondary-btn btn-style-two" id="btn-valider-identite">
                                     Soumettre<span class="fa-solid fa-reply-all"></span>
                                 </button>
                                 <input type="hidden" name="token" id="token" value="">
                                 <input type="hidden" name="traitement" id="traitement" value="valider-identite">
-                        
                             </div>
                         </div>
                     </form>

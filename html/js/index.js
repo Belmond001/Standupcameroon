@@ -19,6 +19,42 @@ for(let i=0;i<item_select.length;i++){
 
 }
 
+$(document).ready(function() {
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe',
+        iframe: {
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/', 
+                    id: 'v=', 
+                    src: 'https://www.youtube.com/embed/%id%?autoplay=1' 
+                }
+            },
+            srcAction: 'iframe_src',
+        }
+    });
+});
+
+
+
+
+$('.wrap-top-right-galerie').slick({
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	arrows: true,
+	autoplay:true,
+	center:false,
+	dots: false,
+	vertical: true,
+	verticalSwiping: true,
+	autoplaySpeed: 3000,
+
+	prevArrow: $('.prev-slick'),
+	nextArrow: $('.next-slick')
+});
+
+
+
 $(".poll-btn").click(function(){
     AfficherNotification("info","INFORMATION", "loader2", "Veuillez vous connecter ou créer un compte pour participer au vote, afin de garantir la sécurité et l'intégrité du processus de vote.", "Se connecter", "javascript:gotoURL('./login.html','loader')", "Fermer", "", "0");
 })
