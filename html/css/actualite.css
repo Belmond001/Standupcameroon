@@ -118,7 +118,29 @@
     font-size: 11px;
     margin-right: 3px;
   }
-  
+  .ct-item-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8px;
+    /* margin-right: 24px; */
+}
+
+.entry-meta.ct-item-meta {
+    margin-bottom: 8px;
+}
+
+.ct-item-meta li {
+    /* font-weight: 600; */
+    transition: all .3s linear;
+    /* align-items: center; */
+    position: relative;
+    margin-right: 36px;
+}
+.ct-item-meta li i {
+    color: var(--primary-color);
+}
   .categorie-actu {
     position: absolute;
     z-index: 2;

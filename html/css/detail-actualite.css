@@ -156,7 +156,21 @@ li.item-date-d {
     position: absolute;
     width: 100%;
 }
+.like li.item-comment {
+    font-size: 16px;
+}
 
+.like li.item-comment input[type=radio] {
+    width: 0;
+}
+
+.like li.item-comment input[type=radio]:checked + span i {
+    color: var(--primary-color);
+}
+
+.like li.item-comment i {
+    /* color: var(--primary-color); */
+}
 li.item-comment {
     font-size: 14px;
     /* line-height: 35px; */
