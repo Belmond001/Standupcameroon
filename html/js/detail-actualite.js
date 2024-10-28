@@ -1,4 +1,34 @@
 
+let nbLike=parseInt($(".post-like .total-like").html());
+let nbDislike=parseInt($(".post-like .total-dislike").html());
+let old_nb_like=nbLike;
+let old_nb_dislike=nbDislike;
+
+$(".post-like input").change(function() {
+
+    if ($(this).is(':checked')) {
+        $(this).prop('checked', true); // Définit checked sur true si coché
+        if($(this).val()==1){
+            $(".post-like .total-like").html(nbLike+1);
+            $(".post-like .total-dislike").html(old_nb_dislike);
+            // $(this).prop('disabled', true);
+        }else{
+            $(".post-like .total-dislike").html(nbDislike+1);
+            $(".post-like .total-like").html(old_nb_like);
+            // $(this).prop('disabled', true);
+    
+        }
+    } else {
+        $(this).prop('disabled', false);
+        $(this).prop('checked', false); // Définit checked sur false si décoché
+    }
+
+
+    
+
+});
+
+
 var tab_photo=[{src:'images/actu/actu3.jpg'},{src:'images/actu/actu2.jpg'}];
 
 //console.log(tab_photo);
@@ -11,7 +41,9 @@ $('#show_photo').magnificPopup({
 });
 
 
-var new_tab_video=[{src:'S_xH7noaqTA&list=RDCtgayAry54k',type:'iframe'}];   
+var new_tab_video = [
+    {src: 'https://www.youtube.com/watch?v=S_xH7noaqTA', type: 'iframe'}
+];
 
 //console.log(new_tab_video);
 $('#show_video').magnificPopup({
@@ -19,7 +51,7 @@ $('#show_video').magnificPopup({
     gallery: {
     enabled: true
     },
-    type: 'image' // this is a default type
+    type: 'iframe' // this is a default type
 });
 
 function socialWindow(url) {
