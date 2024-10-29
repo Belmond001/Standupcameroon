@@ -19,7 +19,8 @@ section.wrapper_detail_actu {
 }
 
 .content-detail {
-    align-items: unset;
+    align-items: start;
+    justify-content: center;
 }
 
 aside.aside_left {
