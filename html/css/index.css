@@ -2438,3 +2438,139 @@ a.tx-number {
 .wrap-partenaire .slick-btn::before {
   display: none;
 }
+
+
+/* RESULTAT ELECTION */
+
+
+.wrapper-resultat-election {
+    padding: 120px 0  115px;
+    position: relative;
+}
+
+.wrap-resultat-election {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.parent-item-resultat-election {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item-resultat-election {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px #ededed8f;
+    padding: 15px 5px;
+    border: 1px solid #eee;
+    flex-wrap: wrap;
+}
+
+.column_element {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 0 15px;
+}
+
+.name_bloc {
+    font-weight: 600;
+    color: var(--third-color);
+    font-size: 14px;
+}
+
+p.text-description {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.percent-bloc {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+}
+
+span.label_percent {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.wrap-bar-goal {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #eee;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.bar-goal-inner {
+    background: var(--primary-color);
+    width: 66%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+/* pagination */
+
+
+.wrapper-pagination {
+    padding: 15px 0;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.wrapper-pagination-left {
+    font-size: 16px;
+    color: #737373;
+}
+
+.wrapper-pagination-left span {font-weight: 600;color: var(--second-color);}
+
+.wrapper-pagination-right {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: end;
+}
+
+.wrap-pagination {
+    padding: 5px 10px;
+    border: 1px solid var(--second-color);
+    margin: 0 5px;
+    font-size: 13px;
+    border-radius: 3px;
+    color: var(--second-color);
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.wrap-pagination.actif, .wrap-pagination:hover {
+    background-color: var(--second-color);
+    color: #fff;
+}
+
+.void-pagination {
+    padding-bottom: 8px;
+}

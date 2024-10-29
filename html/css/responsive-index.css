@@ -224,6 +224,9 @@ h4.toggle-title {
   font-weight: 600;
   font-size: 18px;
 }
+.wrapper-resultat-election {
+  padding: 115px 0 80px;
+}
 
 }
 
@@ -336,6 +339,19 @@ section.wrapper-banniere {
 .wrapper-faq-mission {
   padding-bottom: 76px;
 }
+
+.column_element {
+  width: 25%;
+}
+.wrap-pagination {
+    padding: 2px 8px;
+    min-height: auto;
+}
+.column_element:not(:last-child) {
+  padding: 10px;
+  border-bottom: 1px dotted #eee;
+  margin-right: 10px;
+}
  
 }
 
@@ -366,12 +382,17 @@ section.wrapper-banniere {
   .item-chiffres:nth-child(2n+1) .wrap-item-chiffres:before {
       background: transparent;
   }
-
+  .column_element {
+    width: 48%;
+}
 
 
 }
 
 @media only screen and (max-width: 500px) {
+  .column_element {
+    width: 50%;
+}
   .section-title-banner .subtitle {
     font-size: 12px;
   }
@@ -784,6 +805,9 @@ h4.toggle-title {
   margin: 0 auto 0px;
   position: relative;
   width: 1200px;
+}
+.column_element {
+  width: 100%;
 }
 }
 @media only screen and (max-width: 375px) {
