@@ -4,7 +4,7 @@
 
 
 
-Highcharts.setOptions({
+ Highcharts.setOptions({
     colors: Highcharts.map(Highcharts.getOptions().colors, function (color) {
         return {
             radialGradient: {
@@ -58,45 +58,6 @@ Highcharts.chart('container1', {
     }
 });
 
-
-
-Highcharts.chart('container3', {
-    data: {
-        table: 'datatable3'
-    },
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
-    },
-    title: {
-        text: 'Repartition des voix en fonction des candidats',
-        align: 'left'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    accessibility: {
-        point: {
-            valueSuffix: '%'
-        }
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: true,
-                format: '<span style="font-size: 1.2em"><b>{point.name}</b>' +
-                    '</span><br>' +
-                    '<span style="opacity: 0.6">{point.percentage:.1f} ' +
-                    '%</span>',
-                connectorColor: 'rgba(128,128,128,0.5)'
-            }
-        }
-    }
-});
     // REPARTITION DES VOIX PAR VILLE ET CANDIDAT
 
 
@@ -141,151 +102,46 @@ Highcharts.chart('container3', {
 
     // participation  aux  elections par sexe et age
 
-    const defaultData = 'https://demo-live-data.highcharts.com/time-data.csv';
-    const urlInput = document.getElementById('fetchURL');
-    const pollingCheckbox = document.getElementById('enablePolling');
-    const pollingInput = document.getElementById('pollingTime');
-    
-    function createChart() {
-        Highcharts.chart('container5', {
-            chart: {
-                type: 'areaspline'
-            },
-            title: {
-                text: 'Live Data'
-            },
-            accessibility: {
-                announceNewData: {
-                    enabled: true,
-                    minAnnounceInterval: 15000,
-                    announcementFormatter: function (
-                        allSeries,
-                        newSeries,
-                        newPoint
-                    ) {
-                        if (newPoint) {
-                            return 'New point added. Value: ' + newPoint.y;
-                        }
-                        return false;
-                    }
-                }
-            },
-            plotOptions: {
-                areaspline: {
-                    color: '#32CD32',
-                    fillColor: {
-                        linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
-                        stops: [
-                            [0, '#32CD32'],
-                            [1, '#32CD3200']
-                        ]
-                    },
-                    threshold: null,
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: null,
-                        fillColor: 'white'
-                    }
-                }
-            },
-            data: {
-                csvURL: urlInput.value,
-                enablePolling: pollingCheckbox.checked === true,
-                dataRefreshRate: parseInt(pollingInput.value, 10)
-            }
-        });
-    
-        if (pollingInput.value < 1 || !pollingInput.value) {
-            pollingInput.value = 1;
+
+
+    Highcharts.chart('container3', {
+    data: {
+        table: 'datatable3'
+    },
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: "Analyse de la participation aux élections en fonction du sexe et de l'âge",
+        align: 'left'
+    },
+    subtitle: {
+        text:
+            '',
+        align: 'left'
+    },
+    xAxis: {
+        type:'category'
+         
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Taux de participation aux élections(%)'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' (10)'
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
         }
     }
-    
-    urlInput.value = defaultData;
-    
-    // We recreate instead of using chart update to make sure the loaded CSV
-    // and such is completely gone.
-    pollingCheckbox.onchange = urlInput.onchange =
-       pollingInput.onchange = createChart;
-    
-    // Create the chart
-    createChart();
-    
+   
+});
 
-    // 
-
-
-
-    
-    // participation  aux  elections par sexe et age
-
-
-    const urlInput2 = document.getElementById('fetchURL2');
-    const pollingCheckbox2 = document.getElementById('enablePolling2');
-    const pollingInput2 = document.getElementById('pollingTime2');
-    
-    function createChart2() {
-        Highcharts.chart('container6', {
-            chart: {
-                type: 'areaspline'
-            },
-            title: {
-                text: 'Live Data'
-            },
-            accessibility: {
-                announceNewData: {
-                    enabled: true,
-                    minAnnounceInterval: 15000,
-                    announcementFormatter: function (
-                        allSeries,
-                        newSeries,
-                        newPoint
-                    ) {
-                        if (newPoint) {
-                            return 'New point added. Value: ' + newPoint.y;
-                        }
-                        return false;
-                    }
-                }
-            },
-            plotOptions: {
-                areaspline: {
-                    color: '#32CD32',
-                    fillColor: {
-                        linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
-                        stops: [
-                            [0, '#32CD32'],
-                            [1, '#32CD3200']
-                        ]
-                    },
-                    threshold: null,
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: null,
-                        fillColor: 'white'
-                    }
-                }
-            },
-            data: {
-                csvURL: urlInput2.value,
-                enablePolling: pollingCheckbox2.checked === true,
-                dataRefreshRate: parseInt(pollingInput2.value, 10)
-            }
-        });
-    
-        if (pollingInput2.value < 1 || !pollingInput2.value) {
-            pollingInput2.value = 1;
-        }
-    }
-    
-
-    
-    // We recreate instead of using chart update to make sure the loaded CSV
-    // and such is completely gone.
-    pollingCheckbox2.onchange = urlInput2.onchange =
-       pollingInput2.onchange = createChart2;
-    
-    // Create the chart
-    createChart2();
 
 
 
