@@ -785,7 +785,7 @@ ul.user-social a:hover {
     padding: 0;
     height: auto;
     display: block;
-    padding: 10px 10px 0px 45px;
+    padding: 10px 10px 0px 21px;
     background: #fff;
     box-shadow: 0 0 15px rgb(0 0 0 / 7%);
 } 
@@ -797,27 +797,27 @@ ul.user-social a:hover {
 
 
 .bloc_telechargement_logo img {
-    height: 35px;
+    height: 24px;
     width: auto;
 }
 
 .bloc_telechargement_logo {
-    padding: 10px;
+    padding: 7px;
     background-color: var(--primary-color);
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: -20px;
     z-index: 1;
 }
 
 .content_description {
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .bloc_telechargement_titre {
     color: #000000;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     padding-bottom: 7px;
 }
