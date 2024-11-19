@@ -4,6 +4,10 @@ $(document).ready(function(){
         if($(this).is(':checked')){
             $(this).closest('.candidate').find('.check-select-answer').css('display','flex');
         }
+        var name=$(this).data("name");
+        $(".parent-item-candidat").hide();
+        $("#"+name).slideDown();
+        
     })
     $(".candidate input[type=checkbox]").change(function(){
         if($(this).is(':checked')){

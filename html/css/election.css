@@ -425,6 +425,8 @@ label.label_field {
     align-items: center;
     margin-bottom: 30px;
     box-shadow: 10px 10px 110px #00000012;
+    position: relative;
+    z-index: 1;
 }
 .bloc-formulaire {
     margin-bottom: 25px;
@@ -757,4 +759,139 @@ input[type="radio"]:checked + label p {
 .btn-cancel {
   background-color: red;
   color: white;
+}
+
+
+/* candidat */
+
+
+.candidat-item {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 43px 0 rgb(109 125 145 / 14%);
+  position: relative;
+  transition: all 0.3s;
+  transform: translateY(0);
+  height: auto;
+  overflow: hidden;
+}
+
+.parent-item-candidat {
+  width: 100%;
+  padding: 15px;
+}
+
+.candidat-item {
+  /*! display: flex; */
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 15px 15px 0 0;
+}
+.candidat-image {
+  position: relative;
+  width: 30%;
+  z-index: 1;
+}
+.image-banner {
+  height: 100%;
+  width: 100%;
+}
+.image-banner img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.candidat-author {
+  width: 70%;
+  padding: 25px;
+  position: relative;
+  border: 2px solid #cc00001a;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 18px;
+  /* padding-top: 15px; */
+  box-shadow: 2px 5px 8px #eee;
+}
+.author-name {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+  color: #161417;
+  cursor: pointer;
+}
+.type-election {
+  position: absolute;
+  top: 27px;
+  left: 12px;
+  background: var(--second-color);
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.partie-politique {
+  position: relative;
+  background: rgb(208, 2, 2, 0.1);
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: var(--primary-color);
+  width: fit-content;
+  font-weight: 600;
+}
+.texte-detail-candidat {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.list-item-child {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: fit-content;
+  border-radius: 30px;
+}
+.list-item-child span {
+  color: #6b6666;
+  margin-left: 10px;
+  font-weight: 400;
+  color: var(--third-color);
+}
+
+.partie-politique-and-solcial {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.social-candidat a {
+  position: relative;
+  aspect-ratio: 1;
+  width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--second-color);
+  font-size: 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all .5s ease;
+  margin-right: 10px;
+}
+
+.wrapper-candidat {
+  padding: 50px 0 100px;
 }

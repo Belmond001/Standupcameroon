@@ -422,7 +422,20 @@
                                 <div class="contener-toggle-form" id="" >
                                     <form onsubmit="return false;" id="election-form" enctype="multipart/form-data"> 
                                         
-                                       
+                                        <div class="bloc-formulaire">
+                                            <div class=" field_double contact">
+
+                                                <div class="field_input full_line">
+                                                    <div class="element_field">
+                                                        <label for="num_identite" class="label_field">Numéro d'Identité ou de Carte Électorale<span class="require">*</span></label>
+                                                        <input type="text" name="num_identite" id="num_identite" placeholder="Entrez votre numéro d'identité" class="class_input " value="" data-error-contener="div-erreur-num-identite" onkeyup="Verif_saisie(event, 'num_identite', 'btn-valider')">
+                                                        <div class="message-erreur" id="div-erreur-num-identite" style="display: none;">Veuillez saisir</div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
                                         <div class="bloc-formulaire">
 
                                             <div class="titre-bloc-formulaire"><h2>Veuillez sélectionner un candidat pour l'élection présidentielle. <span class="obligatoire">(*)</span></h2></div>
@@ -432,43 +445,43 @@
                                                 <div class="list-electoral ">    
                                                 
                                                     <div class="candidate">
-                                                        <input type="radio" id="RDPC" name="candidate" value="RDPC">
+                                                        <input type="radio" id="RDPC" data-name="nom_president1" name="candidate" value="RDPC">
                                                         <span class="check-select-answer" style="display:none;"><i class="fas fa-check"></i></span>
                                                         <label for="RDPC">RDPC</label>
                                                         
                                                     </div>
                                                     <div class="candidate">
-                                                        <input type="radio" id="MRC" name="candidate" value="MRC">
+                                                        <input type="radio" id="MRC" data-name="nom_president2" name="candidate" value="MRC">
                                                         <span class="check-select-answer" style="display:none;"><i class="fas fa-check"></i></span>
                                                         <label for="MRC">MRC</label>
                                                         
                                                     </div> 
                                                     <div class="candidate">
-                                                        <input type="radio" id="FSD" name="candidate" value="FSD">
+                                                        <input type="radio" id="FSD" data-name="nom_president3" name="candidate" value="FSD">
                                                         <span class="check-select-answer" style="display:none;"><i class="fas fa-check"></i></span>
                                                         <label for="FSD">FSD</label>
                                                         
                                                     </div>
                                                     <div class="candidate">
-                                                        <input type="radio" id="UDC" name="candidate" value="UDC">
+                                                        <input type="radio" id="UDC" data-name="nom_president4" name="candidate" value="UDC">
                                                         <span class="check-select-answer" style="display:none;"><i class="fas fa-check"></i></span>
                                                         <label for="UDC">UDC</label>
                                                         
                                                     </div>
                                                     <div class="candidate">
-                                                        <input type="radio" id="PCRN" name="candidate" value="PCRN">
+                                                        <input type="radio" id="PCRN" data-name="nom_president5" name="candidate" value="PCRN">
                                                         <span class="check-select-answer" style="display:none;"><i class="fas fa-check"></i></span>
                                                         <label for="PCRN">PCRN</label>
                                                         
                                                     </div>
                                                     <div class="candidate">
-                                                        <input type="radio" id="FCC" name="candidate" value="FCC">
+                                                        <input type="radio" id="FCC" data-name="nom_president6" name="candidate" value="FCC">
                                                         <span class="check-select-answer" style="display:none;"><i class="fas fa-check"></i></span>
                                                         <label for="FCC">FCC</label>
                                                         
                                                     </div>
                                                     <div class="candidate">
-                                                        <input type="radio" id="NSC" name="candidate" value="NSC">
+                                                        <input type="radio" id="NSC" data-name="nom_president7" name="candidate" value="NSC">
                                                         <span class="check-select-answer" style="display:none;"><i class="fas fa-check"></i></span>
                                                         <label for="NSC">NSC</label>
                                                         
@@ -480,11 +493,295 @@
 
                                         </div>
 
-                                        <div class="bloc-formulaire">
+                                        <!-- Affichage du candidat representant un partir politique -->
 
-                                            <div class="titre-bloc-formulaire"><h2>Veuillez sélectionner un candidat pour l'élection municipale.</h2><span>(Possibilité de choisir plusieurs)</span></div>
+                                        <div class="wrap-liste-candidat">
+                                            <div  class="parent-item-candidat" id="nom_president1" style="display:none;">
+                                                <div class="candidat-item">
+                                                    <div class="candidat-image">
+                                                        <div class="image-banner">
+                                                            <a href="detail-candidat.html">
+                                                                <img src="images/team/team1.png" alt="" srcset="">
+                                                            </a>
+                            
+                                                        </div>
+                                                        <div class="type-election">Presidentielle</div>
+                                                    </div>
+                                                    <div class="candidat-author">
+                                                         <div class="partie-politique-and-solcial">
+                                                            <div class="social-candidat row-container">
+                                                                <a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                                <a class="tw" href="#"><i class="fab fa-twitter"></i></a>
+                                                                <a class="yb" href="https://www.youtube.com/@prodeciturikumwe"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                                                             <div class="partie-politique">RDPC</div>
+                                                        </div>
+                                                        <h3 class="author-name">
+                                                            <a href="#"><span class="first-name">M. Simeon</span> NUMBEME</a>
+                                                        </h3>
+                            
+                                                       
+                            
+                                                         <div class="content-item-date">
+                                                            <ul>
+                                                                <li class="list-item-child">Adresse Email:<span class="cache-data">candidat@gmail.com</span></li>
+                                                                 <li class="list-item-child">Localisation:<span class="cache-data">Douala Bepanda</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="texte-detail-candidat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut ali.</div>
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                            <div class="field_double radio-fields "> 
+                                            <div  class="parent-item-candidat" id="nom_president2" style="display:none;">
+                                                <div class="candidat-item">
+                                                    <div class="candidat-image">
+                                                        <div class="image-banner">
+                                                            <a href="detail-candidat.html">
+                                                                <img src="images/team/team1.png" alt="" srcset="">
+                                                            </a>
+                            
+                                                        </div>
+                                                        <div class="type-election">Presidentielle</div>
+                                                    </div>
+                                                    <div class="candidat-author">
+                                                         <div class="partie-politique-and-solcial">
+                                                            <div class="social-candidat row-container">
+                                                                <a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                                <a class="tw" href="#"><i class="fab fa-twitter"></i></a>
+                                                                <a class="yb" href="https://www.youtube.com/@prodeciturikumwe"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                                                             <div class="partie-politique">MRC</div>
+                                                        </div>
+                                                        <h3 class="author-name">
+                                                            <a href="#"><span class="first-name">M. Simeon</span> NUMBEME</a>
+                                                        </h3>
+                            
+                                                       
+                            
+                                                         <div class="content-item-date">
+                                                            <ul>
+                                                                <li class="list-item-child">Adresse Email:<span class="cache-data">candidat@gmail.com</span></li>
+                                                                 <li class="list-item-child">Localisation:<span class="cache-data">Douala Bepanda</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="texte-detail-candidat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut ali.</div>
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div  class="parent-item-candidat" id="nom_president3" style="display:none;">
+                                                <div class="candidat-item">
+                                                    <div class="candidat-image">
+                                                        <div class="image-banner">
+                                                            <a href="detail-candidat.html">
+                                                                <img src="images/team/team1.png" alt="" srcset="">
+                                                            </a>
+                            
+                                                        </div>
+                                                        <div class="type-election">Presidentielle</div>
+                                                    </div>
+                                                    <div class="candidat-author">
+                                                         <div class="partie-politique-and-solcial">
+                                                            <div class="social-candidat row-container">
+                                                                <a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                                <a class="tw" href="#"><i class="fab fa-twitter"></i></a>
+                                                                <a class="yb" href="https://www.youtube.com/@prodeciturikumwe"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                                                             <div class="partie-politique">FSD</div>
+                                                        </div>
+                                                        <h3 class="author-name">
+                                                            <a href="#"><span class="first-name">M. Simeon</span> NUMBEME</a>
+                                                        </h3>
+                            
+                                                       
+                            
+                                                         <div class="content-item-date">
+                                                            <ul>
+                                                                <li class="list-item-child">Adresse Email:<span class="cache-data">candidat@gmail.com</span></li>
+                                                                 <li class="list-item-child">Localisation:<span class="cache-data">Douala Bepanda</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="texte-detail-candidat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut ali.</div>
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div  class="parent-item-candidat" id="nom_president4" style="display:none;">
+                                                <div class="candidat-item">
+                                                    <div class="candidat-image">
+                                                        <div class="image-banner">
+                                                            <a href="detail-candidat.html">
+                                                                <img src="images/team/team1.png" alt="" srcset="">
+                                                            </a>
+                            
+                                                        </div>
+                                                        <div class="type-election">Presidentielle</div>
+                                                    </div>
+                                                    <div class="candidat-author">
+                                                         <div class="partie-politique-and-solcial">
+                                                            <div class="social-candidat row-container">
+                                                                <a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                                <a class="tw" href="#"><i class="fab fa-twitter"></i></a>
+                                                                <a class="yb" href="https://www.youtube.com/@prodeciturikumwe"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                                                             <div class="partie-politique">UDC</div>
+                                                        </div>
+                                                        <h3 class="author-name">
+                                                            <a href="#"><span class="first-name">M. Simeon</span> NUMBEME</a>
+                                                        </h3>
+                            
+                                                       
+                            
+                                                         <div class="content-item-date">
+                                                            <ul>
+                                                                <li class="list-item-child">Adresse Email:<span class="cache-data">candidat@gmail.com</span></li>
+                                                                 <li class="list-item-child">Localisation:<span class="cache-data">Douala Bepanda</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="texte-detail-candidat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut ali.</div>
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div  class="parent-item-candidat" id="nom_president5" style="display:none;">
+                                                <div class="candidat-item">
+                                                    <div class="candidat-image">
+                                                        <div class="image-banner">
+                                                            <a href="detail-candidat.html">
+                                                                <img src="images/team/team1.png" alt="" srcset="">
+                                                            </a>
+                            
+                                                        </div>
+                                                        <div class="type-election">Presidentielle</div>
+                                                    </div>
+                                                    <div class="candidat-author">
+                                                         <div class="partie-politique-and-solcial">
+                                                            <div class="social-candidat row-container">
+                                                                <a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                                <a class="tw" href="#"><i class="fab fa-twitter"></i></a>
+                                                                <a class="yb" href="https://www.youtube.com/@prodeciturikumwe"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                                                             <div class="partie-politique">PCRN</div>
+                                                        </div>
+                                                        <h3 class="author-name">
+                                                            <a href="#"><span class="first-name">M. Simeon</span> NUMBEME</a>
+                                                        </h3>
+
+                                                         <div class="content-item-date">
+                                                            <ul>
+                                                                <li class="list-item-child">Adresse Email:<span class="cache-data">candidat@gmail.com</span></li>
+                                                                 <li class="list-item-child">Localisation:<span class="cache-data">Douala Bepanda</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="texte-detail-candidat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut ali.</div>
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div  class="parent-item-candidat" id="nom_president6" style="display:none;">
+                                                <div class="candidat-item">
+                                                    <div class="candidat-image">
+                                                        <div class="image-banner">
+                                                            <a href="detail-candidat.html">
+                                                                <img src="images/team/team1.png" alt="" srcset="">
+                                                            </a>
+                            
+                                                        </div>
+                                                        <div class="type-election">Presidentielle</div>
+                                                    </div>
+                                                    <div class="candidat-author">
+                                                         <div class="partie-politique-and-solcial">
+                                                            <div class="social-candidat row-container">
+                                                                <a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                                <a class="tw" href="#"><i class="fab fa-twitter"></i></a>
+                                                                <a class="yb" href="https://www.youtube.com/@prodeciturikumwe"><i class="fab fa-youtube"></i></a>
+                                                            </div>
+                                                             <div class="partie-politique">FCC</div>
+                                                        </div>
+                                                        <h3 class="author-name">
+                                                            <a href="#"><span class="first-name">M. Simeon</span> NUMBEME</a>
+                                                        </h3>
+
+                                                         <div class="content-item-date">
+                                                            <ul>
+                                                                <li class="list-item-child">Adresse Email:<span class="cache-data">candidat@gmail.com</span></li>
+                                                                 <li class="list-item-child">Localisation:<span class="cache-data">Douala Bepanda</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="texte-detail-candidat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut ali.</div>
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                        <div  class="parent-item-candidat" id="nom_president7" style="display:none;">
+                                            <div class="candidat-item">
+                                                <div class="candidat-image">
+                                                    <div class="image-banner">
+                                                        <a href="detail-candidat.html">
+                                                            <img src="images/team/team1.png" alt="" srcset="">
+                                                        </a>
+                        
+                                                    </div>
+                                                    <div class="type-election">Presidentielle</div>
+                                                </div>
+                                                <div class="candidat-author">
+                                                     <div class="partie-politique-and-solcial">
+                                                        <div class="social-candidat row-container">
+                                                            <a class="fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                            <a class="tw" href="#"><i class="fab fa-twitter"></i></a>
+                                                            <a class="yb" href="https://www.youtube.com/@prodeciturikumwe"><i class="fab fa-youtube"></i></a>
+                                                        </div>
+                                                         <div class="partie-politique">NSC</div>
+                                                    </div>
+                                                    <h3 class="author-name">
+                                                        <a href="#"><span class="first-name">M. Simeon</span> NUMBEME</a>
+                                                    </h3>
+
+                                                     <div class="content-item-date">
+                                                        <ul>
+                                                            <li class="list-item-child">Adresse Email:<span class="cache-data">candidat@gmail.com</span></li>
+                                                             <li class="list-item-child">Localisation:<span class="cache-data">Douala Bepanda</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="texte-detail-candidat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut ali.</div>
+                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="bloc-formulaire"> -->
+
+                                            <!-- <div class="titre-bloc-formulaire"><h2>Veuillez sélectionner un candidat pour l'élection municipale.</h2><span>(Possibilité de choisir plusieurs)</span></div> -->
+
+                                            <!-- <div class="field_double radio-fields "> 
 
                                                 <div class="list-electoral">    
                                                 
@@ -526,8 +823,81 @@
                                            
                                                 </div>
                                                  
-                                            </div>
+                                            </div> -->
 
+
+                                        <!-- </div> -->
+
+                                        <div class="bloc-formulaire">
+                                            <div class=" field_double contact">
+
+                                                <div class="field_input full_line">
+                                                    <div class="element_field">
+                                                        <label for="num_identite" class="label_field">Numéro d'Identité ou de Carte Électorale<span class="require">*</span></label>
+                                                        <input type="text" name="num_identite" id="num_identite" placeholder="Entrez votre numéro d'identité" class="class_input " value="" data-error-contener="div-erreur-num-identite" onkeyup="Verif_saisie(event, 'num_identite', 'btn-valider')">
+                                                        <div class="message-erreur" id="div-erreur-num-identite" style="display: none;">Veuillez saisir</div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="bloc-formulaire">
+                                        
+                                            <div class=" field_double localisation">
+
+                                                <div class="field_input full-line">
+                                                    <div class="element_field">
+                                                        <label for="nom" class="label_field">Commune de vote <span class="require">*</span></label>
+                                                        <select name="commune-projet" class="class_select  commune" id="commune-projet" data-error-contener="div-erreur-commune" onchange="">
+                                                            <option value="">Sélectionner une commune *</option>
+                                                            <option value="Yaoundé">Yaoundé</option>
+                                                            <option value="Douala">Douala</option>
+                                                            <option value="Bafoussam">Bafoussam</option>
+                                                            <option value="Garoua">Garoua</option>
+                                                            
+                                                        </select>
+                                                        <div class="message-erreur" id="div-erreur-commune" style="display: none;">Veuillez indiquer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bloc-formulaire">
+
+                                            <div class=" field_double">
+
+                                                <div class="field_input full-line">
+                                                    <div class="element_field">
+                                                        <label for="nom" class="label_field">Liste des candidats <span class="require">*</span></label>
+                                                        <select id="candidat" name="candidat" class="class_select " required data-error-contener="div-erreur-candidat">
+                                                            <option value="">Choisissez un candidat</option>
+                                                            <option value="Parti A">Parti A - Liste 1</option>
+                                                            <option value="Parti B">Parti B - Liste 2</option>
+                                                            <option value="Parti C">Parti C - Liste 3</option>
+                                                        </select>
+                                                        <div class="message-erreur" id="div-erreur-candidat" style="display: none;">Veuillez indiquer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="bloc-formulaire">
+                                            <div class=" field_double">
+                                            
+                                                <div class="field_input full-line">
+                                                    <div class="element_field">
+                                                        <label for="nom" class="label_field">Liste des maires <span class="require">*</span></label>
+                                                        <select id="maire" name="maire" class="class_select " required data-error-contener="div-erreur-maire">
+                                                            <option value="">Choisissez un maire</option>
+                                                            <option value="Maire 1">Maire 1</option>
+                                                            <option value="Maire 2">Maire 2</option>
+                                                            <option value="Maire 3">Maire 3</option>
+                                                        </select>
+                                                        <div class="message-erreur" id="div-erreur-maire" style="display: none;">Veuillez indiquer</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                        
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Vote - Élection Municipale</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulaire de Vote - Élection Municipale</h2>
+        <form action="submit_vote.php" method="POST">
+            <!-- Identification de l'électeur -->
+            <label for="num_identite">Numéro d'Identité ou de Carte Électorale:</label>
+            <input type="text" id="num_identite" name="num_identite" required placeholder="Entrez votre numéro d'identité">
+
+            <!-- Sélection de la commune -->
+            <label for="commune">Commune de Vote:</label>
+            <select id="commune" name="commune" required>
+                <option value="">Sélectionner une commune</option>
+                <option value="Yaoundé">Yaoundé</option>
+                <option value="Douala">Douala</option>
+                <option value="Bafoussam">Bafoussam</option>
+                <option value="Garoua">Garoua</option>
+            </select>
+
+            <!-- Sélection de la liste des candidats ou partis -->
+            <label for="candidat">Liste des Candidats:</label>
+            <select id="candidat" name="candidat" required>
+                <option value="">Choisissez un candidat</option>
+                <option value="Parti A">Parti A - Liste 1</option>
+                <option value="Parti B">Parti B - Liste 2</option>
+                <option value="Parti C">Parti C - Liste 3</option>
+            </select>
+
+            <!-- Section pour le choix du maire (si applicable) -->
+            <label for="maire">Choisir un Maire (si applicable):</label>
+            <select id="maire" name="maire" required>
+                <option value="">Choisissez un maire</option>
+                <option value="Maire 1">Maire 1</option>
+                <option value="Maire 2">Maire 2</option>
+                <option value="Maire 3">Maire 3</option>
+            </select>
+
+            <!-- Confirmation du vote -->
+            <div class="confirmation">
+                <label>
+                    <input type="checkbox" name="confirmation" id="confirmation" required>
+                    Je confirme que les informations sont correctes et je souhaite voter.
+                </label>
+            </div>
+
+            <button type="submit" name="submit">Soumettre mon Vote</button>
+        </form>
+    </div>
+</body>
+</html>

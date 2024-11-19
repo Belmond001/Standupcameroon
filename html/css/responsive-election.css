@@ -54,6 +54,8 @@ label.label_field {
 
 .left-bloc-election {
   width: 100%;
+  position: relative;
+  top: 0;
 }
 .image-membre {
   left: 37%;
