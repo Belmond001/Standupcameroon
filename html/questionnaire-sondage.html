@@ -445,9 +445,19 @@
                         </ul>
                         
                     </div>
+                     <!-- Afficher le bouton continuer ssi l'utilisation à enregistré une question -->
+                     
+                        <div class="space_btn_submit">
+                            <button type="button" class="submit secondary-btn btn-style-two" id="btn-valider-identite">
+                                Continuer<span class="fa-solid fa-reply-all"></span>
+                            </button>
+                           
+                        </div>
+                    <!--  -->
                 </div>
                 <div class="right-validation-identite">
-                    
+                       
+                        
                         <div class="bloc-bon-savoir">
                             <div class="tile-bloc-bon-savoir">Bon à savoir</div>
                             <p>Afin de mener à bien le processus de création d'un sondage, bien vouloir remplir soigneusement le formulaire ci-dessous <strong>et puis cliquez sur continuer.</strong>
@@ -458,39 +468,40 @@
                             <div class="wrapper-reponse-question">
                                 <div class="content-question-choisi">
                                     <h3 class="text-question">Q1. Lorem ipsum sit dorlor set ahmed</h3>
-                                    <p class="wrap-list-reponse">
-                                        <div class="item-reponse-question ">
-                                            <input type="checkbox" >
-                                            <span class="reponse-choisi">Ma reponse 1</span>
-                                        </div>
-                                        <div class="item-reponse-question ">
-                                            <input type="checkbox" >
-                                            <span class="reponse-choisi">Ma reponse 2</span>
-                                        </div>
-                                        <div class="item-reponse-question ">
-                                            <input type="checkbox" >
-                                            <span class="reponse-choisi">Ma reponse 3</span>
-                                        </div>
-                                    </p>
+                                    <div class="item-reponse-question ">
+                                        <input type="checkbox" >
+                                        <span class="reponse-choisi">Ma reponse 1</span>
+                                    </div>
+                                    <div class="item-reponse-question ">
+                                        <input type="checkbox" >
+                                        <span class="reponse-choisi">Ma reponse 2</span>
+                                    </div>
+                                    <div class="item-reponse-question ">
+                                        <input type="checkbox" >
+                                        <span class="reponse-choisi">Ma reponse 3</span>
+                                    </div>
+                                    <div class="right-action-btn">
+                                        <button type="button" style="background:var(--primary-color)" class="small green btn"> <i class="fa-solid fa-xmark"></i> Supprimer  </button>
+                                    </div>
                                 </div>
                                 <div class="content-question-choisi">
                                     <h3 class="text-question">Q2. Lorem ipsum sit dorlor set ahmed</h3>
-                                    <p class="wrap-list-reponse">
-                                        <div class="item-reponse-question ">
-                                           <select name="" id="" class="question-type">
-                                                <option value="" selected>Choisir</option>
-                                                <option value="reponse1">Réponse 1</option>
-                                                <option value="reponse2">Réponse 2</option>
-                                                <option value="reponse3">Réponse 3</option>
-                                           </select>
-                                        </div>
-                                       
-                                       
-                                    </p>
+                                    
+                                    <div class="item-reponse-question ">
+                                        <select name="" id="" class="question-type">
+                                            <option value="" selected>Choisir</option>
+                                            <option value="reponse1">Réponse 1</option>
+                                            <option value="reponse2">Réponse 2</option>
+                                            <option value="reponse3">Réponse 3</option>
+                                        </select>
+                                    </div>
+                                  
+                                    <div class="right-action-btn">
+                                        <button type="button" style="background:var(--primary-color)" class="small green btn"> <i class="fa-solid fa-xmark"></i> Supprimer  </button>
+                                    </div>
                                 </div>
                                 <div class="content-question-choisi">
                                     <h3 class="text-question">Q3. Lorem ipsum sit dorlor set ahmed</h3>
-                                    <p class="wrap-list-reponse">
                                         <div class="item-reponse-question ">
                                             <span class="far fa-star"></span>                                         
                                          </div>
@@ -520,15 +531,17 @@
 
 
                                          </div>
-                                    </p>
+                                         <div class="right-action-btn">
+                                            <button type="button" style="background:var(--primary-color)" class="small green btn"> <i class="fa-solid fa-xmark"></i> Supprimer  </button>
+                                        </div>
                                 </div>
                             </div>
                             <!--  question -->
                                 <div class="wrapper-question">
-                                    <form action="" class="form-sondage" id="form-question1">
+                                    <form action="" class="form-sondage" id="form-sondage">
                                         <div class="question-container">
                                             <div class="question-header">
-                                                <span class="question-number">Q1</span>
+                                                <!-- <span class="question-number">Q</span> -->
                                                 <input type="text" name="question[]" required="" class=" question-title" placeholder="Saisir une question">
                                                 <select name="type_question[]" class="question-type">
                                                     <option value="multiple">Choix multiple</option>
@@ -543,13 +556,11 @@
                                             <div class="choices">
                                                 <div class="wrap-form-item">
                                                     <div class="form-item">
-                                                        <input type="checkbox" class="checkbox-choise" disabled>
+                                                        <!-- <input type="checkbox" class="checkbox-choise" disabled> -->
                                                         <input type="text" required="" name="reponse[]" id="reponse1" placeholder="Saisissez un choix de réponse" class=" input-field mandatory" data-error-contener="div-erreur-reponse">
                                                         <div class="message-erreur" id="div-erreur-reponse1" style="display: none;"> Vous devez proposer au moins un choix.</div>
                                                     </div>
-                                                    <div class="wrap-mark-question">
-                                                        <input type="number" min='0' name="note[]" value='0' class="note-reponse">
-                                                    </div>
+                                                    
                                                 </div>
                                             
                                             </div>
@@ -557,13 +568,11 @@
                                             <div class="choices">
                                                 <div class="wrap-form-item">
                                                     <div class="form-item">
-                                                        <input type="checkbox" class="checkbox-choise" disabled>
+                                                        <!-- <input type="checkbox" class="checkbox-choise" disabled> -->
                                                         <input type="text" required="" name="reponse[]"  placeholder="Saisissez un choix de réponse" class=" input-field " data-error-contener="div-erreur-reponse">
                                                         <div class="message-erreur" id="div-erreur-reponse2" style="display: none;"> Vous devez proposer au moins un choix.</div>
                                                     </div>
-                                                    <div class="wrap-mark-question">
-                                                        <input type="number" min='0' name="note[]" value='0' class="note-reponse">
-                                                    </div>
+                                                   
                                                     <div class="wrap-content-add-item">
                                                         <span class="add-bloc" ><i class="fa fa-plus"></i></span>
                                                     </div>
@@ -587,7 +596,7 @@
                                             </div>
                                     
                                             <div class="action-buttons">
-                                      
+                                                <button type="button" class="add-question btn green"> <i class="fa-solid fa-circle-plus"></i> Nouvelle question</button>
                                                 <div class="right-action-btn">
                                                     <!-- <button type="button" class="btn red small"> <i class="fa-solid fa-xmark"></i> Annuler</button> -->
                                                     <button type="submit" data-form="form-question1" class="btn green small"> <i class="fas fa-share"></i> Enregistrer</button>
@@ -597,22 +606,10 @@
                                         </div>
                                     </form>
                                     
-                                    <div class="contener-add-question"></div>
-                                    <div class="action-buttons">
-                                        <button type="button" class="add-question btn green"> <i class="fa-solid fa-circle-plus"></i> Ajouter une question</button>
-                                        <button type="button" style="background:var(--primary-color)" class="add-question btn green"> Continuer <i class="fa-solid fa-angle-right"></i> </button>
-                                        
-                                    </div>
+                                  
+                                   
                                 </div>
-                            <!--  -->
-
-                            <!-- <div class="space_btn_submit">
-                                <button type="button" class="submit secondary-btn btn-style-two" id="btn-valider">
-                                    Enregistrer et continuer<span class="fa-solid fa-reply-all"></span>
-                                </button>
-                                <input type="hidden" name="token" id="token" value="">
-                                <input type="hidden" name="traitement" id="traitement" value="valider-identite">
-                            </div> -->
+                           
                         </div>
               
                 </div>
