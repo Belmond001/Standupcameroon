@@ -1,0 +1,244 @@
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+.shap-06 {
+    position: absolute;
+    top: -160px;
+    right: -28%;
+    z-index: -2;
+    /* display: none; */
+}
+}
+
+
+@media only screen and (max-width: 1200px) {
+ .container.pnc {
+  max-width: 100%;
+}
+.container {
+  max-width: 100% !important;
+}
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+.shap-06 {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: -2;
+    /* display: none; */
+}
+.new-call-action-title h2 {
+  font-size: 22px;
+}
+.btn-call-action-new a {
+  width: fit-content !important;
+  padding: 8px 20px;
+  position: absolute;
+  border-radius: 62px;
+  display: flex;
+}
+.item-shape-decor:nth-child(1) {
+  right: -3%;
+}
+.btn-call-action {
+}
+.items-widget-cas {
+  width: 50%;
+}
+
+.left-pnc {
+  width: 100%;
+}
+.right-pnc {
+  width: 100%;
+}
+
+.main-img-pnc img {
+  width: auto;
+  left: 41px;
+  position: relative;
+}
+.main-img-pnc {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+.shap-04 {
+  left: 60%;
+  bottom: -5%;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.pnc .section-title p {
+  font-size: 15px;
+}
+.content-left-pnc li span {
+  font-size: 16px;
+}
+.text-mision-vision {
+  font-size: 14px !important;
+}
+.cirle-check {
+  width: 25px;
+}
+.right-pnc {
+  left: 10%;
+  position: relative;
+}
+.main-img-pnc img {
+  height: 350px;
+}
+.shap-04 {
+  height: 29px;
+  width: 86px;
+  bottom: 32%;
+}
+  .shap-06,.shap-04,.shap-07,.shap-05 {
+    display: none;
+}
+.wrap-call-new-call-action {
+  width: 100%;
+}
+.container {
+  max-width: 100% !important;
+}
+.popup-calendrier {
+  padding: 5px 10px;
+  font-size: ;
+}
+.pupop-jour {
+  font-size: 20px;
+}
+.popup-mois {
+  font-size: 16px;
+}
+.wrap-items-widget-cas {
+  padding: 20px;
+}
+.items-widget-cas {
+  padding: 10px;
+}
+.section-title h2 {
+  font-size: 22px;
+}
+
+.titre-element-cas {
+  font-size: 17px;
+}
+.items-widget-atout-bottom {
+  font-size: 15px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+.section-title h2 {
+  font-size: 17px;
+}
+
+.wrap-call-new-call-action.row-container {
+  display: flex;
+  /*! justify-content: center; */
+  flex-wrap: wrap;
+  height: fit-content;
+  padding-bottom: 61px;
+  padding: 10px 15px;
+  padding-bottom: 69px;
+}
+.left-new-call-action {
+  width: 100%;
+}
+.right-new-call-action {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  font-size: 13px !important;
+}
+.new-call-action-title {
+  width: 100%;
+}
+.btn-call-action-new a {
+  position: absolute;
+  top: 76%;
+  left: 11%;
+  font-size: 14px;
+}
+.phn-number {
+  font-size: 14px;
+}
+.new-call-action-title h2 {
+  font-size: 18px;
+}
+.items-bonAsavoir-entete {
+  flex-wrap: wrap;
+}
+.section-title h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.items-widget-cas {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.content-left-pnc li span {
+  font-size: 15px;
+}
+.left-pnc .text-mision-vision {
+  font-size: 13px !important;
+}
+.new-call-action-title h2.desc-call-action {
+  font-size: 16px;
+}
+.titre-element-cas {
+  font-size: 15px;
+}
+.icon-new-call-action {
+  font-size: 20px;
+}
+.info-text {
+  font-size: 14px;
+}
+.btn-call-action-new a svg {
+  font-size: 14px;
+  height: 26px;
+}
+.left-pnc {
+  padding-left: 0;
+}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+   
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+
+}
