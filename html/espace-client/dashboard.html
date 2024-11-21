@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/graphe.css">
+    <link rel="stylesheet" href="css/figure.css">
+
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <!-- <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-img">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header-left-items">
+           
+            <div class="header-profil-box">
+                <div class="header-profil-picture">
+                    <img src="images/profilman.png" alt="photo de profil">
+                </div>
+                <div class="second_field_btn">
+                    <button type="button" class="btn_option"><i class="fa-solid fa-angle-down"></i></button>
+        
+                    <div class="action_element">
+                        <i class="fas fa-caret-up" aria-hidden="true"></i>
+                        
+                            <a class="link_action link_edit" href="#">
+                                <i class="fas fa-xmark"></i><span>Se deconnecter</span>
+                            </a>
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper-dashboard">
+        <div class="container dashboard">
+            <div class="wrap-dashboad">
+                <div class="dashboard-left">
+                    <div class="item-dashboard-menu">
+                        <div class="wrap-item-dashboard-menu">
+                          
+                            <ul class="dashboard-menu">
+                                <li class="menu-list active-menu">
+                                    <a href="dashboard.html"><span><i class="fa-solid fa-chart-line"></i></span>Dashboard</a>
+                                </li>
+                               
+                                <li class="menu-list ">
+                                    <a href="sondage.html"><span><i class="fa-solid fa-user-group"></i></span>Sondages</a>
+                                </li>
+                               
+                                <li class="menu-list">
+                                    <a href="temoignage.html"><span><i class="fa-regular fa-comment-dots"></i></span>Témoignage</a>
+                                </li>
+                               
+                                <li class="menu-list">
+                                    <a href="mon-compte.html"><span><i class="fa-regular fa-user"></i></span>Mon compte</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-right graph">
+                    
+                    <div class="item-graph-section">
+                        <div class="item-first-section">
+                            <div class="wrap-item-first-section">
+                                <!-- <div class="item-first-container">
+                                    <div class="wrap-item-first-container">
+                                        <div class="first-container-head">
+                                            <h4>Au total</h4>
+                                        </div>
+                                        <div class="first-container-body">
+                                            <div class="first-container-text">
+                                                <h2>01</h2>
+                                                <p>Vote(s)</p>
+                                            </div>
+                                            <div class="first-container-icon">
+                                                <i class="fa-solid fa-users"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="item-first-container">
+                                    <div class="wrap-item-first-container blue-bg">
+                                        <div class="first-container-head">
+                                            <h4>Au total</h4>
+                                        </div>
+                                        <div class="first-container-body">
+                                            <div class="first-container-text">
+                                                <h2>650k</h2>
+                                                <p>Participants au sondage</p>
+                                                <div class="progress-bar-box">
+                                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="first-container-icon">
+                                                <i class="fa-solid fa-user"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-first-container">
+                                    <div class="wrap-item-first-container yellow-bg">
+                                        <div class="first-container-head">
+                                            <h4>Au total</h4>
+                                        </div>
+                                        <div class="first-container-body">
+                                            <div class="first-container-text">
+                                                <h2>10</h2>
+                                                <p>Témoignages</p> 
+                                            </div>
+                                            <div class="first-container-icon">
+                                                <i class="fa-solid fa-users-rays"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-second-section">
+                            <div class="wrap-item-second-section">
+                        
+                                <div class="item-second-container full">
+                                    <div class="wrap-item-second-container">
+                                        <div class="second-container-head">
+                                            <h4>Répresentation</h4>
+                                        </div>
+                                        <div class="second-container-body">
+                                            <div class="second-container-text">
+                                                <h2>Graphe des votes</h2>
+                                            </div>
+                                            <figure class="highcharts-figure">
+                                                <div id="container2"></div>
+                                                <p class="highcharts-description">
+                                                    Nombre de voie obtenu par chaque Candidat.
+                                                </p>
+
+                                                <table id="datatable" style="display: none;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Hommes</th>
+                                                            <th>Femmes</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Candidat 2</th>
+                                                            <td>28 430</td>
+                                                            <td>26 690</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Candidat 1</th>
+                                                            <td>28 042</td>
+                                                            <td>26 453</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Candidat 3</th>
+                                                            <td>27 063</td>
+                                                            <td>25 916</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Candidat 4</th>
+                                                            <td>28 684</td>
+                                                            <td>27 376</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Candidat 5</th>
+                                                            <td>26 445</td>
+                                                            <td>25 035</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Candidat 6</th>
+                                                            <td>26 564</td>
+                                                            <td>25 416</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-second-container">
+                                    <div class="wrap-item-second-container">
+                                        <div class="second-container-head">
+                                            <h4>Répresentation</h4>
+                                        </div>
+                                        <div class="second-container-body">
+                                            <div class="second-container-text">
+                                                <h2>Diagramme des pourcentage de vote</h2>
+                                            </div>
+                                            <figure class="highcharts-figure">
+                                                <div id="container3"></div>
+                                                <p class="highcharts-description">
+                                                    Pourcentage de vote obtenu par chaque candidat par vargue d'élection.
+                                                </p>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-second-container">
+                                    <div class="wrap-item-second-container">
+                                        <div class="second-container-head">
+                                            <h4>Répresentation</h4>
+                                        </div>
+                                        <div class="second-container-body">
+                                            <div class="second-container-text">
+                                                <h2>Graphe des Sondages Périodique</h2>
+                                            </div>
+                                            <figure class="highcharts-figure">
+                                                <div id="container4"></div>
+                                                <p class="highcharts-description">
+                                                    estimation des sondages durant chaque période.
+                                                </p>
+                                            </figure>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+    
+    <script src="js/graph.js"></script>
+    <script src="js/menu-active.js"></script>
+
+</body>
+</html>

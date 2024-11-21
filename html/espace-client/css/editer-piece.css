@@ -1,0 +1,415 @@
+.dashboard-right.half {
+    border-radius: initial;
+    background: none;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.first-half {
+    background: #fff;
+    border-radius: 10px;
+    width: 60%;
+}
+.dashboard-profil{
+    position: relative;
+    /* padding: 40px 20px; */
+    /* background: white; */
+}
+.wrap-item-dashboard-profil {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.dashboard-profil-img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+    border: 3px solid #fff;
+}
+.dashboard-profil-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.input-box {
+    width: 49%;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 18px;
+}
+
+.input-box label {
+    font-weight: 500;
+    color: #161417;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+.radio-field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.radio-item {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-item input {
+    margin-right: 8px;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.input-field textarea {
+    width: 100%;
+    height: 100px;
+}
+.btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-cancel button {
+    width: 90px;
+    height: 35px;
+    border: 1px solid;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+.btn-update button {
+    width: 110px;
+    height: 35px;
+    background-color: var(--third-color);
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.btn-box button{
+    cursor: pointer;
+}
+
+.second-half {
+    background: #fff;
+    border-radius: 10px;
+    width: calc(40% - 20px);
+    margin-left: 20px;
+}
+.radio-item span {
+    color: #161417;
+}
+.dashboard-right.half span {
+    margin-right: 5px;
+}
+.input-icon{
+    margin-right: 5px;
+    padding-right: 10px;
+    border-right: 1px solid #eee;
+    height: 130%;
+    display: flex;
+    align-items: center;
+}
+.dashboard-pathway {
+    position: absolute;
+    top: 0;
+    left: initial;
+    font-weight: 600;
+}
+.profil-edit-icon {
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dashboard-profil-box {
+    position: relative;
+    width: 100px;
+}
+.dashboard-pathway a {
+    color: var(--third-color);
+    /* font-size: initial; */
+    position: relative;
+    margin-right: 8px;
+}
+
+.dashboard-pathway span {
+    color: var(--primary-color);
+    font-size: initial;
+}
+/*********************************************** DETAIL-UTILISATEUR *******************************************************/
+
+.dashboard-detail-box {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.profil-name-box p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.profil-name-box {
+    /* margin-left: 20px; */
+    text-align: center;
+}
+
+.edit-detail-profile {
+    position: absolute;
+    top: 30px;
+    right: 6%;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: var(--third-color);
+    color: #fff;
+    font-size: 12px;
+}
+
+.profile-details-container h2 {
+    font-size: 16px;
+    margin: 10px 0 10px;
+}
+
+.detail-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail-list li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.detail-list li span {
+    color: var(--third-color);
+    font-size: 13px;
+    font-weight: 700;
+}
+.profile-details-container-1, .profile-details-container-2 {
+    position: relative;
+    margin-bottom: 20px;
+    border: 2px solid #eee;
+    border-radius: 30px;
+    padding: 20px;
+}
+.dashboard-right.detail {
+    background: none;
+}
+.item-dashboard-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-dashboard-detail-1, .item-dashboard-detail-2 {
+    position: relative;
+    width: 50%;
+}
+.wrap-dashboard-detail-1 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 134px 20px 20px;
+}
+
+.item-dashboard-detail-1 {
+    margin-right: 20px;
+    padding-top: 40px;
+}
+
+.wrap-dashboard-detail-2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.detail-list-box li {
+    border-bottom: 2px dashed #eee;
+    margin-bottom: 10px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-list-box li span {
+    color: var(--third-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.icon-edit p {
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--third-color);
+    color: #fff;
+    font-size: 12px;
+    width: 70px;
+    height: 20px;
+}
+
+.icon-edit P span {
+    margin-right: 10px;
+    color: #fff;
+}
+.detail-list-box-2 li {
+    border-bottom: 2px dashed #eee;
+    margin-bottom: 10px;
+    line-height: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail-list-box-2 li span {
+    color: var(--third-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.wrap-dashboard-detail-2 h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.detail-list-box {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.detail-list-box-2 {
+    margin-bottom: 22px;
+}
+
+.item-dashboard-detail-2 {
+    width: calc(50% - 20px);
+}
+/******************************************************* PWD ************************************************/
+
+.wrap-item-dashboard-pwd {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+}
+.wrap-item-dashboard-pwd .input-box {width: 100%;}
+.dashboard-detail-box.pwd {
+    border: none;
+    padding: initial;
+    flex-direction: column;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dashboard-detail-box.pwd .dashboard-profil-img {
+    border: 3px solid #fff;
+}
+.dashboard-pwd{
+    position: relative;
+    padding: 110px 20px 20px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 20px auto;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: -6px -1px 18px rgb(0 0 0 / 10%);
+}
+.dashboard-pwd .item-dashboard-profil {
+    width: 100%;
+    margin-top: 30px;
+}
+.btn-box.pwd {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/********************************************************** PIECE-IDENTITE ************************************************************************/
+
+select, input[type="date"] {
+    width: 100%;
+}
+.notice-box {
+    position: relative;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    background-color: #f205050f;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.notice-box p {
+    color: var(--primary-color);
+    font-size: 11px;
+}
+
+.notice-title {
+    background-color: var(--primary-color);
+    width: 100px;
+    border-radius: 25px;
+    position: absolute;
+    top: -10px;
+}
+
+.notice-title P {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cni-photo, passport-photo, permis-photo {
+    width: 100%;
+}
+.item-dashboard-profil {
+    background: white;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.input-box:nth-child(2n) {
+    margin-right: 0px;
+}
+.input-field input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--primary-font);
+}
