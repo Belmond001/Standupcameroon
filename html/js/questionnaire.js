@@ -6,13 +6,10 @@ $(document).ready(function() {
     var hidden_content = `<div class="choices">
                         <div class="wrap-form-item">
                             <div class="form-item">
-                                <input type="checkbox" class="checkbox-choise" disabled>
                                 <input type="text" required="" name="reponse[]" id="reponse${nb_reponse+1}" placeholder="Saisissez un choix de réponse" class="input-field " data-error-contener="div-erreur-reponse${nb_reponse+1}">
                                 <div class="message-erreur" id="div-erreur-reponse${nb_reponse+1}" style="display: none;"> Vous devez proposer au moins un choix.</div>
                             </div>
-                            <div class="wrap-mark-question">
-                                <input type="number" min='0' name="note[]" value='0' class="note-reponse">
-                            </div>
+                           
                             <div class="wrap-content-add-item">
                                 <span class="add-bloc" ><i class="fa fa-plus"></i></span>
                                 <span class="remove-bloc" ><i class="fa fa-minus"></i></span>
@@ -55,7 +52,8 @@ $(document).ready(function() {
 
 
     $(document).on('click', '.add-question', function() {  // Fix class name
-        document.getElementById("form-sondage").reset();
+        // document.getElementById("form-sondage").reset();
+        
 
     });
 

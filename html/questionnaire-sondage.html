@@ -446,13 +446,13 @@
                         
                     </div>
                      <!-- Afficher le bouton continuer ssi l'utilisation à enregistré une question -->
-                     
+                        <!--                      
                         <div class="space_btn_submit">
                             <button type="button" class="submit secondary-btn btn-style-two" id="btn-valider-identite">
                                 Continuer<span class="fa-solid fa-reply-all"></span>
                             </button>
                            
-                        </div>
+                        </div> -->
                     <!--  -->
                 </div>
                 <div class="right-validation-identite">
@@ -469,15 +469,15 @@
                                 <div class="content-question-choisi">
                                     <h3 class="text-question">Q1. Lorem ipsum sit dorlor set ahmed</h3>
                                     <div class="item-reponse-question ">
-                                        <input type="checkbox" >
+                                        <input type="checkbox" disabled>
                                         <span class="reponse-choisi">Ma reponse 1</span>
                                     </div>
                                     <div class="item-reponse-question ">
-                                        <input type="checkbox" >
+                                        <input type="checkbox" disabled>
                                         <span class="reponse-choisi">Ma reponse 2</span>
                                     </div>
                                     <div class="item-reponse-question ">
-                                        <input type="checkbox" >
+                                        <input type="checkbox" disabled>
                                         <span class="reponse-choisi">Ma reponse 3</span>
                                     </div>
                                     <div class="right-action-btn">
@@ -500,41 +500,26 @@
                                         <button type="button" style="background:var(--primary-color)" class="small green btn"> <i class="fa-solid fa-xmark"></i> Supprimer  </button>
                                     </div>
                                 </div>
+
                                 <div class="content-question-choisi">
-                                    <h3 class="text-question">Q3. Lorem ipsum sit dorlor set ahmed</h3>
-                                        <div class="item-reponse-question ">
-                                            <span class="far fa-star"></span>                                         
-                                         </div>
-                                         <div class="item-reponse-question ">
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-                                         
-                                         </div>
-                                        <div class="item-reponse-question ">
-                                           <span class="far fa-star"></span>
-                                           <span class="far fa-star"></span>
-                                           <span class="far fa-star"></span>
-                                        </div>
-                                        <div class="item-reponse-question ">
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-
-                                         </div>
-                                         <div class="item-reponse-question ">
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-                                            <span class="far fa-star"></span>
-
-
-                                         </div>
-                                         <div class="right-action-btn">
-                                            <button type="button" style="background:var(--primary-color)" class="small green btn"> <i class="fa-solid fa-xmark"></i> Supprimer  </button>
-                                        </div>
+                                    <h3 class="text-question">Q1. Lorem ipsum sit dorlor set ahmed</h3>
+                                    <div class="item-reponse-question ">
+                                        <input type="radio" disabled>
+                                        <span class="reponse-choisi">Ma reponse 1</span>
+                                    </div>
+                                    <div class="item-reponse-question ">
+                                        <input type="radio" disabled>
+                                        <span class="reponse-choisi">Ma reponse 2</span>
+                                    </div>
+                                    <div class="item-reponse-question ">
+                                        <input type="radio" disabled>
+                                        <span class="reponse-choisi">Ma reponse 3</span>
+                                    </div>
+                                    <div class="right-action-btn">
+                                        <button type="button" style="background:var(--primary-color)" class="small green btn"> <i class="fa-solid fa-xmark"></i> Supprimer  </button>
+                                    </div>
                                 </div>
+                                
                             </div>
                             <!--  question -->
                                 <div class="wrapper-question">
@@ -546,9 +531,9 @@
                                                 <select name="type_question[]" class="question-type">
                                                     <option value="multiple">Choix multiple</option>
                                                     <option value="case-cocher">Case à cocher</option>
-                                                    <option value="etoile">Evaluation par étoile</option>
+                                                    <!-- <option value="etoile">Evaluation par étoile</option> -->
                                                     <option value="liste">Liste déroulante</option>
-                                                    <option value="date">Date et heure</option>
+                                                    <!-- <option value="date">Date et heure</option> -->
                                                 </select>
                                             </div>
                                             
@@ -596,10 +581,10 @@
                                             </div>
                                     
                                             <div class="action-buttons">
-                                                <button type="button" class="add-question btn green"> <i class="fa-solid fa-circle-plus"></i> Nouvelle question</button>
+                                                <button type="submit" class="add-question btn green"> <i class="fa-solid fa-circle-plus"></i> Nouvelle question</button>
                                                 <div class="right-action-btn">
                                                     <!-- <button type="button" class="btn red small"> <i class="fa-solid fa-xmark"></i> Annuler</button> -->
-                                                    <button type="submit" data-form="form-question1" class="btn green small"> <i class="fas fa-share"></i> Enregistrer</button>
+                                                    <button type="submit"  class="btn green small btn-valider"> <i class="fas fa-share"></i> Enregistrer</button>
 
                                                 </div>
                                             </div>

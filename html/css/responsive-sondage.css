@@ -41,7 +41,7 @@
 .btn-call-action-new a {
   width: fit-content !important;
   padding: 8px 20px;
-  position: absolute;
+  /* position: absolute; */
   border-radius: 62px;
   display: flex;
 }
@@ -59,6 +59,7 @@
 }
 .right-pnc {
   width: 100%;
+  margin-top: 20px;
 }
 
 .main-img-pnc img {
@@ -76,6 +77,11 @@
 .shap-04 {
   left: 60%;
   bottom: -5%;
+}
+span.word {
+  width: calc(100% - 50px);
+  text-align: left;
+  font-size: 15px;
 }
 
 }
@@ -118,7 +124,6 @@
 }
 .popup-calendrier {
   padding: 5px 10px;
-  font-size: ;
 }
 .pupop-jour {
   font-size: 20px;
@@ -142,11 +147,40 @@
 .items-widget-atout-bottom {
   font-size: 15px;
 }
+.space_btn_submit {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+}
 
+@media only screen and (max-width: 500px) {
+  ul.list-item-pnc::before {
+      left: 12px;
+  }
 
+  .titre-bloc-formulaire h2 {
+      font-size: 15px;
+  }
 
-@media only screen and (max-width: 600px) {
+  .question-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
 
+.question-type {
+  width: 100%;
+  margin-top: 10px;
+}
+
+input.question-title {
+  margin-right: 0px;
+}
+h3.text-question {
+  font-size: 14px;
+}
 
 }
 
@@ -227,6 +261,22 @@
 .left-pnc {
   padding-left: 0;
 }
+
+.btn {
+  padding: 7px 11px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+}
+button.btn.small {
+  padding: 8px 13px;
+}
+.content-question-choisi button.btn.small {
+  padding: 2px 8px;
+  font-size: 13px;
+}
+
 
 }
 
