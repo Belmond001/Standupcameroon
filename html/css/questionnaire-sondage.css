@@ -474,7 +474,7 @@ ul.list-item-pnc {
     margin-left:5px;
     transform: scale(-1, 1) translateY(-2px);
 }
-.space_btn_submit button {
+.space_btn_submit button, .space_btn_submit a {
     position: relative;
     display: inline-block;
     vertical-align: middle;
