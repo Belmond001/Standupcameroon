@@ -56,8 +56,17 @@
     aside.aside_left {
         width: 100%;
         padding: 0;
+        margin-top: 30px;
     }
+.wrap-page-interne {
+    flex-direction: column-reverse !important;
+}
 
+aside.aside_right {
+    margin-top: 0;
+    position:relative;
+    top:unset;
+}
 
 
 }
