@@ -858,6 +858,15 @@ h3.text-question {
     font-size: 15px;
     margin-bottom: 10px;
 }
+.space_btn_submit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.space_btn_submit button {
+    margin-right: 30px;
+}
 
 .item-reponse-question {
     display: flex;
