@@ -1,0 +1,413 @@
+@media only screen and (max-width: 5000px) {
+
+
+}
+
+
+@media only screen and (max-width: 3000px) {
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+
+  
+.wrap-banniere-interne img {
+  height: 237px;
+}
+.item-wrap-left-projet {
+  width: 50%;
+}
+.item-left-review-part label {
+  font-size: 14px;
+}
+input[type="radio"] + label {
+  font-size: 13px;
+}
+.background-white-color {
+  font-size: 12px;
+}
+.btn-wish p {
+  font-size: 13px;
+}
+.on-banner .titre-element-propriety h4 {
+  font-size: 21px;
+}
+.wrap-content-element-propriety p {
+  padding: 0 10px;
+  margin-top: 0;
+}
+.prix-cours-actuel h3 {
+  font-size: 21px;
+}
+a.btn-enroll {
+  font-size: 14px;
+}
+.element-propriety.tutor-details {
+  padding-top: 67px;
+}
+.tutor-details-image {
+  /*! margin-top: -19px; */
+}
+.ct-tab-meta {
+  font-size: 17px;
+}
+.titre-element-propriety h4 {
+  font-size: 17px;
+}
+	   
+}
+
+
+@media only screen and (max-width: 768px) {
+  .on-banner .titre-element-propriety h4 {
+  font-size: 21px;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+  
+aside.social-media {
+}
+.element-propriety.on-banner {
+  padding-left: -6px;
+}
+.wrap-banniere-interne img {
+  height: 300px;
+}
+.wrapper-page-wrapper-detail {
+  margin-top: -164px;
+}
+.element-wrap-left-projet.row-container {
+  padding-top: 10px;
+}
+.entry-content p {
+  font-size: 15px;
+}
+.entry-title {
+  font-size: 15px;
+}
+.element-propriety.tutor-details {
+  padding-top: 0;
+}
+.item-tutor-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-top: 24px;
+}
+.item-tutor-details a {
+}
+.item-tutor-details h6 {
+  width: 27%;
+}
+.item-tutor-details >a {
+  width: 50%;
+}
+.item-tutor-details >p {
+  width: 44%;
+  padding-top: 9px;
+}
+.item-bloc-left.description-bloc {
+  margin-bottom: 19px;
+}
+.wrap-content-element-propriety p {
+  padding: 0 10px;
+}
+
+.left-page-wrapper-detail {
+  width: 88%;
+  /*! padding-left: 0; */
+  /*! padding-right: 0; */
+}
+.right-page-wrapper-detail {
+  width: 100%;
+  padding: 0 0px;
+  padding-top: 30px;
+}
+a.btn-enroll {
+  width: 39%;
+}
+.detail-price-cours {
+  display: flex;
+}
+.prix-cours-actuel {
+  width: 50%;
+}
+.wrap-image-panel-right {
+  box-shadow: 1px 5px 10px #80808021;
+  width: 40px;
+}
+          /*********************************************************************************************************/
+.wrap-item-section-cirriculum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px;
+  min-height: 50px;
+}
+
+
+    
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    
+.item-tutor-details {
+  width: 32%;
+  padding-top: 14px;
+}
+.element-propriety.tutor-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 68px;
+  align-items: center;
+  /*! justify-content: center; */
+}
+.tutor-details-image {
+
+}
+.item-tutor-details a {
+}
+.etoiles-revue {
+  width: 100%;
+}
+.ct-tab-meta {
+  font-size: 16px;
+}
+.titre-element-propriety h4 {
+  font-size: 17px;
+}
+a.btn-enroll {
+  width: 50%;
+}
+.prix-cours-actuel h3 {
+  font-size: 15px;
+}
+.wrap-image-panel-right {
+  width: 40px;
+}
+.wrap-image-panel-right svg {
+  width: 17px;
+  height: 17px;
+}
+li.item-list-detail-cours h6 {
+  font-size: 14px;
+}
+li.item-list-detail-cours span {
+  font-size: 13px;
+}
+
+/**************************************/
+.right-interne-tit {
+  width: 31%;
+}
+
+.course-item-meta {
+  width: 31%;
+}
+.ligne-form {
+  padding-bottom: 10px;
+}
+.ligne-form {
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+.form-group.two-items {
+  width: 100%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+  
+
+.element-propriety.tutor-details {
+  padding-top: 0;
+}
+.item-tutor-details {
+  width: 63%;
+}
+.item-tutor-details h6 {
+  width: 100%;
+}
+.item-tutor-details > p {
+  width: 100%;
+}
+	.on-banner .titre-element-propriety h4 {
+  font-size: 17px;
+  width: 100%;
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+  
+.left-page-wrapper-detail {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.wrapper-page-wrapper-detail {
+  margin-top: -255px;
+}
+ul.social-icons {
+  padding: 10px;
+  width: 60px;
+  padding-right: 0;
+  width: fit-content;
+  display: flex;
+}
+.wrap-content-element-propriety.row-container {
+  margin-right: 0;
+  text-align: left;
+}
+.item-wrap-left-projet {
+  width: 100%;
+}
+.icon-wrap-left-projet {
+  padding: 6px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+ul.social-icons a {
+  margin: 0 4px;
+}
+.wrap-page-wrapper-detail {
+}
+.social-media {
+  width: 100%;
+}
+.info-wrap-left-projet .name {
+  font-size: 15px;
+}
+.item-fichier-joint {
+  width: 100%;
+  margin-bottom: 13px;
+}
+.item-bloc-fichier-joint {
+  flex-wrap: wrap;
+}
+.wrap-left-review-part.row-container {
+}
+.left-review-part {
+  width: 100%;
+}
+.form-group {
+  margin-bottom: 7px;
+}
+.item-tutor-details {
+  display: block;
+}
+..element-propriety.tutor-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 51px;
+  justify-content: space-between;
+}
+.titre-element-propriety h4 {
+  font-size: 16px;
+}
+.wrap-content-element-propriety p {
+  font-size: 15px;
+  padding: 0;
+  padding-top: 19px;
+}
+a.btn-enroll {
+  width: 78%;
+}
+.item-tutor-details {
+  width: 50%;
+  margin-right: 0;
+}
+/*******************************************************************************************************************/
+  .right-interne-tit {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+  }
+   
+.wrap-item-section-cirriculum {
+  flex-wrap: wrap;
+  padding: 10px 24px;
+}
+button.expand-all {
+  padding-bottom: 14px;
+}
+
+a.wrap-item-list-cirriculum {
+  flex-wrap: wrap;
+}
+.name-course-curriculum {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.course-item-meta {
+  width: 41%;
+  padding: 4px 0;
+}
+.tabcontent h5 {
+  font-size: 17px;
+  color: #000;
+  margin: 5px 0 5px;
+  width: 100%;
+}
+.course-tutor-details img {
+  width: 105px;
+  height: 105px;
+}
+.item-enseignant-details {
+  
+  width: 33.33%;
+}
+.detail-enseignant {
+  flex-wrap: wrap;
+}
+.right-review-part {
+  width: 100%;
+  padding: 0 0 0 15px;
+  margin-bottom: 23px;
+}
+.item-left-review-part {
+  width: 100%;
+  padding: 0 8px;
+}
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    a.btn-enroll {
+  width: 100%;
+}
+.tutor-details-image {
+  margin-right: 16px;
+  
+}
+.wrap-content-element-propriety p {
+  font-size: 14px;
+  padding: 0;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+
+}
