@@ -31,23 +31,14 @@
 
 
 
-    
+      <!-- JS files -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/phpjs.js"></script>
     <script src="js/app-mesfonctions.js"></script>
     <script src="js/app.js"></script>
-     <script src="js/chiffres-cles.js"></script>
-    
-    <!-- Magnific popup -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/jquery-modal-video.js" type="text/javascript"></script>
 
-
-    <!-- JS files -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-
- 
     <script src="js/owl.carousel.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
     <meta property="og:type" content="article" />
@@ -504,8 +495,8 @@
                                                     <div class="wrap-content-element-propriety row-container">
                                                         <!-- si autorise reponse multiple -->
                                                             <div class="item-element">
-                                                                <span  class="entry-title"><i class="fa-solid fa-question"></i>Question 1</span>
-                                                                <div class="entry-content">
+                                                                <span  class="entry-title"><i class="fa-solid fa-question"></i>Question 1  <i class="fas fa-angle-down icons-down-question"></i></span>
+                                                                <div class="entry-content" style="display: none;">
                                                                     <div class="item-reponse-question ">
                                                                         <input id="reponse1" type="checkbox" name="question1[]">
                                                                         <label for="reponse1" class="reponse-choisi">Ma reponse 1</label>
@@ -523,8 +514,8 @@
                                                         <!-- fin -->
                                                          <!-- sinon -->
                                                         <div class="item-element">
-                                                            <span  class="entry-title"><i class="fa-solid fa-question"></i>Question 2</span>
-                                                            <div class="entry-content">
+                                                            <span  class="entry-title"><i class="fa-solid fa-question"></i>Question 2  <i class="fas fa-angle-down icons-down-question"></i></span>
+                                                            <div class="entry-content" style="display: none;">
                                                                 <div class="item-reponse-question ">
                                                                     <input type="radio" id="question2-reponse1" name="question1">
                                                                     <label for="question2-reponse1" class="reponse-choisi">Ma reponse 1</label>
@@ -542,8 +533,8 @@
                                                         <!-- fin -->
 
                                                         <div class="item-element">
-                                                            <span  class="entry-title"><i class="fa-solid fa-question"></i>Question 3</span>
-                                                            <div class="entry-content">
+                                                            <span  class="entry-title"><i class="fa-solid fa-question"></i>Question 3  <i class="fas fa-angle-down icons-down-question"></i></span>
+                                                            <div class="entry-content" style="display: none;">
                                                              
                                                                 <div class="form-group ">
                                                                     <select name="question3" id="question3" class="form-control">
@@ -575,6 +566,62 @@
                         </div>                                  
                         <div id="onglet2" class="tabcontent">
                                 <!-- resultat des sondages -->
+                                <div  class="wrap-sondage">
+                                    <p class="highcharts-description">
+                                        Répartition graphique des réponses au sondage
+                                     </p>
+                                    <div  class="item-graphe">
+                                        <figure class="highcharts-figure">
+                                            <div id="container1"></div>
+                                    
+                                            <table id="datatable1" style="display: none;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Question</th>
+                                                        <th>Nombres de participants</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Réponse 1</td>
+                                                        <td>60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Réponse 2</td>
+                                                        <td>40</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </figure>
+                                    </div> 
+                                    
+                                    <div  class="item-graphe">
+                                        <figure class="highcharts-figure">
+                                            <div id="container2"></div>
+                                    
+                                            <table id="datatable2" style="display: none;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Question</th>
+                                                        <th>Nombres de participants</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Réponse 1</td>
+                                                        <td>60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Réponse 2</td>
+                                                        <td>40</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </figure>
+                                    </div> 
+                                </div>
                                  
                         </div>                                
 
@@ -603,25 +650,6 @@
                                     </div>
                         
                                 </div>
-                                <!-- <div class="detail-price-cours">
-                                    
-                                     <a href="" class="btn-enroll">Envoyer un message</a>
-                                     <div class="btn-det-cours-actuel">
-                                        <div class="item-btn-cours">
-                                            <div class="btn-wish">
-                                            <div class="background-white-color">Initiative soutenue par :
-                                            </div><p>La Banque d'Investissement et de Developpement pour les Femmes (BIDF)</p></div>
-                                            <ul class="social-media-icons">
-                                                  <a class="tw tooltip-color link_action link_edit" aria-label="site web" data-balloon-pos="up" href="javascript:void()" id="btn-web-share"><i class="fas fa-globe"></i></a> 
-                                                <a class="tw tooltip-color link_action link_edit" aria-label="Twitter" data-balloon-pos="up" href="javascript:void()" id="btn-tw-share"><i class="fab fa-x-twitter"></i></a>
-                                                <a class="fb tooltip-color link_action link_edit" aria-label="Facebook" data-balloon-pos="up" href="javascript:void()" id="btn-fb-share"><i class="fab fa-facebook-f"></i></a>
-                                                
-                                                <a class="wh tooltip-color link_action link_edit" aria-label="Youtube" data-balloon-pos="up" href="javascript:void()" id="btn-wh-share"><i class="fab fa-youtube"></i></a>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    
-                                </div> -->
 
                                 <ul class="list-detail-cours">
                                     <li class="item-list-detail-cours">
@@ -661,6 +689,11 @@
         </div>
     </div>
 </div>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="js/detail-sondage.js"></script>
 
         

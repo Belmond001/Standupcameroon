@@ -118,6 +118,9 @@ aside.social-media {
 .item-bloc-left.description-bloc {
   margin-bottom: 19px;
 }
+  .wrap-page-wrapper-detail {
+    margin-top: 0;
+}
 .wrap-content-element-propriety p {
   padding: 0 10px;
 }
@@ -126,11 +129,13 @@ aside.social-media {
   width: 88%;
   /*! padding-left: 0; */
   /*! padding-right: 0; */
+  position: relative;
 }
 .right-page-wrapper-detail {
   width: 100%;
   padding: 0 0px;
   padding-top: 30px;
+  position: relative;
 }
 a.btn-enroll {
   width: 39%;

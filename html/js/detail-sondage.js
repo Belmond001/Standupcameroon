@@ -1,3 +1,53 @@
+    $('.item-element').eq().addClass('active').find('.entry-content').css('display','block');
+    $('.entry-title').on('click',function(){
+        $(this).siblings('.entry-content').slideToggle('fast');
+        $(this).parent().toggleClass('active');
+        $(this).parent().siblings().children('.entry-content:visible').slideUp('fast');
+        $(this).parent().siblings().children('.entry-content:visible').parent().removeClass('active');
+    });
+   
+    var nb_question=document.querySelectorAll('.item-graphe').length;
+            for (let i = 1; i<= nb_question; i++) {
+                Highcharts.chart('container'+i, {
+                    data: {
+                        table: 'datatable'+i
+                    },
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                    },
+                    title: {
+                        text: 'Repartition des réponses relatives a la question '+i,
+                        align: 'left'
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    accessibility: {
+                        point: {
+                            valueSuffix: '%'
+                        }
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<span style="font-size: 1.2em"><b>{point.name}</b>' +
+                                    '</span><br>' +
+                                    '<span style="opacity: 0.6">{point.percentage:.1f} ' +
+                                    '%</span>',
+                                connectorColor: 'rgba(128,128,128,0.5)'
+                            }
+                        }
+                    }
+                });
+                
+            }
+    
 
    function openContent(evt, content) {
 
@@ -20,6 +70,49 @@
         document.getElementById(content).style.display = "block";
 
         evt.currentTarget.className += " active";
+        if(content=='onglet2'){
+            var nb_question=document.querySelectorAll('.item-graphe').length;
+            for (let i = 1; i<= nb_question; i++) {
+                Highcharts.chart('container'+i, {
+                    data: {
+                        table: 'datatable'+i
+                    },
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                    },
+                    title: {
+                        text: 'Repartition des réponses relatives a la question '+i,
+                        align: 'left'
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    accessibility: {
+                        point: {
+                            valueSuffix: '%'
+                        }
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<span style="font-size: 1.2em"><b>{point.name}</b>' +
+                                    '</span><br>' +
+                                    '<span style="opacity: 0.6">{point.percentage:.1f} ' +
+                                    '%</span>',
+                                connectorColor: 'rgba(128,128,128,0.5)'
+                            }
+                        }
+                    }
+                });
+                
+            }
+        }
 
     }
 
