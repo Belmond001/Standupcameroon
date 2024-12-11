@@ -79,9 +79,6 @@
     background-color: #fff;
     box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.14);
     width: fit-content;
-    position: absolute;
-    top: 34px;
-    right: 125px;
 }
 
 span.icon-btn {

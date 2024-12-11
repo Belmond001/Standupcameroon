@@ -134,6 +134,9 @@
     display: flex;
     align-items: center;
 }
+.input-field p.email {
+    pointer-events: none;
+}
 .dashboard-pathway {
     position: absolute;
     top: 0;

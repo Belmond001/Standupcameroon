@@ -103,12 +103,14 @@ span.question-mark {
     justify-content: center;
     color: var(--third-color);
     font-size: 13px;
+    padding-top: 5px;
 }
 
 .status-sondage {
     background: #f4f2fe;
     color: #7A5AF8;
     padding: 7px 12px;
+    padding-top: 10px;
     font-size: 14px;
     line-height: 11px;
     min-width: 25px;

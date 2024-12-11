@@ -58,6 +58,11 @@
     background-color: var(--third-color);
     color: #fff;
     font-size: 12px;
+    display: flex;
+    
+}
+.edit-detail-profile a {
+    margin-top: 3px;
 }
 
 .profile-details-container h2 {

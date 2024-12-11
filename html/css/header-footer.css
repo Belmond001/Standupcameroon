@@ -968,7 +968,7 @@ span.sub-title {}
 }
 
 .wrapper-header {
-    position: absolute;
+    position: fixed;
     /* background: #ffffff; */
     padding-top: 0px;
     z-index: 3;
