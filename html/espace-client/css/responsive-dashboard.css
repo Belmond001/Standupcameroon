@@ -1,0 +1,214 @@
+@media only screen and (max-width: 5000px) {
+ 
+}
+
+@media only screen and (max-width: 3000px) {
+
+}
+
+@media only screen and (max-width: 1320px) {
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 1024px) {
+  
+
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .dashboard-menu {
+        margin-top: 35px;
+    }
+    
+    .dashboard-left {
+        display: none;
+    }
+    
+    .dashboard-right {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .item-first-section {
+        padding: 0;
+        margin: 0;
+    }
+    
+    section.wrapper-dashboard {
+        padding: 35px 0 35px;
+    }
+    
+    .item-graph-section {
+        padding: 0;
+    }
+    
+    .item-graph-section h4 {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+    
+    .first-container-text h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .first-container-text P {
+        line-height: 20px;
+        font-size: 13px;
+    }
+    
+    .first-container-body {
+        flex-wrap: nowrap;
+    }
+    
+    .item-first-container h4::after, .item-second-container h4::after, .item-third-container h4::after {
+        width: 30px;
+        height: 20px;
+        right: -30px;
+        border-radius: 5px;
+    }
+    
+    .item-first-container h4::before {
+        width: 20px;
+        height: 15px;
+        right: -15px;
+    }
+    
+    .first-container-icon {
+        font-size: 26px;
+    }
+    
+    .item-second-container h4::before {
+        width: 20px;
+        height: 15px;
+        right: -15px;
+    }
+    
+    .second-container-text h2 {
+        font-size: 20px;
+    }
+    
+    text.highcharts-title {
+        font-size: 17px ! important;
+    }
+    
+    .second-container-text h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .highcharts-description {
+        text-align: center;
+    }
+    
+    .item-second-container {
+        width: 100%;
+    }
+
+    .header-left-items div {
+        margin-right: 0;
+    }
+
+    .header-left-items {
+        width: initial;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    .item-first-container {
+        width: 50%;
+    }
+    
+    .item-graph-section h4 {
+        font-size: 15px;
+    }
+    
+    .first-container-text h2 {
+        font-size: 28px;
+    }
+    
+    .second-container-text h2 {
+        font-size: 17px;
+    }
+    
+    text.highcharts-title {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+   
+    .item-first-container {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+    }
+    
+    .item-graph-section h4 {
+        font-size: 14px;
+    }
+    
+    .first-container-text h2 {
+        font-size: 25px;
+    }
+    
+    .first-container-text P {
+        font-size: 12px;
+    }
+    
+    .first-container-icon {
+        font-size: 22px;
+    }
+    
+    .second-container-text h2 {
+        font-size: 16px;
+    }
+    
+    text.highcharts-title {
+        font-size: 15px !important;
+    }
+        .logo-img {
+        width: 90px;
+    }
+    
+    section.wrapper-dashboard {
+        padding: 30px 0 45px;
+    }
+    .highcharts-figure, .highcharts-data-table table {
+        min-width: 100px;
+    }
+    .item-second-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+  
+    
+}
+
+@media only screen and (max-width: 375px) {
+  
+    .second-container-body {
+        padding: 10px;
+    }
+    
+    .highcharts-description {
+        line-height: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+
+}

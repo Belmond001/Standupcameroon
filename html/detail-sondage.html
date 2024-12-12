@@ -78,7 +78,43 @@
                             <ul>
                                 <li class="header-user-info">
                                     <i class="far fa-user"></i>
+                                    <!-- si connecter cacher ceci -->
                                     <a href="#">Se connecter</a>
+                                    <!-- et afficher ceci -->
+                                    <a href="#">Profil</a>
+                                    <div id="infoCompteUser" class="infoCompteUser" style="display: none;">
+                                        <div class="moncompte item">
+                                            <div class="profil-user">
+                                                
+                                                <div class="image-profil">
+                                                    <!-- si utilisateur n'a pas une photo de profil  decommenter ceci -->
+                                                    <!-- <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg> -->
+                                                    <!-- si non afficher ceci -->
+                                                    <img src="images/team/team1.png" alt="">
+                                                </div>
+                                                <a href="./espace-client/mon-compte.html" class="editer-profil">
+                                                    <i class="fa fa-camera"></i>
+                                                </a>
+    
+                                                <div class="info-user center">
+                                                    <span class="name">KAMDEM SIMO</span>&nbsp;
+                                                    <span class="fname">Belmond</span>
+                                                </div>
+                                                <div class="email-user center">kssbelastars@gmail.com</div>
+                                            </div>
+                                            <div class="manage-myaccount">
+                                                <a href="javascript:gotoURL('./espace-client/index.html','loader')">Accéder à mon espace privé</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="item logout-all-account">
+                                            <a href="javascript:Notification_fermeture_session('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', '10d9d8680b47824f2bbe40955590250d') ">
+                                                Se déconnecter - Fermer ma session
+                                            </a>
+                                        </div>
+    
+                                    </div>
+                                    <!-- fin -->
                                 </li>
                                 <li class="social-header row-container">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -175,7 +211,7 @@
                                     <li class="header-btn">
                                         <a class="btn transparent-btn" href="#">Je participe <i class="fa-solid fa-reply-all"></i></a>
                                     </li>
-                                    <li class="header-shop-cart">
+                                    <li class="header-shop-cart" id="serach_icon_top">
                                         <button type="button">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </button>
@@ -236,7 +272,43 @@
                         <ul>
                             <li class="header-user-info">
                                 <i class="far fa-user"></i>
+                                <!-- si connecter cacher ceci -->
                                 <a href="#">Se connecter</a>
+                                <!-- et afficher ceci -->
+                                <a href="#">Profil</a>
+                                <div id="infoCompteUser" class="infoCompteUser" style="display: none;">
+                                    <div class="moncompte item">
+                                        <div class="profil-user">
+                                            
+                                            <div class="image-profil">
+                                                    <!-- si l'utiliser a ajoute une photo afficher ceci -->
+                                                    <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg>
+                                                    <!-- si non afficher ceci -->
+                                                    <!-- <img src="images/team/team1.png" alt=""> -->
+                                            </div>
+                                            <a href="./espace-client/mon-compte.html" class="editer-profil">
+                                                <i class="fa fa-camera"></i>
+                                            </a>
+
+                                            <div class="info-user center">
+                                                <span class="name">KAMDEM SIMO</span>&nbsp;
+                                                <span class="fname">Belmond</span>
+                                            </div>
+                                            <div class="email-user center">kssbelastars@gmail.com</div>
+                                        </div>
+                                        <div class="manage-myaccount">
+                                            <a href="javascript:gotoURL('./espace-client/index.html','loader')">Accéder à mon espace privé</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="item logout-all-account">
+                                        <a href="javascript:Notification_fermeture_session('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', '10d9d8680b47824f2bbe40955590250d') ">
+                                            Se déconnecter - Fermer ma session
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!-- fin -->
                             </li>
                             <li class="social-header row-container">
                                 <a href="https://www.facebook.com/PDLE-195812521301041/"><i class="fab fa-facebook-f"></i></a>
@@ -386,6 +458,23 @@
                 </div>
 
             </div>
+        </div>
+    </div>
+
+
+    <div class="bloc-search-bar--">
+        <div class="content-search-display">
+            <button type="button" id="close" data-dismiss="dropdown" title="Refermer le volet moteur de recherche">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="     0px" viewBox="0 0 224.512 224.512" style="enable-background:new 0 0 224.512 224.512;" xml:space="preserve">
+                    <polygon style="fill:#010002;" points="224.507,6.997 217.521,0 112.256,105.258 6.998,0 0.005,6.997 105.263,112.254    0.005,217.512 6.998,224.512 112.256,119.24 217.521,224.512 224.507,217.512 119.249,112.254  "></polygon>
+                </svg>
+            </button>
+            <div class="titre-search-bar">RECHERCHER SUR LE SITE</div>
+            <form action="resultats-recherche.php" method="get" id="search-bar">
+                <input type="text" name="search" id="mot-cle" placeholder="Mots clés...">
+                <button class="search-button" id="search-button" type="submit">RECHERCHER</button>
+            </form>
+            <!-- <p class="description-search-bar"><strong>Mots clés les plus recherchés :</strong> <br> </p> -->
         </div>
     </div>
 

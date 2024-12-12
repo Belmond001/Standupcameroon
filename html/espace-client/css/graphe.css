@@ -17,7 +17,7 @@
 }
 .item-graph-section {
     position: relative;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .item-first-container{
     flex: 0 0 auto;

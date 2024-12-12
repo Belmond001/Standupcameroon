@@ -116,7 +116,7 @@
 
 .item-dashboard-detail-1 {
     margin-right: 20px;
-    padding-top: 75px;
+    padding-top: 15px;
 }
 
 .wrap-dashboard-detail-2 {
@@ -186,7 +186,7 @@
 
 .item-dashboard-detail-2 {
     width: calc(50% - 20px);
-    padding-top: 75px;
+    padding-top: 15px;
 }
 .icon-edit a {
     display: flex;

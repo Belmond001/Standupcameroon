@@ -74,6 +74,7 @@ label.label_field {
 .right-bloc-election {
   padding: 0;
   width: 100%;
+  margin-bottom: 42px;
 }
 
 }
@@ -82,7 +83,32 @@ label.label_field {
 @media only screen and (max-width: 600px) {
   
 
+  .candidat-image {
+    width: 100%;
+}
 
+.image-banner img {
+    height: 100%;
+    width: 200px;
+}
+
+a {}
+
+.image-banner a {
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.candidat-author {
+    width: 100%;
+}
+
+.candidat-item {
+    padding: 0 15px 15px;
+    margin-bottom: 17px;
+}
 
 
 }

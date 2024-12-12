@@ -1,13 +1,12 @@
 .wrapper-dashboard{
+    background-color: #eff1f5;
     position: relative;
-    padding: 20px;
-    padding-top: 90px;
-    padding-bottom: 0;
+    padding: 50px 0 110px;
 }
 .card{
-    background: #ffffff;
+    /* background: #ffffff; */
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .row-contain-title-page {
@@ -23,9 +22,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-}
-
-.titre-page-generale h1 {
 }
 
 .titre-page-generale::before {
@@ -49,7 +45,7 @@
     background: #ffffff;
 }
 .wrap-card {
-    background: #eff1f5;
+    /* background: #eff1f5; */
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -132,8 +128,8 @@ svg.icon-tabler.icon-tabler-plus {
 .dashboard-right {
     /* background-color: #fff; */
     border-radius: 10px;
-    width: calc(100% - 289px);
-    margin-left: 289px;
+    /* width: calc(100% - 289px); */
+    /* margin-left: 289px; */
     position: relative;
 }
 
@@ -295,6 +291,36 @@ svg.icon-tabler.icon-tabler-plus {
     display: flex;
     align-items: center;
 }
+.header-right-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menu-bar{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: var(--third-color);
+    cursor: pointer;
+    overflow: hidden;
+}
+.menu-bar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dashboard-left .menu-close {
+    margin: 0;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    font-size: 17px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 
 /******************************************************************* DASHBOAD-BODY-LEFT *******************************************************/
 
@@ -306,8 +332,6 @@ svg.icon-tabler.icon-tabler-plus {
 }
 .wrap-dashboad {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
@@ -445,14 +469,9 @@ li.btn-pagination a {
 
 
 .wrapper-btn {
-    padding: 28px 40px;
-    background: white;
     position: sticky;
-    bottom: 0px;
     z-index: 10;
-    border-top: 1px solid #eee;
     margin-top: 20px;
-    box-shadow: 0 0 12px #0000000f;
     width: 100%;
 }
 

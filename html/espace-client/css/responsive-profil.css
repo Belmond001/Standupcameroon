@@ -1,0 +1,134 @@
+@media only screen and (max-width: 5000px) {
+ 
+}
+
+@media only screen and (max-width: 3000px) {
+
+}
+
+@media only screen and (max-width: 1320px) {
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 1024px) {
+  
+
+  
+}
+@media only screen and (max-width: 768px) {
+    .dashboard-profil-img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .dashboard-profil-box {
+        margin: 0 auto;
+    }
+    
+    .input-box {
+        width: 48%;
+    }
+    
+    .item-dashboard-profil {
+        padding: 30px 20px;
+    }
+    
+    .wrapper-dashboard {
+        padding: 30px 0 110px;
+    }
+    .content-fixed-btn button, .content-fixed-btn a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .input-box {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .content-fixed-btn button, .content-fixed-btn a {
+        padding: 7px 12px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    
+    .input-box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .dashboard-profil-box {
+        margin: 0 auto;
+    }
+    
+    .wrapper-dashboard {
+        padding: 20px 0 65px;
+    }
+    
+    .dashboard-profil-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .item-dashboard-profil {
+        padding: 20px;
+    }
+    
+    .profil-edit-icon {
+        right: 25px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    
+    .wrap-item-dashboard-profil {
+        margin-top: 10px;
+    }
+    
+    .input-field {
+        height: 35px;
+        margin-top: 5px;
+    }
+    
+    .input-box label {
+        font-size: 12px;
+    }
+    
+    .input-field p.email {
+        font-size: 13px;
+    }
+    
+    
+    ::placeholder {
+        font-size: 13px;
+    }
+    
+    .content-fixed-btn button, .content-fixed-btn a {
+        padding: 5px 10px;
+    }
+  
+}
+
+@media only screen and (max-width: 425px) {
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .content-fixed-btn button, .content-fixed-btn a {
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  
+  
+}

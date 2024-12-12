@@ -1,165 +1,249 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/profil.css">
-    <link rel="stylesheet" href="css/responsive-profil.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="">
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     <link rel="icon" type="image/x-icon" href="images/icons/favicon.jpg">
+    <title>Editer profil - Espace client :Standupcameroon site Officiel</title>
 
-    <title>Dashboard: Standupcameroon</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <meta name="image" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noarchive" />
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/actualite.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/profil.css">
+
+
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" type="text/css" href="css/responsive-header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/interne.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-interne.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-index.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-profil.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="js/app-mesfonctions.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- JS files -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo-img">
-            <img src="images/logo.png" alt="logo">
-        </div>
-        <div class="header-left-items">
-            <div class="header-profil-box">
-                <div class="header-profil-picture">
-                    <img src="images/profilman.png" alt="photo de profil">
-                </div>
-                <div class="second_field_btn">
-                    <button type="button" class="btn_option"><i class="fa-solid fa-angle-down"></i></button>
-        
-                    <div class="action_element">
-                        <i class="fas fa-caret-up" aria-hidden="true"></i>
-                        
-                            <a class="link_action link_edit" href="#">
-                                <i class="fas fa-xmark"></i><span>Se deconnecter</span>
-                            </a>
-                           
+
+    <!-- HEADER -->
+
+    <div class="header-mobile">
+        <div class="container">
+            <div class="wrap-header-mobile">
+
+                <div class="top-super-header-mobile row-container">
+                    <div class="left-top-super-header mobile-left-top-super-header">
+                        <ul class="header-contact-info">
+                            <li class="item-info-contact">
+                                <!-- <i class="fas fa-map-marker-alt"></i>  -->
+                                StandUpCameroon: Plateforme de sondages sur l'opinion des citoyens citoyens à propos de leurs dirigeants. 
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right-top-super-header">                 
+                        <ul>
+                            <li class="header-user-info">
+                                <i class="far fa-user"></i>
+                                <a href="#">Se déconnecter</a>
+                            </li>
+                            <li class="social-header row-container">
+                                <a href="https://www.facebook.com/PDLE-195812521301041/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/PdleBurundi"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <div class="middle-header" id="wrapper-bottom-header">
+                    <div class="wrap-middle-header row-container">
+                        <div class="left-middle-header">
+                            <div class="logo-and-3-bandes-header row-container">
+                                <div class="widget_menu content_menu_btn">            
+                                    <div class="logo-header">
+                                        <a href="./"><img src="images/logo.png" alt=""></a>
+                                    </div>
+                                    
+                                </div>
+                            
+                            </div>
+
+                            <div class="widget_menu content_panel_menu_mobile">
+                                <div class="container_panel" id="panelmenu">
+
+                                    <div class="main-menu-mb" id="main-menu-mb">
+                                        <div class="listmenu"><a href="./" class="linklist-menu bush-left">Accueil</a></div>
+                                        <div class="listmenu">
+                                            <input type="radio" name="submenu-mb" id="item2">
+                                            <label for="item2" class="submenu-label">
+                                                <span class="linklist-menu">Sondages</span>
+                                                <ul class="panel_submenu_mb">
+                                                    
+                                                    <li class="smenu-item">
+                                                        <a class="linksubmenu__mb" href="#" target="">Créer un sondage</a>    
+                                                    </li>
+                                                    <li class="smenu-item">
+                                                        <a class="linksubmenu__mb" href="#" target="">Voir les sondages </a>                          
+                                                    </li>
+                                                </ul>
+                                            </label>
+                                        </div>
+                                        <div class="listmenu"><a href="./mon-compte.html" class="linklist-menu bush-left">Mon compte</a></div>
+                                    </div>
+
+
+                                    <div class="contentclose">
+                                        <i class="fa fa-xmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div  class="right-middle-header">
+                            <div class="header-detail-box">
+                                <div class="header-profil-img">
+                                    <img src="images/avatar/t2.png" alt="famille">
+                                </div>
+                                <div class="profil-name-box">
+                                    <h2>Kamdem Belmond</h2>
+                                </div>
+                            </div>
+                            <div class="icon_bar">
+                                <svg fill="#222" xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16"><g><g><path d="M1.125 6.875H20.75a1.125 1.125 0 1 1 0 2.25H1.125a1.125 1.125 0 1 1 0-2.25zm.012 6.844h22.726c.628 0 1.137.509 1.137 1.137v.007C25 15.49 24.49 16 23.863 16H1.137C.51 16 0 15.49 0 14.863v-.007c0-.628.51-1.137 1.137-1.137zM1.137 0h16.476c.628 0 1.137.51 1.137 1.137v.007c0 .628-.51 1.137-1.137 1.137H1.137C.51 2.281 0 1.772 0 1.144v-.007C0 .51.51 0 1.137 0z"></path></g></g></svg>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-    </header>
-    <section class="wrapper-dashboard">
+    </div>
+
+    <!-- FIN  -->
+  
+    <!-- Banniere interne -->
+    <section class="biography-wrapper">
+        <div class="container">
+            <div class="wrap-biography">
+
+                <div class="content-text-center">
+                    <h3 class="title-banner-center detail-tit aos-init aos-animate" data-aos="fade-down" data-aos-delay="100" data-aos-duration="3000">Edition du profil</h3>
+                    <ol class="breadcrumblist aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
+                        <li><a href="./">Accueil</a></li> /
+                        <li><a href="actualite.html">Edition du profil</a></li>
+                        
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+     <!-- Fin -->
+   
+
+     <section class="wrapper-dashboard">
         <div class="container dashboard">
             <div class="wrap-dashboad">
                 <!--  -->
-                <div class="dashboard-left">
-                    <div class="item-dashboard-menu">
-                        <div class="wrap-item-dashboard-menu">
-                            <ul class="dashboard-menu">
-                                <li class="menu-list">
-                                    <a href="dashboard.html"><span><i class="fa-solid fa-chart-line"></i></span>Dashboard</a>
-                                </li>
-                              
-                                <li class="menu-list ">
-                                    <a href="sondage.html"><span><i class="fa-solid fa-user-group"></i></span>Sondages</a>
-                                </li>
-                              
-                                <li class="menu-list active-menu">
-                                    <a href="mon-compte.html"><span><i class="fa-regular fa-user"></i></span>Mon compte</a>
-                                </li>
-                               
-                            </ul>
+                <div class="card">
+                    <div class="wrap-card">
+                        <!--  Profil -->
+                        <div class="dashboard-profil">
+                        
+                            <div class="item-dashboard-profil">
+                                <div class="dashboard-profil-box">
+                                    <div class="dashboard-profil-img">
+                                        <img src="images/avatar/t2.png" alt="famille">
+                                    </div>
+                                    <div class="profil-edit-icon">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+                                <div class="wrap-item-dashboard-profil">
+                                    
+                                    <div class="input-box">
+                                        <label for="utilisateur">Nom</label>
+                                        <div class="input-field">
+                                            <div class="input-icon"><i class="fa-regular fa-user"></i></div>
+                                            <input type="text" name="utilisateur" id="utilisateur" placeholder="Blic">
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="prenom">Prénom</label>
+                                        <div class="input-field">
+                                            <div class="input-icon"><i class="fa-regular fa-user"></i></div>
+                                            <input type="text" name="prenom" id="prenom" placeholder="Jordy">
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="email">Email</label>
+                                        <div class="input-field">
+                                            <div class="input-icon"><i class="fa-regular fa-envelope"></i></div>
+                                            <p class="email">blicjordy@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="telephone">Téléphone</label>
+                                        <div class="input-field">
+                                            <div class="input-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                                            <input type="text" name="telephone" id="telephone" placeholder="+237600000000">
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="adresse">Adresse</label>
+                                        <div class="input-field">
+                                            <div class="input-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                            <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                                        </div>
+                                    </div>
+                                    <div class="input-box">
+                                        <label for="lieu-residence">Lieu de residence</label>
+                                        <div class="input-field">
+                                            <div class="input-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                            <input type="text" name="lieu-residence" id="lieu-residence" placeholder="Lieu residence">
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-btn">
+                                        <div class="content-fixed-btn">
+                                            <a href="sondage.html" class="prev-btn"><i class="fas fa-angle-left"></i> Quitter</a>
+                                            <a href="question-sondage.html" class="next-btn">Modifier <i class="fas fa-angle-right"></i> </a>
+                
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--  -->
-                <div class="dashboard-right">
-                    <!--  -->
-                    <div class="item-dashboard">
-                        <div class="wrap-item-dashboard">
-                            <div class="menu-top">
-                                <div class="left-menu-top">
-                                    <div class="menu-top publish active-menu-top">
-                                        <a href="#"><span><i class="fas fa-user"></i></span>Mon compte</a>
-                                    </div>
-                                   
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- search  -->
-                    <!--  -->
-                    <div class="card">
-                        <!-- titre des page -->
-                        <div class="row-contain-title-page row-container">
-                            <div class="titre-page-generale">
-                                <h1>Profil</h1>
-                            </div>
-                            
-                        </div>
-                        <div class="wrap-card">
-                            <!--  Profil -->
-                            <div class="dashboard-profil">
-                            
-                                <div class="item-dashboard-profil">
-                                    <div class="dashboard-profil-box">
-                                        <div class="dashboard-profil-img">
-                                            <img src="images/avatar/t2.png" alt="famille">
-                                        </div>
-                                        <div class="profil-edit-icon">
-                                            <i class="fa-regular fa-pen-to-square"></i>
-                                        </div>
-                                    </div>
-                                    <div class="wrap-item-dashboard-profil">
-                                        
-                                        <div class="input-box">
-                                            <label for="utilisateur">Nom</label>
-                                            <div class="input-field">
-                                                <div class="input-icon"><i class="fa-regular fa-user"></i></div>
-                                                <input type="text" name="utilisateur" id="utilisateur" placeholder="Blic">
-                                            </div>
-                                        </div>
-                                        <div class="input-box">
-                                            <label for="prenom">Prénom</label>
-                                            <div class="input-field">
-                                                <div class="input-icon"><i class="fa-regular fa-user"></i></div>
-                                                <input type="text" name="prenom" id="prenom" placeholder="Jordy">
-                                            </div>
-                                        </div>
-                                        <div class="input-box">
-                                            <label for="email">Email</label>
-                                            <div class="input-field">
-                                                <div class="input-icon"><i class="fa-regular fa-envelope"></i></div>
-                                                <p class="email">blicjordy@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="input-box">
-                                            <label for="telephone">Téléphone</label>
-                                            <div class="input-field">
-                                                <div class="input-icon"><i class="fa-solid fa-phone-volume"></i></div>
-                                                <input type="text" name="telephone" id="telephone" placeholder="+237600000000">
-                                            </div>
-                                        </div>
-                                        <div class="input-box">
-                                            <label for="adresse">Adresse</label>
-                                            <div class="input-field">
-                                                <div class="input-icon"><i class="fa-solid fa-location-dot"></i></div>
-                                                <input type="text" name="adresse" id="adresse" placeholder="Adresse">
-                                            </div>
-                                        </div>
-                                        <div class="input-box">
-                                            <label for="lieu-residence">Lieu de residence</label>
-                                            <div class="input-field">
-                                                <div class="input-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                                                <input type="text" name="lieu-residence" id="lieu-residence" placeholder="Lieu residence">
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="wrapper-btn">
-                                <div class="content-fixed-btn">
-                                    <a href="sondage.html" class="prev-btn"><i class="fas fa-angle-left"></i> Quitter</a>
-                                    <a href="question-sondage.html" class="next-btn">Modifier <i class="fas fa-angle-right"></i> </a>
-        
-                                </div>
-                            </div>
-                            <!--  -->
-                        </div>
-                    </div>
-                    
-                </div>
+            
+                
             </div>
             
         </div>
@@ -167,25 +251,44 @@
     </section>
 
 
+        
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Sélectionne tous les éléments avec la classe 'item'
-            const items = document.querySelectorAll('.menu-list');
+   <!-- FOOTER -->
 
-            // Ajoute un écouteur d'événement 'click' à chaque élément
-            items.forEach(function(item) {
-                item.addEventListener('click', function() {
-                    // Supprime la classe 'active' de tous les éléments
-                    items.forEach(function(el) {
-                        el.classList.remove('active-menu');
-                    });
-                    // Ajoute la classe 'active' à l'élément cliqué
-                    this.classList.add('active-menu');
-                });
-            });
-        });
-    </script>
+  
+
+  <div class="footer-copyright">
+    <div class="wrapper-footer-copyright container">
+      <a href="#banniere" class="scroll-to-top">
+        <i class="fa-solid fa-angles-up icon-angle-double-up"></i>
+                  </a>
+      <div class="copyright">
+        <p>
+         Copyright 2024 ©Standupcameroon. 
+        </p>
+      </div>
+      <ul class="copyright-menu">
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+        
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+<script src="js/footer.js"></script>
+      
+      <!-- FOOTER FIN-->
+    <!-- FIN -->
+
+
 
 </body>
 </html>
