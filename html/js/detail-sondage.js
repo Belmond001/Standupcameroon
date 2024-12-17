@@ -1,8 +1,8 @@
-    var modal = document.getElementById("voteModal");
-    var cancelBtn = document.getElementById("closeModal");
-    cancelBtn.onclick = function() {
-        modal.style.display = "none";
-    }
+    // var modal = document.getElementById("voteModal");
+    // var cancelBtn = document.getElementById("closeModal");
+    // cancelBtn.onclick = function() {
+    //     modal.style.display = "none";
+    // }
     
     $('.item-element').eq().addClass('active').find('.entry-content').css('display','block');
     $('.entry-title').on('click',function(){
@@ -36,66 +36,7 @@
         document.getElementById(content).style.display = "block";
 
         evt.currentTarget.className += " active";
-        if(content=='onglet2'){
-             // Nombre de questions
-            const nb_question = document.querySelectorAll('.item-graphe').length;
-
-            // Boucle pour chaque question
-            for (let i = 1; i <= nb_question; i++) {
-                const containerId = 'container' + i;
-                const tableId = 'datatable' + i;
-
-                // Vérifiez si le conteneur et la table existent avant de créer le graphique
-                if (document.getElementById(containerId) && document.getElementById(tableId)) {
-
-                    Highcharts.chart(containerId, {
-
-                        data: {
-                            table: tableId
-                        },
-                    
-                        chart: {
-                            plotBackgroundColor: null,
-                            plotBorderWidth: null,
-                            plotShadow: false,
-                            type: 'pie'
-                        },
-                    
-                        title: {
-                            text: `Répartition des réponses relatives à la question ${i}`
-                        },
-                        accessibility: {
-                            point: {
-                                valueSuffix: '%'
-                            }
-                        },
-                    plotOptions: {
-                            pie: {
-                                allowPointSelect: true,
-                                cursor: 'pointer',
-                                dataLabels: {
-                                    enabled: true,
-                                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-                                },
-                                showInLegend: true
-                            }
-                        },
-                    
-                        //colors: ['#491d05', '#ff5252', '#background-color: #e37b03;','#910000', '#9ccc65','#fe2d01'],
-                        colors: [  '#E37B03','#50B432', '#FE2D01','#F9C70C','#491d05', '#8839B9','#00AEEF'],
-                        tooltip: {
-                            formatter: function () {
-                                return '<b>' + this.point.name + '</b><br/>' +
-                                    this.point.y + ' Participants';
-                            }
-                        }
-                    });
-                } else {
-                    console.warn(`Le conteneur ou la table manquant(e) pour la question ${i}.`);
-                }
-            }
-
-        }
+       
 
     }
 
