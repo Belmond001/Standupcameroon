@@ -16,10 +16,10 @@ section.biography-wrapper {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 129px 0 55px;
+    padding: 185px 0 55px;
     color: var(--white-color);
     background-color: #000052;
-    height: 174px;
+    height: 300px;
     -
     top: 0;
 }
