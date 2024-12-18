@@ -21,7 +21,7 @@
 }
 
 
-@media only screen and (max-width: 5000px) {
+@media only screen and (max-width: 1200px) {
   .wrap-item-info-header {
     margin-bottom: 15px;
 }
@@ -129,7 +129,7 @@ ul.header-contact-info li {
 }
 
 
-@media only screen and (max-width: 5000px) {
+@media only screen and (max-width: 1024px) {
 div#wrapper-bottom-header {
     box-shadow: 0px 14px 20px #00000021;
 }
@@ -237,7 +237,6 @@ a.linksubmenu__mb {
 }
 .header-mobile .container {
   padding: 0 !important;
-  width: 100%;
 }
 .left-top-super-header {
   width: 100%;
@@ -310,7 +309,6 @@ a.support-logo {
         z-index: 3;
         position: relative;
         display: block;
-        width: 100%;
     }
 .info-header {
     width: 100%;
@@ -332,31 +330,9 @@ a.support-logo {
     width: 100px;
     object-fit: contain;
 }
-    .header-detail-box {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-size: 8px;
-    color: white;
-}
-
-.header-profil-img {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    width: 70px;
-    aspect-ratio: 1;
-    border-radius: 50px;
-    margin-right: 5px;
-}
-
-.header-profil-img + .profil-name-box {
-    text-align: left;
-    margin-right: 10px;
-}
+    
 .right-middle-header {
-  width: 60%;
+  width: 50%;
   justify-content: end;
   display: flex;
   align-items: center;
@@ -395,7 +371,7 @@ a.support-logo {
 
 .left-middle-header {
     padding-left: 0;
-    width: fit-content;
+    width: 50%;
 }
 
     .widget_menu.content_menu_btn {
@@ -806,6 +782,13 @@ ul.header-contact-info li:first-child {
 }
 .footer-link-item + .footer-link-item {
 }
+    .news-letter-title {
+    width: 100%;
+}
+
+.wrap-form-news-letter {
+    width: 100%;
+}
 .footer-links {
 }
 .footer-links div +div {
@@ -1027,7 +1010,10 @@ a.support-logo {
 .logo-amories {
   width: 58px;
 } 
-    
+    .image-logo-footer {
+    height: 105px;
+    position: relative;
+}
 .footer-links div + div {
   padding: 0;
 }
@@ -1252,10 +1238,15 @@ a.logo-right img {
       margin-bottom: 12px;
     }
     .wrap-form-news-letter {
-      width: 92%;
+      width: 100%;
       padding-top: 0;
     }
 
+.wrap-newsletter.row-container {
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 30px;
+}
 
 }
 
@@ -1291,9 +1282,10 @@ a.logo-right img {
   padding-top: 0px;
 }
 .left-middle-header {
-  width: fit-content;
+  width: 70%;
 }
 .right-middle-header {
+  width: 20%;
 }
 .left-middle-header a {
   /*! width: 35px; */

@@ -150,6 +150,414 @@ body {
     box-shadow: 0 15px 18px rgb(2 21 78 / 10%);
 }
 
+
+/* ***********************************************************************************************************
+|                                                   GRSTION INFO COMPTE Utilisateur                                                           |
+**************************************************************************************************************/
+.infoCompteUser {position: absolute;width: 375px;padding: 20px 6px 9px;padding-bottom: 0;border-radius: 10px;background: white;box-shadow: 1px 2px 9px #b6b6b6;/* border: 1px solid #eee; */top: 60px;right: -300%;z-index: 2;max-width: 400px;height: auto;overflow: auto;}
+
+.infoCompteUser .item{border-bottom: 1px solid #eee;}
+
+.infoCompteUser .moncompte{/* padding: 0 33px; */color: black;display: flex;flex-direction: column;align-items: center;}
+
+
+span.dot {
+    background: black;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.charte li {
+    display: flex;
+    align-items: center;
+}
+
+.charte a:hover {
+    background: #eee;
+}
+
+.logout-all-account a:hover {
+    background: #eeeeeec7;
+}
+
+.manage-myaccount:hover {
+    background: #eeeeeeb8;
+}
+
+.add-account a:hover {
+    background: #eeeeeea6;
+}
+
+span.text-profil {
+    color: white !important;
+    font-weight: 600;
+    font-size: 37px;
+    text-transform: lowercase;
+}
+
+.image-profil {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    flex-wrap: wrap;
+    /* position: relative; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    align-items: center;
+    z-index: 1;
+    background: #c6942a;
+}
+
+.other-account {
+    display: flex;
+    padding: 11px 32px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.item.logout-all-account {
+    padding: 16px;
+    color: black;
+}
+
+.political-charte {
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+ul.charte {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 20px;
+}
+
+.charte a {
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px 7px;
+    transition: all ease 0.5s;
+}
+
+.logout-all-account a {
+    border: 1px solid #dadce0;
+    padding: 8px 24px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all ease-in 0.6s;
+    font-size: 16px;
+}
+
+.statut-account {
+    color: black;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    position: absolute;
+    right: 0;
+}
+.profilother-account {
+    border-radius: 50%;
+    display: flex;
+    height: 32px;
+    /* margin-bottom: 4px; */
+    /* margin-top: 2px; */
+    position: relative;
+    /* vertical-align: top; */
+    width: 32px;
+    overflow: hidden;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    background: #054a7a;
+}
+
+.profilother-account img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-other-account {
+    display: flex;
+    width: 87%;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: 13px;
+    /* align-items: start; */
+    padding-left: 16px;
+    line-height: 20px;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+}
+
+.info-other-account .info-user {
+    font-weight: 500;
+    padding-right: 74px;
+}
+
+.profil-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.moncompte .info-user.center {
+    /* color: #202124; */
+    line-height: 30px;
+}
+
+.email-user.center {
+    color: black;
+}
+
+.moncompte .email-user {
+    margin-bottom: 16px;
+    font-weight: 300;
+    color: #5f6368;
+    font-size: 16px;
+}
+
+#infoCompteUser i {
+    color: black;
+}
+
+.add-account a {
+    padding: 11px 32px 15px;
+    display: inline-block;
+    display: flex;
+    transition: all ease 0.7s;
+}
+
+.add-account a i {
+    margin-right: 19px;
+    width: 32px;
+}
+
+.add-account a span {
+    display: block;
+}
+
+.manage-myaccount {
+    border: 1px solid #dadce0;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    max-width: 254px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    outline: 0;
+    padding: 6px 16px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+#infoCompteUser span {
+    color: black;
+}
+
+
+.profilother-account .text-profil {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.image-profil img {
+    width: 100%;
+}
+svg.dx-icon {
+    fill: white;
+    width: 100%;
+    height: 40px;
+}
+.editer-profil {
+    position: absolute;
+    background: white;
+    width: 28px;
+    color: black;
+    z-index: 2;
+    top: 38%;
+    align-items: center;
+    font-size: 13px;
+    justify-content: center;
+    display: flex;
+    height: 28px;
+    right: 30%;
+    border-radius: 50%;
+    box-shadow: 1px 2px 9px #c0bdbd;
+}
+
+/***************************************************Recherche*************************************************************/
+
+
+
+.bloc-search-bar-- {
+    position:  absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    top: 0;
+    width:  100%;
+    background-color: rgb(245, 245, 245);
+    height: 200px;
+    z-index: 10010;
+    margin-top: 1px;
+    padding-top: 30px;
+    transform: translateY(-178%);
+    transition: all 0.8s;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+}
+
+.content-search-display {
+    width: 900px;
+    max-width: 100%;
+    margin:  0 auto;
+    height: auto;
+    position:  relative;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+button#close {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 34px;
+    cursor: pointer;
+}
+
+
+.titre-search-bar {
+    margin: 0 0 10px 0;
+    font-size: 27px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p.description-search-bar {
+    color: rgb(37, 37, 37);
+    font-size: 17px;
+    width: auto;
+    line-height:  1.5;
+    opacity: 0.8;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.bloc-search-bar--:before {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    left: 55vw;
+    width: 0;
+    height: 0;
+    margin: auto;
+    content: '';
+    border-bottom: 15px solid rgb(242, 242, 242);
+    border-right: 20px solid rgba(0, 0, 0, 0);
+    border-left: 20px solid rgba(0, 0, 0, 0);
+    z-index: 1500;
+    display: none;
+}
+
+.bloc-search-bar--.show-search-bar--- {
+    transform: translateY(0);
+}
+
+.icone-search svg, 
+.icone-cle svg {
+}
+
+input#mot-cle {
+    width: 60%;
+    height: 50px;
+    border: 0px solid rgb(216, 216, 216);
+    padding: 0 10px;
+    font-size: 19px;
+    margin-right: 0;
+    background: #fff;
+}
+
+
+form#search-bar {
+    position:  relative;
+    display: flex;
+    width:  100%;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgb(0 0 0 / 5%);
+    height: 80px;
+    border-radius: 40px;
+    padding: 0 15px 0 20px;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+}
+
+.content-button-client a:last-child .icone-cle {
+    width: 123px;
+}
+
+button#search-button {
+    position: relative;
+    /* right:  0; */
+    /* top: 0; */
+    /* bottom:  0; */
+    /* font-size: 100%; */
+    /* border:  none; */
+    /* border-left: 1px solid #d8d8d8; */
+    /* padding: 12px 19px; */
+    /* height:  50px; */
+    /* background: #034c76; */
+    /* border:  none; */
+    /* color: #fff; */
+    /* font-family: "Rubik", sans-serif; */
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    /* background: #044b7a; */
+    padding: 0 45px;
+    /* height: 70px; */
+    /* line-height: 70px; */
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    height: 55px;
+    background: #c3942e;
+    cursor: pointer;
+}
+
+
+
+/******************************************************************************************************/
+
 /*********************************************** Loaders ********************************************/
 
 #loader{
@@ -1296,7 +1704,7 @@ button#close {
     font-size: 27px;
     letter-spacing: .5px;
     font-weight: 400;
-    color: #c4942c;
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -1628,7 +2036,7 @@ button#search-button {
     -moz-border-radius: 35px;
     border-radius: 35px;
     height: 55px;
-    background: #c3942e;
+    background: var(--third-color);
     cursor: pointer;
 }
 
@@ -1817,7 +2225,7 @@ li.has-children > a:after {
                                                    GRSTION INFO COMPTE Utilisateur                          |
 **************************************************************************************************************/
 
-.infoCompteUser {position: absolute;width: 375px;padding: 20px 6px 9px;padding-bottom: 0;border-radius: 10px;background: white;box-shadow: 1px 2px 9px #b6b6b6;/* border: 1px solid #eee; */top: 60px;right: -300%;z-index: 2;max-width: 400px;height: auto;overflow: auto;}
+.infoCompteUser {position: absolute;width: 375px;padding: 20px 6px 9px;padding-bottom: 0;border-radius: 10px;background: white;box-shadow: 1px 2px 9px #b6b6b6;/* border: 1px solid #eee; */top: 45px;left: 0;z-index: 2;max-width: 400px;height: auto;overflow: auto;}
 
 .infoCompteUser .item{border-bottom: 1px solid #eee;}
 
@@ -1874,7 +2282,7 @@ span.text-profil {
     margin-bottom: 16px;
     align-items: center;
     z-index: 1;
-    background: #c6942a;
+    background: var(--third-color);
 }
 
 .other-account {
@@ -1993,6 +2401,7 @@ ul.charte {
 
 #infoCompteUser i {
     color: black;
+    margin-right: 0;
 }
 
 .add-account a {
@@ -2050,13 +2459,13 @@ ul.charte {
     width: 28px;
     color: black;
     z-index: 2;
-    top: 41%;
+    top: 74px;
     align-items: center;
     font-size: 13px;
     justify-content: center;
     display: flex;
     height: 28px;
-    right: 34%;
+    right: 44px;
     border-radius: 50%;
     box-shadow: 1px 2px 9px #c0bdbd;
 }
@@ -2682,7 +3091,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   justify-content: space-between;
   flex-wrap: wrap;
   color: white;
-  /* border-top: 1px dashed rgb(255 255 255 / 40%); */
+  border-top: 1px dashed rgb(255 255 255 / 40%);
 }
 
 .copyright p {

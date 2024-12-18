@@ -1,4 +1,27 @@
+$('.header-user-info').click(function(){
+	$(".infoCompteUser").slideToggle('slow');
+})
+$('#serach_icon_top').click(function(){
+	$(".bloc-search-bar--").addClass('show-search-bar---');
+});
 
+$('#close').click(function(){
+	$(".bloc-search-bar--").removeClass('show-search-bar---');
+});
+$('.wrap-produit-footer').slick({
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	arrows: true,
+	autoplay:true,
+	center:false,
+	dots: false,
+	vertical: true,
+	verticalSwiping: true,
+	autoplaySpeed: 3000,
+
+	prevArrow: $('.prev-slick'),
+	nextArrow: $('.next-slick')
+});
 
 
 $(document).ready(function name() {
