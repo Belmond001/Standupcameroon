@@ -6,29 +6,201 @@
 
 }
 
-@media only screen and (max-width: 1320px) {
-    
+@media only screen and (max-width: 1420px) {
+    h2.titre-sondage {
+        min-width: 500px;
+        max-width: 570px;
+    } 
+    span.etat-sondage {
+        min-width: 14px;
+        min-height: 14px;
+        height: auto;
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-    
+    h2.titre-sondage {
+        min-width: 500px;
+        max-width: 600px;
+    } 
 }
 
 @media only screen and (max-width: 1024px) {
   
-
+    span.etat-sondage {
+        min-width: 10px;
+        min-height: 10px;
+        height: auto;
+        width: auto;
+    }
+    .wrap-sondage {
+        flex-direction: column;
+        align-items: initial;
+        padding-left: 10px;
+    }
+    .categorie-sondage {
+        margin-left: 10px;
+    }
+    .second_field_btn {
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .categorie-sondage {
+        position: absolute;
+        right: 8%;
+    }
+    .right-sondage {
+        justify-content: initial;
+    }
+    .left-sondage {
+        margin-bottom: 10px;
+    }
+    
+    .right-sondage {
+        padding: 0;
+        margin-left: 30px;
+    }
   
 }
 @media only screen and (max-width: 768px) {
+    .wrap-sondage {
+        flex-direction: column;
+        align-items: initial;
+        padding-left: 10px;
+    }
     
+    h2.titre-sondage {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    
+    .right-sondage {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    
+    span.etat-sondage {
+        margin: 0 8px;
+        height: 10px;
+    }
+    
+    .categorie-sondage {
+        margin-left: 10px;
+    }
+    
+    .left-sondage {
+        width: 55%;
+    }
+    
+    .right-sondage {
+        width: 80%;
+        justify-content: flex-start;
+        margin-left: 22px;
+    }
+    .form-search .wrap-field {
+        width: 48%;
+    }
+    .wrapper-search {
+        margin-bottom: 20px;
+    }
+    
+    .wrapper-sondage {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .second_field_btn {
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .categorie-sondage {
+        position: absolute;
+        right: 8%;
+    }
+    
+    .status-sondage {
+        position: absolute;
+        right: 8%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .form-search .wrap-field {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    h2.titre-sondage {
+        min-width: 270px;
+    }
 }
 
 @media only screen and (max-width: 485px) {
   
+    .wrap-search {
+        padding: 5px 15px;
+    }
+    
+    .field-form {
+        margin-bottom: 10px;
+    }
+    
+    .wrap-field input, .wrap-field textarea, .wrap-field select {
+        height: 35px !important;
+    }
+    
+    button.btn-search {
+        height: 30px;
+        width: 30px;
+        font-size: 13px;
+    }
+    span.etat-sondage {
+        height: 7px;
+        margin-left: 0;
+    }
+    
+    h2.titre-sondage {
+        font-size: 12px;
+    }
+    
+    .categorie-sondage {
+        padding: 2px 4px;
+        font-size: 11px;
+        right: 10%;
+    }
+    
+    .status-sondage {
+        padding: 5px 8px;
+        font-size: 13px;
+        right: 10%;
+    }
+    
+    span.question-mark {
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+        padding-top: 2px;
+    }
+    
+    span.valeur-trafic {
+        font-size: 12px;
+    }
+    
+    .right-sondage {
+        margin-left: 14px;
+    }
+    section.wrapper-dashboard {
+        padding-bottom: 65px;
+    }    
+    h2.titre-sondage {
+        min-width: 200px;
+    }
   
 }
 

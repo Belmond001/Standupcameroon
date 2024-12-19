@@ -46,234 +46,40 @@
 
 <body>
 
-    <!-- HEADER -->
+  <!-- HEADER -->
 
-    <div class="wrapper-super-header">
-        <div class="wrapper-header">
-            <div  class="container header">
-                <div class="wrap-contener-header">
-                    <div class="top-super-header row-container">
-                        <div class="left-top-super-header">
-                    
-                            <ul class="header-contact-info">
-                                <li class="item-info-contact">
-                                    StandUpCameroon: Plateforme de sondages sur l'opinion des citoyens à propos de leurs dirigeants. 
-                                </li>      
-                            </ul>
-
-                        </div>
-                        <div class="right-top-super-header">
-                            
-                            <ul>
-                                <li class="header-user-info">
-                                    <i class="far fa-user"></i>
-                                    <!-- si connecter cacher ceci -->
-                                    <a href="#">Se connecter</a>
-                                    <!-- et afficher ceci -->
-                                    <a href="#">Profil</a>
-                                    <div id="infoCompteUser" class="infoCompteUser" style="display: none;">
-                                        <div class="moncompte item">
-                                            <div class="profil-user">
-                                                
-                                                <div class="image-profil">
-                                                    <!-- si utilisateur n'a pas une photo de profil  decommenter ceci -->
-                                                    <!-- <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg> -->
-                                                    <!-- si non afficher ceci -->
-                                                    <img src="images/team/team1.png" alt="">
-                                                </div>
-                                                <a href="./espace-client/mon-compte.html" class="editer-profil">
-                                                    <i class="fa fa-camera"></i>
-                                                </a>
-    
-                                                <div class="info-user center">
-                                                    <span class="name">KAMDEM SIMO</span>&nbsp;
-                                                    <span class="fname">Belmond</span>
-                                                </div>
-                                                <div class="email-user center">kssbelastars@gmail.com</div>
-                                            </div>
-                                            <div class="manage-myaccount">
-                                                <a href="javascript:gotoURL('./espace-client/index.html','loader')">Accéder à mon espace privé</a>
-                                            </div>
-                                        </div>
-    
-                                        <div class="item logout-all-account">
-                                            <a href="javascript:Notification_fermeture_session('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', '10d9d8680b47824f2bbe40955590250d') ">
-                                                Se déconnecter - Fermer ma session
-                                            </a>
-                                        </div>
-    
-                                    </div>
-                                    <!-- fin -->
-                                </li>
-                                <li class="social-header row-container">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="wrap-header">
-
-                        <div class="left-header">
-                            <div class="wrap-left-header">
-                                <a href="./" class="logo-header"><img src="images/logo.png"></a>                         
-                            </div>
-                        </div>
-
-                        <div class="center-header">
-                            <div class="center-top-header">
-                                <div class="navbar-header-bottom">
-                                    <ul class="navlink">
-
-                                        <li><a class=" " href="./index.html" target=""> Accueil</a></li>
-                                        <li class="">
-                                            <a class="" href="apropos.html" target="">A propos</a>
-                                        </li>
-                                    
-                                        <li class="has-children">
-                                            <a class="active" href="javascript:void();" target="">Candidats</a>
-                                            <ul class="smenu">
-                                                <li><a href="#" target="">Candidats aux Élections Présidentielle</a></li>
-                                                <li><a href="" target="">Candidats aux Élections Législative</a></li>
-                                                <li><a href="" target="">Candidats aux Élections Municipales</a></li>
-                                                <li><a href="" target="">Candidats aux Élections Régionales</a></li>
-
-                                            </ul>
-                                        </li> 
-                                        <li class="has-children">
-                                            <a class=" " href="javascript:void();" target="">Sondages</a>
-                                            <ul class="smenu">
-                                                <li><a href="#" target="">Créer un sondage</a></li>
-                                                <li><a href="" target="">Voir les sondages </a></li>
-                                    
-                                            </ul>
-                                        </li>
-                                                                        
-                                        <li class="has-children">
-                                            <a class="" href="javascript:void();" target="">
-                                                Résultats
-                                            </a>
-                                            <ul class="smenu">
-                                                <li class="has-children">
-                                                    <a href="javascript:void();" target="">Résultats actuels  </a>
-                                                    <ul class="ssmenu">
-                                                        <li><a href="resultat-vote.html" target="">Des votes</a></li>
-                                                        <li><a href="#" target="">Des sondages </a></li>
-                                                    
-                                                    </ul>
-                                                </li>
-                                                <li><a href="resultat-vote-archiver.html" target="">Résultats archivés</a></li>
-
-                                            
-
-                                            </ul>
-                                        </li>
-                                        <li class=""><a class=" " href="actualite.html" target="">Actualités</a></li>
-                                        <li class="has-children">
-                                            <a class="  active" href="javascript:void();" target="">Galeries</a>
-                                            <ul class="smenu">
-                                                <li><a href="galerie-photo.html" target="">Galeries photos</a></li>
-                                                <li><a href="galerie-video.html" target="">Galeries vidéos</a></li>
-                                    
-                                            </ul>
-                                        </li>  
-                                        <li class="has-children">
-                                            <a class="" href="javascript:void();" target="">Aide</a>
-                                            <ul class="smenu">
-                                                <li><a href="faq.html" target="">FAQ</a></li>
-                                                <li><a href="contact.html" target="">Contact</a></li>
-                                            </ul>
-                                        </li> 
-                                                                    
-                                    </ul>                            
-                                </div> 
-                            </div> 
-                        </div>
-
-                        <div class="right-header">
-                            <div class="header-action">
-                                <ul>
-                                    <li class="header-btn">
-                                        <a class="btn transparent-btn" href="#">Je participe <i class="fa-solid fa-reply-all"></i></a>
-                                    </li>
-                                    <li class="header-shop-cart" id="serach_icon_top">
-                                        <button type="button">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </button>
-                                    
-                                    </li>
-                                    <li class="bloc-change-color">
-                                        <a href="#" class="bloc-lang">
-                                            <span>FR</span>
-                                            <img src="images/fr.png" alt="">
-                                        </a>
-                                        <ul class="other-list-lang">
-                                            <li class="item-lang">
-                                                <a href="#" class="bloc-lang">
-                                                    <span>FR</span>
-                                                    <img src="images/fr.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="item-lang">
-                                                <a href="#" class="bloc-lang">
-                                                    <span>EN</span>
-                                                    <img src="images/en.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="tx-lines">
-                        <span class="tx-line tx-line__1"></span>
-                        <span class="tx-line tx-line__2"></span>
-                        <span class="tx-line tx-line__3"></span>
-                    </div>
+  <div class="wrapper-super-header">
+    <div class="wrapper-header">
+        <div  class="container header">
+            <div class="wrap-contener-header">
+                <div class="top-super-header row-container">
+                    <div class="left-top-super-header">
                 
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="header-mobile">
-        <div class="container">
-            <div class="wrap-header-mobile">
-
-                <div class="top-super-header-mobile row-container">
-                    <div class="left-top-super-header mobile-left-top-super-header">
                         <ul class="header-contact-info">
                             <li class="item-info-contact">
-                                <!-- <i class="fas fa-map-marker-alt"></i>  -->
-                                StandUpCameroon: Plateforme de sondages sur l'opinion des citoyens citoyens à propos de leurs dirigeants. 
-                            </li>
+                                StandUpCameroon: Plateforme de sondages sur l'opinion des citoyens à propos de leurs dirigeants. 
+                            </li>      
                         </ul>
-                    </div>
 
-                    <div class="right-top-super-header">                 
+                    </div>
+                    <div class="right-top-super-header">
+                        
                         <ul>
                             <li class="header-user-info">
                                 <i class="far fa-user"></i>
                                 <!-- si connecter cacher ceci -->
-                                <a href="#">Se connecter</a>
+                                <!-- <a href="#">Se connecter</a> -->
                                 <!-- et afficher ceci -->
-                                <a href="#">Profil</a>
+                                <a href="#">Mon Profil <i class="fas fa-angle-down"></i></a>
                                 <div id="infoCompteUser" class="infoCompteUser" style="display: none;">
                                     <div class="moncompte item">
                                         <div class="profil-user">
                                             
                                             <div class="image-profil">
-                                                    <!-- si l'utiliser a ajoute une photo afficher ceci -->
-                                                    <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg>
-                                                    <!-- si non afficher ceci -->
-                                                    <!-- <img src="images/team/team1.png" alt=""> -->
+                                                <!-- si utilisateur n'a pas une photo de profil  decommenter ceci -->
+                                                <!-- <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg> -->
+                                                <!-- si non afficher ceci -->
+                                                <img src="images/team/team1.png" alt="">
                                             </div>
                                             <a href="./espace-client/mon-compte.html" class="editer-profil">
                                                 <i class="fa fa-camera"></i>
@@ -285,13 +91,20 @@
                                             </div>
                                             <div class="email-user center">kssbelastars@gmail.com</div>
                                         </div>
-                                        <div class="manage-myaccount">
+                                        <!-- <div class="manage-myaccount">
                                             <a href="javascript:gotoURL('./espace-client/index.html','loader')">Accéder à mon espace privé</a>
-                                        </div>
+                                             
+                                        </div> -->
+                                        <ul  class="list-nav-profil">
+                                            <li class=""><a href="index.html" class="active">Dashboard</a></li>
+                                            <li><a href="sondage.html" target="">Sondages</a></li>
+                                            <li><a href="mon-compte.html" target="">Mon compte</a></li>
+                                           
+                                        </ul>
                                     </div>
 
                                     <div class="item logout-all-account">
-                                        <a href="javascript:Notification_fermeture_session('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', '10d9d8680b47824f2bbe40955590250d') ">
+                                        <a href="#">
                                             Se déconnecter - Fermer ma session
                                         </a>
                                     </div>
@@ -300,174 +113,375 @@
                                 <!-- fin -->
                             </li>
                             <li class="social-header row-container">
-                                <a href="https://www.facebook.com/PDLE-195812521301041/"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://twitter.com/PdleBurundi"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
+
                     </div>
                 </div>
-                <div class="middle-header" id="wrapper-bottom-header">
-                    <div class="wrap-middle-header row-container">
-                        <div class="left-middle-header">
-                            <div class="logo-and-3-bandes-header row-container">
-                                <div class="widget_menu content_menu_btn">            
-                                    <div class="logo-header">
-                                        <a href="./"><img src="images/logo.png" alt=""></a>
-                                    </div>
-                                    
-                                </div>
-                            
-                            </div>
 
-                            <div class="widget_menu content_panel_menu_mobile">
-                                <div class="container_panel" id="panelmenu">
+                <div class="wrap-header">
 
-                                    <div class="main-menu-mb" id="main-menu-mb">
-                                        <div class="listmenu"><a href="./" class="linklist-menu bush-left">Accueil</a></div>
-                                        <div class="listmenu"><a href="./apropos.html" class="linklist-menu bush-left">A propos</a></div>
-
-                                        <div class="listmenu">
-                                            <input type="radio" name="submenu-mb" id="item1">
-                                            <label for="item1" class="submenu-label">
-                                                <span class="linklist-menu">Candidats</span>
-                                                <ul class="panel_submenu_mb">
-                                                    
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Présidentielle</a>
-                                                        
-                                                    </li>
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Législative</a>                          
-                                                    </li>
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Municipales</a>                          
-                                                    </li>
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Régionales</a>                          
-                                                    </li>
-                                                    
-                                                </ul>
-                                            </label>
-                                        </div>
-
-                                        <div class="listmenu">
-                                            <input type="radio" name="submenu-mb" id="item2">
-                                            <label for="item2" class="submenu-label">
-                                                <span class="linklist-menu">Sondages</span>
-                                                <ul class="panel_submenu_mb">
-                                                    
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="#" target="">Créer un sondage</a>    
-                                                    </li>
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="#" target="">Voir les sondages </a>                          
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </div>
-
-                                        <div class="listmenu"><input type="radio" name="submenu-mb" id="item3">
-                                            <label for="item3" class="submenu-label">
-                                                <span class="linklist-menu">Résultats</span>
-                                                <ul class="panel_submenu_mb">
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="resultat-vote-archiver.html" target="">Résultats archivés</a>
-                                                    </li>
-                                                    <li class="smenu-item has-children ">
-                                                        <input type="radio" name="smenu" id="subitem41">
-                                                        <label for="subitem41">
-                                                            <span class="smenu-item-titre"> Résultats actuels</span>
-                                                            <ul class="ssmenu">
-                                                                <li>
-                                                                    <a href="resultat-vote.html" target="">Vote</a>
-                                                                </li>
-                                                            
-                                                                <li><a href="resultat-sondage.html" target="">Sondage</a>
-                                                                </li>
-                                                            </ul>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </div>
-
-                                        <div class="listmenu"><a href="actualite.html" class="linklist-menu bush-left">Actualités</a></div>
-
-                                        <div class="listmenu">
-                                            <input type="radio" name="submenu-mb" id="item4">
-                                            <label for="item4" class="submenu-label">
-                                                <span class="linklist-menu">Galeries</span>
-                                                <ul class="panel_submenu_mb">
-                                                    
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="galerie-photo.html" target="">Galeries photos </a>    
-                                                    </li>
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="galerie-video.html" target="">Galeries vidéos</a>                          
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </div>
-                                        <div class="listmenu">
-                                            <input type="radio" name="submenu-mb" id="item5">
-                                            <label for="item5" class="submenu-label">
-                                                <span class="linklist-menu">Aide</span>
-                                                <ul class="panel_submenu_mb">
-                                                    
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="faq.html" target="">FAQ</a>    
-                                                    </li>
-                                                    <li class="smenu-item">
-                                                        <a class="linksubmenu__mb" href="contact.html" target="">Contact</a>                          
-                                                    </li>
-                                                </ul>
-                                            </label>
-                                        </div>
-                                    
-                                    </div>
-
-
-                                    <div class="contentclose">
-                                        <i class="fa fa-xmark"></i>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="left-header">
+                        <div class="wrap-left-header">
+                            <a href="./" class="logo-header"><img src="images/logo.png"></a>                         
                         </div>
+                    </div>
 
-                        <div  class="right-middle-header">
-                            <div class="icon_bar">
-                                <svg fill="#222" xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16"><g><g><path d="M1.125 6.875H20.75a1.125 1.125 0 1 1 0 2.25H1.125a1.125 1.125 0 1 1 0-2.25zm.012 6.844h22.726c.628 0 1.137.509 1.137 1.137v.007C25 15.49 24.49 16 23.863 16H1.137C.51 16 0 15.49 0 14.863v-.007c0-.628.51-1.137 1.137-1.137zM1.137 0h16.476c.628 0 1.137.51 1.137 1.137v.007c0 .628-.51 1.137-1.137 1.137H1.137C.51 2.281 0 1.772 0 1.144v-.007C0 .51.51 0 1.137 0z"></path></g></g></svg>
+                    <div class="center-header">
+                        <div class="center-top-header">
+                            <div class="navbar-header-bottom">
+                                <ul class="navlink">
+
+                                    <li><a class=" " href="./index.html" target=""> Accueil</a></li>
+                                    <li class="">
+                                        <a class="" href="apropos.html" target="">A propos</a>
+                                    </li>
+                                
+                                    <li class="has-children">
+                                        <a class="" href="javascript:void();" target="">Candidats</a>
+                                        <ul class="smenu">
+                                            <li><a href="#" target="">Candidats aux Élections Présidentielle</a></li>
+                                            <li><a href="" target="">Candidats aux Élections Législative</a></li>
+                                            <li><a href="" target="">Candidats aux Élections Municipales</a></li>
+                                            <li><a href="" target="">Candidats aux Élections Régionales</a></li>
+
+                                        </ul>
+                                    </li> 
+                                    <li class="has-children">
+                                        <a class=" " href="javascript:void();" target="">Sondages</a>
+                                        <ul class="smenu">
+                                            <li><a href="#" target="">Créer un sondage</a></li>
+                                            <li><a href="" target="">Voir les sondages </a></li>
+                                
+                                        </ul>
+                                    </li>
+                                                                    
+                                    <li class="has-children">
+                                        <a class="" href="javascript:void();" target="">
+                                            Résultats
+                                        </a>
+                                        <ul class="smenu">
+                                            <li class="has-children">
+                                                <a href="javascript:void();" target="">Résultats actuels  </a>
+                                                <ul class="ssmenu">
+                                                    <li><a href="resultat-vote.html" target="">Des votes</a></li>
+                                                    <li><a href="#" target="">Des sondages </a></li>
+                                                
+                                                </ul>
+                                            </li>
+                                            <li><a href="resultat-vote-archiver.html" target="">Résultats archivés</a></li>
+
+                                        
+
+                                        </ul>
+                                    </li>
+                                    <li class=""><a class=" " href="actualite.html" target="">Actualités</a></li>
+                                    <li class="has-children">
+                                        <a class="" href="javascript:void();" target="">Galeries</a>
+                                        <ul class="smenu">
+                                            <li><a href="galerie-photo.html" target="">Galeries photos</a></li>
+                                            <li><a href="galerie-video.html" target="">Galeries vidéos</a></li>
+                                
+                                        </ul>
+                                    </li>  
+                                    <li class="has-children">
+                                        <a class="" href="javascript:void();" target="">Aide</a>
+                                        <ul class="smenu">
+                                            <li><a href="faq.html" target="">FAQ</a></li>
+                                            <li><a href="contact.html" target="">Contact</a></li>
+                                        </ul>
+                                    </li> 
+                                                                
+                                </ul>                            
+                            </div> 
+                        </div> 
+                    </div>
+
+                    <div class="right-header">
+                        <div class="header-action">
+                            <ul>
+                                <li class="header-btn">
+                                    <a class="btn transparent-btn" href="#">Je participe <i class="fa-solid fa-reply-all"></i></a>
+                                </li>
+                                <li class="header-shop-cart" id="serach_icon_top">
+                                    <button type="button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                
+                                </li>
+                                <li class="bloc-change-color">
+                                    <a href="#" class="bloc-lang">
+                                        <span>FR</span>
+                                        <img src="images/fr.png" alt="">
+                                    </a>
+                                    <ul class="other-list-lang">
+                                        <li class="item-lang">
+                                            <a href="#" class="bloc-lang">
+                                                <span>FR</span>
+                                                <img src="images/fr.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="item-lang">
+                                            <a href="#" class="bloc-lang">
+                                                <span>EN</span>
+                                                <img src="images/en.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tx-lines">
+                    <span class="tx-line tx-line__1"></span>
+                    <span class="tx-line tx-line__2"></span>
+                    <span class="tx-line tx-line__3"></span>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="header-mobile">
+    <div class="container">
+        <div class="wrap-header-mobile">
+
+            <div class="top-super-header-mobile row-container">
+                <div class="left-top-super-header mobile-left-top-super-header">
+                    <ul class="header-contact-info">
+                        <li class="item-info-contact">
+                            <!-- <i class="fas fa-map-marker-alt"></i>  -->
+                            StandUpCameroon: Plateforme de sondages sur l'opinion des citoyens citoyens à propos de leurs dirigeants. 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-top-super-header">                 
+                    <ul>
+                        <li class="header-user-info">
+                            <i class="far fa-user"></i>
+                            <!-- si connecter cacher ceci -->
+                            <!-- <a href="#">Se connecter</a> -->
+                            <!-- et afficher ceci -->
+                            <a href="#">Mon Profil <i class="fas fa-angle-down"></i></a>
+                            <div id="infoCompteUser" class="infoCompteUser" style="display: none;">
+                                <div class="moncompte item">
+                                    <div class="profil-user">
+                                        
+                                        <div class="image-profil">
+                                            <!-- si utilisateur n'a pas une photo de profil  decommenter ceci -->
+                                            <!-- <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg> -->
+                                            <!-- si non afficher ceci -->
+                                            <img src="images/team/team1.png" alt="">
+                                        </div>
+                                        <a href="./espace-client/mon-compte.html" class="editer-profil">
+                                            <i class="fa fa-camera"></i>
+                                        </a>
+
+                                        <div class="info-user center">
+                                            <span class="name">KAMDEM SIMO</span>&nbsp;
+                                            <span class="fname">Belmond</span>
+                                        </div>
+                                        <div class="email-user center">kssbelastars@gmail.com</div>
+                                    </div>
+                                    <!-- <div class="manage-myaccount">
+                                        <a href="javascript:gotoURL('./espace-client/index.html','loader')">Accéder à mon espace privé</a>
+                                         
+                                    </div> -->
+                                    <ul  class="list-nav-profil">
+                                        <li class="active"><a href="index.html" target="">Dashboard</a></li>
+                                        <li><a href="sondage.html" target="">Sondages</a></li>
+                                        <li><a href="mon-compte.html" target="">Mon compte</a></li>
+                                       
+                                    </ul>
+                                </div>
+
+                                <div class="item logout-all-account">
+                                    <a href="#">
+                                        Se déconnecter - Fermer ma session
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- fin -->
+                        </li>
+                        <li class="social-header row-container">
+                            <a href="https://www.facebook.com/PDLE-195812521301041/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/PdleBurundi"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="middle-header" id="wrapper-bottom-header">
+                <div class="wrap-middle-header row-container">
+                    <div class="left-middle-header">
+                        <div class="logo-and-3-bandes-header row-container">
+                            <div class="widget_menu content_menu_btn">            
+                                <div class="logo-header">
+                                    <a href="./"><img src="images/logo.png" alt=""></a>
+                                </div>
+                                
                             </div>
                         
                         </div>
 
+                        <div class="widget_menu content_panel_menu_mobile">
+                            <div class="container_panel" id="panelmenu">
+
+                                <div class="main-menu-mb" id="main-menu-mb">
+                                    <div class="listmenu"><a href="./" class="linklist-menu bush-left">Accueil</a></div>
+                                    <div class="listmenu"><a href="./apropos.html" class="linklist-menu bush-left">A propos</a></div>
+
+                                    <div class="listmenu">
+                                        <input type="radio" name="submenu-mb" id="item1">
+                                        <label for="item1" class="submenu-label">
+                                            <span class="linklist-menu">Candidats</span>
+                                            <ul class="panel_submenu_mb">
+                                                
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Présidentielle</a>
+                                                    
+                                                </li>
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Législative</a>                          
+                                                </li>
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Municipales</a>                          
+                                                </li>
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="#" target="">Candidats aux Élections Régionales</a>                          
+                                                </li>
+                                                
+                                            </ul>
+                                        </label>
+                                    </div>
+
+                                    <div class="listmenu">
+                                        <input type="radio" name="submenu-mb" id="item2">
+                                        <label for="item2" class="submenu-label">
+                                            <span class="linklist-menu">Sondages</span>
+                                            <ul class="panel_submenu_mb">
+                                                
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="#" target="">Créer un sondage</a>    
+                                                </li>
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="#" target="">Voir les sondages </a>                          
+                                                </li>
+                                            </ul>
+                                        </label>
+                                    </div>
+
+                                    <div class="listmenu"><input type="radio" name="submenu-mb" id="item3">
+                                        <label for="item3" class="submenu-label">
+                                            <span class="linklist-menu">Résultats</span>
+                                            <ul class="panel_submenu_mb">
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="resultat-vote-archiver.html" target="">Résultats archivés</a>
+                                                </li>
+                                                <li class="smenu-item has-children ">
+                                                    <input type="radio" name="smenu" id="subitem41">
+                                                    <label for="subitem41">
+                                                        <span class="smenu-item-titre"> Résultats actuels</span>
+                                                        <ul class="ssmenu">
+                                                            <li>
+                                                                <a href="resultat-vote.html" target="">Vote</a>
+                                                            </li>
+                                                        
+                                                            <li><a href="resultat-sondage.html" target="">Sondage</a>
+                                                            </li>
+                                                        </ul>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </label>
+                                    </div>
+
+                                    <div class="listmenu"><a href="actualite.html" class="linklist-menu bush-left">Actualités</a></div>
+
+                                    <div class="listmenu">
+                                        <input type="radio" name="submenu-mb" id="item4">
+                                        <label for="item4" class="submenu-label">
+                                            <span class="linklist-menu">Galeries</span>
+                                            <ul class="panel_submenu_mb">
+                                                
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="galerie-photo.html" target="">Galeries photos </a>    
+                                                </li>
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="galerie-video.html" target="">Galeries vidéos</a>                          
+                                                </li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                    <div class="listmenu">
+                                        <input type="radio" name="submenu-mb" id="item5">
+                                        <label for="item5" class="submenu-label">
+                                            <span class="linklist-menu">Aide</span>
+                                            <ul class="panel_submenu_mb">
+                                                
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="faq.html" target="">FAQ</a>    
+                                                </li>
+                                                <li class="smenu-item">
+                                                    <a class="linksubmenu__mb" href="contact.html" target="">Contact</a>                          
+                                                </li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                
+                                </div>
+
+
+                                <div class="contentclose">
+                                    <i class="fa fa-xmark"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div  class="right-middle-header">
+                        <div class="icon_bar">
+                            <svg fill="#222" xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16"><g><g><path d="M1.125 6.875H20.75a1.125 1.125 0 1 1 0 2.25H1.125a1.125 1.125 0 1 1 0-2.25zm.012 6.844h22.726c.628 0 1.137.509 1.137 1.137v.007C25 15.49 24.49 16 23.863 16H1.137C.51 16 0 15.49 0 14.863v-.007c0-.628.51-1.137 1.137-1.137zM1.137 0h16.476c.628 0 1.137.51 1.137 1.137v.007c0 .628-.51 1.137-1.137 1.137H1.137C.51 2.281 0 1.772 0 1.144v-.007C0 .51.51 0 1.137 0z"></path></g></g></svg>
+                        </div>
+                    
+                    </div>
+
                 </div>
-
             </div>
+
         </div>
     </div>
+</div>
 
 
-    <div class="bloc-search-bar--">
-        <div class="content-search-display">
-            <button type="button" id="close" data-dismiss="dropdown" title="Refermer le volet moteur de recherche">
-               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="     0px" viewBox="0 0 224.512 224.512" style="enable-background:new 0 0 224.512 224.512;" xml:space="preserve">
-                    <polygon style="fill:#010002;" points="224.507,6.997 217.521,0 112.256,105.258 6.998,0 0.005,6.997 105.263,112.254    0.005,217.512 6.998,224.512 112.256,119.24 217.521,224.512 224.507,217.512 119.249,112.254  "></polygon>
-                </svg>
-            </button>
-            <div class="titre-search-bar">RECHERCHER SUR LE SITE</div>
-            <form action="resultats-recherche.php" method="get" id="search-bar">
-                <input type="text" name="search" id="mot-cle" placeholder="Mots clés...">
-                <button class="search-button" id="search-button" type="submit">RECHERCHER</button>
-            </form>
-            <!-- <p class="description-search-bar"><strong>Mots clés les plus recherchés :</strong> <br> </p> -->
-        </div>
+<div class="bloc-search-bar--">
+    <div class="content-search-display">
+        <button type="button" id="close" data-dismiss="dropdown" title="Refermer le volet moteur de recherche">
+           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="     0px" viewBox="0 0 224.512 224.512" style="enable-background:new 0 0 224.512 224.512;" xml:space="preserve">
+                <polygon style="fill:#010002;" points="224.507,6.997 217.521,0 112.256,105.258 6.998,0 0.005,6.997 105.263,112.254    0.005,217.512 6.998,224.512 112.256,119.24 217.521,224.512 224.507,217.512 119.249,112.254  "></polygon>
+            </svg>
+        </button>
+        <div class="titre-search-bar">RECHERCHER SUR LE SITE</div>
+        <form action="resultats-recherche.php" method="get" id="search-bar">
+            <input type="text" name="search" id="mot-cle" placeholder="Mots clés...">
+            <button class="search-button" id="search-button" type="submit">RECHERCHER</button>
+        </form>
+        <!-- <p class="description-search-bar"><strong>Mots clés les plus recherchés :</strong> <br> </p> -->
     </div>
+</div>
 
-<!-- FIN  -->
+<!-- FIN  -->    
   
     <!-- Banniere interne -->
     <section class="biography-wrapper">
@@ -477,8 +491,9 @@
                 <div class="content-text-center">
                     <h3 class="title-banner-center detail-tit aos-init aos-animate" data-aos="fade-down" data-aos-delay="100" data-aos-duration="3000">Edition du mot de passe</h3>
                     <ol class="breadcrumblist aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
-                        <li><a href="./">Accueil</a></li> /
-                        <li><a href="actualite.html">Edition du mot de passe</a></li>
+                        <li><a href="./">Mon profil</a></li> /
+                        <li><a href="mon-compte.html">Mon compte</a></li> /
+                        <li><a href="editer-pwd.html">Edition du mot de passe</a></li>
                         
                     </ol>
                 </div>

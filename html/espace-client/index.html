@@ -79,9 +79,9 @@
                                 <li class="header-user-info">
                                     <i class="far fa-user"></i>
                                     <!-- si connecter cacher ceci -->
-                                    <a href="#">Se connecter</a>
+                                    <!-- <a href="#">Se connecter</a> -->
                                     <!-- et afficher ceci -->
-                                    <a href="#">Profil</a>
+                                    <a href="#">Mon Profil <i class="fas fa-angle-down"></i></a>
                                     <div id="infoCompteUser" class="infoCompteUser" style="display: none;">
                                         <div class="moncompte item">
                                             <div class="profil-user">
@@ -102,13 +102,20 @@
                                                 </div>
                                                 <div class="email-user center">kssbelastars@gmail.com</div>
                                             </div>
-                                            <div class="manage-myaccount">
+                                            <!-- <div class="manage-myaccount">
                                                 <a href="javascript:gotoURL('./espace-client/index.html','loader')">Accéder à mon espace privé</a>
-                                            </div>
+                                                 
+                                            </div> -->
+                                            <ul  class="list-nav-profil">
+                                                <li class=""><a href="index.html" class="active">Dashboard</a></li>
+                                                <li><a href="sondage.html" target="">Sondages</a></li>
+                                                <li><a href="mon-compte.html" target="">Mon compte</a></li>
+                                               
+                                            </ul>
                                         </div>
     
                                         <div class="item logout-all-account">
-                                            <a href="javascript:Notification_fermeture_session('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', '10d9d8680b47824f2bbe40955590250d') ">
+                                            <a href="#">
                                                 Se déconnecter - Fermer ma session
                                             </a>
                                         </div>
@@ -146,7 +153,7 @@
                                         </li>
                                     
                                         <li class="has-children">
-                                            <a class="active" href="javascript:void();" target="">Candidats</a>
+                                            <a class="" href="javascript:void();" target="">Candidats</a>
                                             <ul class="smenu">
                                                 <li><a href="#" target="">Candidats aux Élections Présidentielle</a></li>
                                                 <li><a href="" target="">Candidats aux Élections Législative</a></li>
@@ -185,7 +192,7 @@
                                         </li>
                                         <li class=""><a class=" " href="actualite.html" target="">Actualités</a></li>
                                         <li class="has-children">
-                                            <a class="  active" href="javascript:void();" target="">Galeries</a>
+                                            <a class="" href="javascript:void();" target="">Galeries</a>
                                             <ul class="smenu">
                                                 <li><a href="galerie-photo.html" target="">Galeries photos</a></li>
                                                 <li><a href="galerie-video.html" target="">Galeries vidéos</a></li>
@@ -273,18 +280,18 @@
                             <li class="header-user-info">
                                 <i class="far fa-user"></i>
                                 <!-- si connecter cacher ceci -->
-                                <a href="#">Se connecter</a>
+                                <!-- <a href="#">Se connecter</a> -->
                                 <!-- et afficher ceci -->
-                                <a href="#">Profil</a>
+                                <a href="#">Mon Profil <i class="fas fa-angle-down"></i></a>
                                 <div id="infoCompteUser" class="infoCompteUser" style="display: none;">
                                     <div class="moncompte item">
                                         <div class="profil-user">
                                             
                                             <div class="image-profil">
-                                                    <!-- si l'utiliser a ajoute une photo afficher ceci -->
-                                                    <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg>
-                                                    <!-- si non afficher ceci -->
-                                                    <!-- <img src="images/team/team1.png" alt=""> -->
+                                                <!-- si utilisateur n'a pas une photo de profil  decommenter ceci -->
+                                                <!-- <svg class="dx-icon" height="1em" width="1em" focusable="false" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true"><defs></defs><g><path d="M16 15a6 6 0 1 0-6-6 6 6 0 0 0 6 6zm0-10.5A4.5 4.5 0 1 1 11.5 9 4.5 4.5 0 0 1 16 4.5zM16 16A12 12 0 0 0 4 28h1.5a10.5 10.5 0 1 1 21 0H28a12 12 0 0 0-12-12z"></path></g></svg> -->
+                                                <!-- si non afficher ceci -->
+                                                <img src="images/team/team1.png" alt="">
                                             </div>
                                             <a href="./espace-client/mon-compte.html" class="editer-profil">
                                                 <i class="fa fa-camera"></i>
@@ -296,13 +303,20 @@
                                             </div>
                                             <div class="email-user center">kssbelastars@gmail.com</div>
                                         </div>
-                                        <div class="manage-myaccount">
+                                        <!-- <div class="manage-myaccount">
                                             <a href="javascript:gotoURL('./espace-client/index.html','loader')">Accéder à mon espace privé</a>
-                                        </div>
+                                             
+                                        </div> -->
+                                        <ul  class="list-nav-profil">
+                                            <li class="active"><a href="index.html" target="">Dashboard</a></li>
+                                            <li><a href="sondage.html" target="">Sondages</a></li>
+                                            <li><a href="mon-compte.html" target="">Mon compte</a></li>
+                                           
+                                        </ul>
                                     </div>
 
                                     <div class="item logout-all-account">
-                                        <a href="javascript:Notification_fermeture_session('dHJhaXRlbWVudF9hamF4L21haW4ucGhw', '10d9d8680b47824f2bbe40955590250d') ">
+                                        <a href="#">
                                             Se déconnecter - Fermer ma session
                                         </a>
                                     </div>
@@ -488,8 +502,8 @@
                 <div class="content-text-center">
                     <h3 class="title-banner-center detail-tit aos-init aos-animate" data-aos="fade-down" data-aos-delay="100" data-aos-duration="3000">Dashboard</h3>
                     <ol class="breadcrumblist aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
-                        <li><a href="./">Accueil</a></li> /
-                        <li><a href="actualite.html">Dashboard</a></li>
+                        <li><a href="./">Mon Profil</a></li> /
+                        <li><a href="index.html">Dashboard</a></li>
                         
                     </ol>
                 </div>
@@ -566,103 +580,175 @@
                         <div class="item-second-section">
                             <div class="wrap-item-second-section">
                         
-                                <div class="item-second-container full">
+                               <!-- ici tu feras une boucle en fonction des questions -->
+                                <div class="item-second-container">
                                     <div class="wrap-item-second-container">
                                         <div class="second-container-head">
-                                            <h4>Répresentation</h4>
+                                            <h4>Résultat sondage</h4>
                                         </div>
                                         <div class="second-container-body">
-                                            <div class="second-container-text">
-                                                <h2>Graphe des votes</h2>
-                                            </div>
+                                       
+                                            <figure class="highcharts-figure">
+                                                <div id="container1"></div>
+                                                <p class="highcharts-description">
+                                                    Pourcentage de vote obtenu par chaque participant par réponse.
+                                                </p>
+                                            </figure>
+                                            <table id="datatable1" style="display:none;">
+                                                <thead>
+                                                    <th></th>
+                                                    <th> Repartition des voix en fonction des réponses</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Réponse A</th>
+                                                        <td>938899</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse B</th>
+                                                        <td>1229600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse C</th>
+                                                        <td>325251</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse D</th>
+                                                        <td>238751</td>
+                                                    </tr>
+                                                </tbody>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-second-container">
+                                    <div class="wrap-item-second-container">
+                                        <div class="second-container-head">
+                                            <h4>Résultat sondage</h4>
+                                        </div>
+                                        <div class="second-container-body">
+                                       
                                             <figure class="highcharts-figure">
                                                 <div id="container2"></div>
                                                 <p class="highcharts-description">
-                                                    Nombre de voie obtenu par chaque Candidat.
+                                                    Pourcentage de vote obtenu par chaque participant par réponse.
                                                 </p>
-
-                                                <table id="datatable" style="display: none;">
-                                                    <thead>
-                                                        <tr>
-                                                            <th></th>
-                                                            <th>Hommes</th>
-                                                            <th>Femmes</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>Candidat 2</th>
-                                                            <td>28 430</td>
-                                                            <td>26 690</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Candidat 1</th>
-                                                            <td>28 042</td>
-                                                            <td>26 453</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Candidat 3</th>
-                                                            <td>27 063</td>
-                                                            <td>25 916</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Candidat 4</th>
-                                                            <td>28 684</td>
-                                                            <td>27 376</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Candidat 5</th>
-                                                            <td>26 445</td>
-                                                            <td>25 035</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Candidat 6</th>
-                                                            <td>26 564</td>
-                                                            <td>25 416</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
                                             </figure>
+                                            <table id="datatable2" style="display:none;">
+                                                <thead>
+                                                    <th></th>
+                                                    <th> Repartition des voix en fonction des réponses</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Réponse A</th>
+                                                        <td>938899</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse B</th>
+                                                        <td>1229600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse C</th>
+                                                        <td>325251</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse D</th>
+                                                        <td>238751</td>
+                                                    </tr>
+                                                </tbody>
+                                                
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="item-second-container">
                                     <div class="wrap-item-second-container">
                                         <div class="second-container-head">
-                                            <h4>Répresentation</h4>
+                                            <h4>Résultat sondage</h4>
                                         </div>
                                         <div class="second-container-body">
-                                            <div class="second-container-text">
-                                                <h2>Diagramme des pourcentage de vote</h2>
-                                            </div>
+                                       
                                             <figure class="highcharts-figure">
                                                 <div id="container3"></div>
                                                 <p class="highcharts-description">
-                                                    Pourcentage de vote obtenu par chaque candidat par vargue d'élection.
+                                                    Pourcentage de vote obtenu par chaque participant par réponse.
                                                 </p>
                                             </figure>
+                                            <table id="datatable3" style="display:none;">
+                                                <thead>
+                                                    <th></th>
+                                                    <th> Repartition des voix en fonction des réponses</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Réponse A</th>
+                                                        <td>938899</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse B</th>
+                                                        <td>1229600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse C</th>
+                                                        <td>325251</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse D</th>
+                                                        <td>238751</td>
+                                                    </tr>
+                                                </tbody>
+                                                
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="item-second-container">
                                     <div class="wrap-item-second-container">
                                         <div class="second-container-head">
-                                            <h4>Répresentation</h4>
+                                            <h4>Résultat sondage</h4>
                                         </div>
                                         <div class="second-container-body">
-                                            <div class="second-container-text">
-                                                <h2>Graphe des Sondages Périodique</h2>
-                                            </div>
+                                       
                                             <figure class="highcharts-figure">
                                                 <div id="container4"></div>
                                                 <p class="highcharts-description">
-                                                    estimation des sondages durant chaque période.
+                                                    Pourcentage de vote obtenu par chaque participant par réponse.
                                                 </p>
                                             </figure>
-                                            
+                                            <table id="datatable4" style="display:none;">
+                                                <thead>
+                                                    <th></th>
+                                                    <th> Repartition des voix en fonction des réponses</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Réponse A</th>
+                                                        <td>938899</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse B</th>
+                                                        <td>1229600</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse C</th>
+                                                        <td>325251</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Réponse D</th>
+                                                        <td>238751</td>
+                                                    </tr>
+                                                </tbody>
+                                                
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
+                              <!-- fin -->
                             </div>
                         </div>
                        

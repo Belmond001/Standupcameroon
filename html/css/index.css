@@ -368,6 +368,7 @@ span.devise {
     border-radius: 5px;
     color: white;
     background: #df0e0e;
+    width: 100%;
 }
 .btn-primary.banner i {
     transform: scale(-1,1);
@@ -498,8 +499,8 @@ a.tx-number {
   .end-point {
     position: absolute;
     z-index: 1;
-    top: 3px;
-    right: -4px;
+    top: 0px;
+    right: -27px;
     color: var(--primary-color);
   }
   .bg-process svg path:nth-child(1) {
@@ -655,15 +656,15 @@ a.tx-number {
     top: 8px;
     right: -15px;
   }
-  .wrap-item-chiffres::after {
-    content: url(../images/shape/shape8.png);
+  /* .wrap-item-chiffres::after {
+    content: url("../images/shape/shape8.png");
     position: absolute;
     left: 44px;
     top: 58%;
     transform: translateY(-50%);
     z-index: -1;
     filter: brightness(0%) invert(100%);
-  }
+  } */
   .count-num {
     font-weight: 600;
     font-size: 48px;
@@ -1316,7 +1317,7 @@ a.tx-number {
   .wrapper-team {
     padding: 127px 0;
     padding-bottom: 124px;
-    background-image: url(../images/bg/bg-actualite.png);
+    background-image: url("../images/bg/bg-actualite.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1340,7 +1341,7 @@ a.tx-number {
     width: 100%;
     height: 100%;
     top: 0;
-    background-image: url(../images/bg/bg-faq.png);
+    background-image: url("../images/bg/bg-faq.png");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
@@ -1634,7 +1635,7 @@ a.tx-number {
     background-position: 50%;
     padding: 37px;
     border-radius: 10px;
-    background-image: url(../images/bg/bg-call.jpg);
+    background-image: url("../images/bg/bg-call.jpg");
     /*! background: black; */
   }
   .right-new-call-action {
@@ -1701,7 +1702,7 @@ a.tx-number {
   
   .wrapper-temoignage {
       padding: 40px 0 40px;
-      background-image: url(../images/bg/bg-temoignage.jpg);
+      background-image: url("../images/bg/bg-temoignage.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -1739,7 +1740,7 @@ a.tx-number {
       z-index: -1;
       transition: all .25s cubic-bezier(.645,.045,.355,1);
       opacity: 0;
-      background-image: url(../images/temoins/bg-temoins.png);
+      background-image: url("../images/temoins/bg-temoins.png");
       content: '';
       background-color: var(--third-color);
   }
@@ -2090,7 +2091,7 @@ a.tx-number {
     padding: 50px 0 40px;
     /* top: -30px; */
     position: relative;
-    background-image: url(../images/bg/bg-galerie.jpg);
+    background-image: url("../images/bg/bg-galerie.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -2255,6 +2256,7 @@ a.tx-number {
   .img-item-right-video img {
     width: 100%;
     position: relative;
+    object-fit: cover;
   }
   .boc-title-left-galerie {
     margin-bottom: 30px;

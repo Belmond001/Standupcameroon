@@ -262,7 +262,7 @@ form.search-form input {
     .title-bloc {
         font-size: 20px !important;!i;!;
         line-height: 1.2 !important;!i;!;
-        padding-top: 0px;
+        padding-top: 15px;
       }
 
     .breadcrumblist>li:not(:first-child) {

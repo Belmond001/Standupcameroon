@@ -98,8 +98,8 @@ ul.header-contact-info li {
   margin: 0 20px 0 0;
   border-right: 1px solid #0000001a;
   border-right: 1px solid #ffffff52;
-  background: white;
-  padding: 9px 10px !important;
+  /* background: white; */
+  /* padding: 9px 10px !important; */
   border-radius: 4px;
   display: flex;
   width: fit-content;
@@ -289,7 +289,7 @@ a.support-logo {
   }
 
 .logo-and-3-bandes-header.row-container {
-  padding-top: 15px;
+  /* padding-top: 15px; */
   width: 100%;
 }
 .middle-header {
@@ -327,7 +327,7 @@ a.support-logo {
 
 .logo-header img {
     height: auto;
-    width: 100px;
+    width: 155px;
     object-fit: contain;
 }
     
@@ -341,7 +341,9 @@ a.support-logo {
   padding: 0 20px;
   padding-bottom: 10px;
   padding-top: 10px;
-  background: var(--primary-color);
+  background: white;
+  box-shadow: 1px 0px 20px #00000012;
+  border-top: 1px solid #df0e0e;
 }
     .wrap-header-mobile {
         display: flex;
@@ -917,7 +919,7 @@ a.support-logo {
   width: 50%;
 }
     .logo-header a {
-        width: 100px;
+        width: 100%;
     }
 .logo-header a  img {height: auto;object-fit: contain;}
 
@@ -1084,8 +1086,8 @@ input {
 }
 .left-middle-header a {
   border-radius: 50%;
-  width: 75%;
-  height: 66px;
+  /* width: 75%; */
+  /* height: 66px; */
   padding: 0 !important;
   border-radius: 5px;
 }
@@ -1123,7 +1125,7 @@ a#identification {
 }
     
 .logo-header a img {
-  width: 90px;
+  width: 125px;
 }
 .logo-and-3-bandes-header.row-container {
   padding-top: 0;
@@ -1253,11 +1255,11 @@ a.logo-right img {
 
 @media only screen and (max-width: 375px) {
 .logo-header a img {
-  width: 93px;
+  /* width: 93px; */
   height: auto;
   }
   .logo-header a  {
-  width: 90px;
+  width: 116px;
   height: auto;
   }
 .item-info-contact:nth-child(2) {
