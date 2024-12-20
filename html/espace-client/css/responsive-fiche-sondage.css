@@ -64,7 +64,9 @@
         padding: 0;
         margin-left: 30px;
     }
-  
+    .wrap-field.middle {
+        width: 45%;
+    }
 }
 @media only screen and (max-width: 768px) {
     .wrap-sondage {
@@ -94,15 +96,16 @@
     
     .left-sondage {
         width: 55%;
+        /* position: relative; */
     }
     
     .right-sondage {
         width: 80%;
-        justify-content: flex-start;
+        justify-content: start;
         margin-left: 22px;
     }
     .form-search .wrap-field {
-        width: 48%;
+        width: 43%;
     }
     .wrapper-search {
         margin-bottom: 20px;
@@ -133,16 +136,24 @@
 
 @media only screen and (max-width: 600px) {
     .form-search .wrap-field {
-        width: 100%;
+        width: 87%;
         margin-bottom: 20px;
+        /* margin-right: 0; */
     }
+.form-search .wrap-field:first-child {
+    width: 100%;
+    margin-right: 0;
+}
     h2.titre-sondage {
         min-width: 270px;
     }
 }
 
 @media only screen and (max-width: 485px) {
-  
+     .left-sondage {
+        position: relative;
+    }
+    
     .wrap-search {
         padding: 5px 15px;
     }
@@ -156,8 +167,8 @@
     }
     
     button.btn-search {
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         font-size: 13px;
     }
     span.etat-sondage {
@@ -172,13 +183,16 @@
     .categorie-sondage {
         padding: 2px 4px;
         font-size: 11px;
-        right: 10%;
+        left: 0;
+        width: fit-content;
+        top: 0;
     }
     
     .status-sondage {
         padding: 5px 8px;
         font-size: 13px;
-        right: 10%;
+        right: 0;
+        position: relative;
     }
     
     span.question-mark {
@@ -194,12 +208,23 @@
     
     .right-sondage {
         margin-left: 14px;
+        width: 100%;
     }
     section.wrapper-dashboard {
         padding-bottom: 65px;
     }    
     h2.titre-sondage {
         min-width: 200px;
+    }
+
+    .form-search .wrap-field {
+        width: 88%;
+        margin-bottom: 20px;
+        margin-right: 5px;
+    }
+    .left-sondage {
+        width: 95%;
+        padding-top: 27px;
     }
   
 }
@@ -209,10 +234,30 @@
 }
 
 @media only screen and (max-width: 375px) {
-    
+    .form-search .wrap-field {
+        width: 86%;
+        margin-bottom: 20px;
+        margin-right: 5px;
+    }
+    .status-sondage {
+        padding: 5px 8px;
+        font-size: 13px;
+        right: 0;
+        position: relative;
+    }
+    .right-sondage {
+        position:relative;
+    }
+    .question-sondage{
+        margin-bottom:10px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-  
+    .form-search .wrap-field {
+        width: 83%;
+        margin-bottom: 20px;
+        margin-right: 5px;
+    }
   
 }

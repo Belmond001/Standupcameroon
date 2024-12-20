@@ -180,7 +180,7 @@ label.libele-form.labelle-periode {
     min-height: 115px;
 }
 .wrap-field.middle input {
-    width: 98%;
+    width: 100%;
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -190,6 +190,7 @@ input:-webkit-autofill {
     justify-content: space-between;
     position: relative;
     margin-right: 20px;
+    width: 46%;
 }
 
 .wrap-field input[type="submit"], .wrap-field input[type="button"] {

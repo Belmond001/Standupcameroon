@@ -510,14 +510,14 @@
                         <div class="wrapper-search-contain">
                             <div class="wrap-search">
                                 <form class="form-search" id="form-recherche">
-                                    <div class="wrap-field">
+                                    <div class="wrap-field middle">
                                         <label class="libele-form labelle-periode">Titre </label>
                                         <div class="field-form">
                                             <input type="text" required=" " name="libelle-search" placeholder="titre " id="libelle-search">
                                             <!-- <label class="libele-form">Saisir</label> -->
                                         </div>
                                     </div>
-                                    <div class="wrap-field">
+                                    <div class="wrap-field middle">
                                         <div class="field-form wrap-select">
                                         <label class="libele-form labelle-periode">Catégorie</label>
                                     
@@ -528,7 +528,7 @@
                                     </div>
                                
                 
-                                    <div class="wrap-field">
+                                    <!-- <div class="wrap-field">
                                         <div class="field-form wrap-select">
                                         <label for="" class="libele-form labelle-periode">Autre</label>
                                     
@@ -539,18 +539,13 @@
                 
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> -->
                 
                                     <div id="contener-periode-search"></div>
                 
                                     <div class="wrapper-btn-search">
-                                        <button type="button" class="btn-search" id="btn-filtrer-graphe"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        <button type="submit" class="btn-search" id="btn-filtrer-graphe"><i class="fa-solid fa-magnifying-glass"></i></button>
                                     </div>
-                                    <input type="hidden" name="token" id="token" value="">
-                                    <input type="hidden" name="form" id="form" value="form-recherche">
-                                    <input type="hidden" name="traitement" id="traitement" value="">
-                                    <input type="hidden" name="conteneur-resultat" id="conteneur-resultat" value="line3">
-                
                                 </form>
                             </div>
                 
@@ -681,7 +676,6 @@
                                         </div>
                                     </div>
 
-
                                     <div class="wrap-sondage">
                                         <div class="left-sondage">
                                             <span class="etat-sondage closed"></span>
@@ -800,7 +794,6 @@
                                         </div>
                                     </div>
                                     
-
                                     <div class="wrap-sondage">
                                         <div class="left-sondage">
                                             <span class="etat-sondage paused"></span>
@@ -839,8 +832,31 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    
+                                
+                                </div>
+
+                                <div class="bloc_pagination">
+                                    <div class="info-total-element-in-list">
+                                        <div class="total-element"><span>03</span> resultats&nbsp;</div>
+                                        <div class="total-page"> - page <span>1</span> sur <span>5</span></div>
+                                    </div>
+                                    <ul class="list-pagination">
+                                        <li class="btn-pagination prev">
+                                            <a href=""><i class="fas fa-angle-left"></i></a>
+                                        </li>
+                                        <li class="btn-pagination active">
+                                            <a href=""><span>1</span></a>
+                                        </li>
+                                        <li class="btn-pagination ">
+                                            <a href=""><span>2</span></a>
+                                        </li>
+                                        <li class="btn-pagination">
+                                            <a href=""><span>3</span></a>
+                                        </li>
+                                        <li class="btn-pagination next">
+                                            <a href=""><i class="fas fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             <!--  -->
                         </div>
