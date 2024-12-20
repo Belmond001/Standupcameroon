@@ -20,7 +20,6 @@
 
     <!-- CSS styles -->
     <link rel="stylesheet" type="text/css" href="css/header-footer.css">
-    <link rel="stylesheet" type="text/css" href="css/actualite.css">
     <link rel="stylesheet" type="text/css" href="css/dashboard.css">
     <link rel="stylesheet" type="text/css" href="css/search.css">
     <link rel="stylesheet" type="text/css" href="css/mon-compte.css">
@@ -48,12 +47,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/data.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
     <script src="js/owl.carousel.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+
 </head>
 
 <body>
@@ -521,23 +518,7 @@
                     <div class="item-graph-section">
                         <div class="item-first-section">
                             <div class="wrap-item-first-section">
-                                <!-- <div class="item-first-container">
-                                    <div class="wrap-item-first-container">
-                                        <div class="first-container-head">
-                                            <h4>Au total</h4>
-                                        </div>
-                                        <div class="first-container-body">
-                                            <div class="first-container-text">
-                                                <h2>01</h2>
-                                                <p>Vote(s)</p>
-                                            </div>
-                                            <div class="first-container-icon">
-                                                <i class="fa-solid fa-users"></i>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div> -->
+  
                                 <div class="item-first-container">
                                     <div class="wrap-item-first-container blue-bg">
                                         <div class="first-container-head">
@@ -580,7 +561,7 @@
                         <div class="item-second-section">
                             <div class="wrap-item-second-section">
                         
-                               <!-- ici tu feras une boucle en fonction des questions -->
+                               <!-- ici tu feras une boucle en fonction du nombres de sondages -->
                                 <div class="item-second-container full-line">
                                     <div class="wrap-item-second-container">
                                         <div class="second-container-head">
@@ -728,6 +709,155 @@
                                         
                                     </div>
                                 </div>
+
+                                <div class="item-second-container full-line">
+                                    <div class="wrap-item-second-container">
+                                        <div class="second-container-head">
+                                            <h4>Résultat sondage</h4>
+                                        </div>
+                                        <div class="second-container-body">
+                                            <div class="second-container-text">
+                                                <h2>Titre du sondage</h2>
+                                            </div>
+                                            <div class="content-general-graph">
+                                                <div class="item-graphe">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="container1"></div>
+                                                        <p class="highcharts-description">
+                                                            Pourcentage de vote obtenu par chaque participant par réponse.
+                                                        </p>
+                                                    </figure>
+                                                    <table id="datatable1" style="display:none;">
+                                                        <thead>
+                                                            <th></th>
+                                                            <th> Repartition des voix en fonction des réponses</th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Réponse A</th>
+                                                                <td>938899</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse B</th>
+                                                                <td>1229600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse C</th>
+                                                                <td>325251</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse D</th>
+                                                                <td>238751</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        
+                                                    </table>
+                                                </div>
+                                                <div class="item-graphe">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="container2"></div>
+                                                        <p class="highcharts-description">
+                                                            Pourcentage de vote obtenu par chaque participant par réponse.
+                                                        </p>
+                                                    </figure>
+                                                    <table id="datatable2" style="display:none;">
+                                                        <thead>
+                                                            <th></th>
+                                                            <th> Repartition des voix en fonction des réponses</th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Réponse A</th>
+                                                                <td>938899</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse B</th>
+                                                                <td>1229600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse C</th>
+                                                                <td>325251</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse D</th>
+                                                                <td>238751</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        
+                                                    </table>
+                                                </div>
+                                                <div class="item-graphe">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="container3"></div>
+                                                        <p class="highcharts-description">
+                                                            Pourcentage de vote obtenu par chaque participant par réponse.
+                                                        </p>
+                                                    </figure>
+                                                    <table id="datatable3" style="display:none;">
+                                                        <thead>
+                                                            <th></th>
+                                                            <th> Repartition des voix en fonction des réponses</th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Réponse A</th>
+                                                                <td>938899</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse B</th>
+                                                                <td>1229600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse C</th>
+                                                                <td>325251</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse D</th>
+                                                                <td>238751</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        
+                                                    </table>
+                                                </div>
+                                                <div class="item-graphe">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="container4"></div>
+                                                        <p class="highcharts-description">
+                                                            Pourcentage de vote obtenu par chaque participant par réponse.
+                                                        </p>
+                                                    </figure>
+                                                    <table id="datatable4" style="display:none;">
+                                                        <thead>
+                                                            <th></th>
+                                                            <th> Repartition des voix en fonction des réponses</th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Réponse A</th>
+                                                                <td>938899</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse B</th>
+                                                                <td>1229600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse C</th>
+                                                                <td>325251</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Réponse D</th>
+                                                                <td>238751</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
                        
                               <!-- fin -->
                             </div>
@@ -927,7 +1057,12 @@
   </div>
 </div>
 
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
+<script src="js/graph.js"></script>
 
     <script src="js/footer.js"></script>
 
@@ -951,8 +1086,8 @@
       <!-- FOOTER FIN-->
     <!-- FIN -->
 
-    <script src="js/graph.js"></script>
-    <script src="js/menu-active.js"></script>
+
+    <!-- <script src="js/menu-active.js"></script> -->
 
 </body>
 </html>

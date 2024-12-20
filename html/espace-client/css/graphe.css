@@ -41,6 +41,12 @@
     margin-bottom: 0;
     background-color: #fff;
 }
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 660px;
+    margin: 1em auto;
+}
 .first-container-head:first-child, .second-container-head:first-child{
     border: 0;
     border-radius: 7px 7px 0 0;
